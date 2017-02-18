@@ -9,26 +9,16 @@
             <div class="top-back2 filter-back3">
               <a @click="hideOuter()">返回</a>
             </div>
-            <div class="top-bt3 " v-text="outerName">
-
-            </div>
+            <div class="top-bt3 " v-text="outerName"></div>
           </div>
           <div class="filter-prof2 margin-top-2rem above-mask">
             <div class="filter-search border-bottom" v-if="outerName=='角色职业' ">
               <input class="f30" type="text" placeholder="首字母搜索" v-model="outerQuery">
             </div>
             <div class="prof2-list f30">
-
-
               <transition-group tag="ul" @before-enter="beforeEnter"
                                 :appear="true"
                                 @enter="enter" @leave="leave">
-                <!--<ul>-->
-
-                <!--<li v-for="(item, index) in computedList" :key="item.msg" :data-index='index' style="transition: all .5s">-->
-                <!--<span v-text="item.msg"></span>-->
-                <!--</li>-->
-
                 <li class="border-bottom"
                     v-for="(item,index) in outerListFilter"
                     :key="item.id"
@@ -41,9 +31,7 @@
                   <span><i><input type="checkbox"></i></span>
                   <!--<div style="clear: both"></div>-->
                 </li>
-
               </transition-group>
-              <!--</ul>-->
             </div>
             <div class="prof2-check f36">
               <a class="fcheckmore" @click="confirm()">确定</a>
@@ -54,7 +42,6 @@
 
       </template>
     </transition>
-
     <!-- 显示筛选列表 -->
     <transition name="innerPage">
       <div class="filter-list docheight" v-if="!isShowOuter">
@@ -73,26 +60,24 @@
         <div class="filter-body padding-b4 fw margin-top-2rem">
           <div class="filter01 fw " style="text-align: left" :class="{'margin-bottom': item.name!='角色职业'}"
                v-for="item in list">
-
             <h3 class="filter-title border-bottom f32"><b class="b-normal" v-text="item.name"></b>
               <span
                 id="openprof"
                 v-if="item.outer"
                 @click="showOuter(item)">
-                                <b class="b-normal" v-text="item.outer.name">
-                                </b>
-                                <i></i>
-                            </span>
+                <b class="b-normal" v-text="item.outer.name"></b>
+                <i></i>
+                </span>
             </h3>
             <div class="fw filter-ul border-bottom" v-if="item.inner.length != 0">
               <ul>
-                <li :class="{'active':inner.check}" v-for="(inner,index) in item.inner"
+                <li :class="{'active':inner.check}" :key="inner.name" v-for="(inner,index) in item.inner"
                     v-if="item.show || index < 6">
-                                    <span class="f30" @click="innerCheck(inner, item)">
-                                      <!--{{inner.check}}-->
-                                      <input :type="item.type" name="">
-                                      <b style="font-weight: normal" v-text="inner.name"></b>
-                                    </span>
+                     <span class="f30" @click="innerCheck(inner, item)">
+                      <!--{{inner.check}}-->
+                     <input :type="item.type" name="">
+                       <b style="font-weight: normal" v-text="inner.name"></b>
+                     </span>
                 </li>
               </ul>
               <!--
@@ -107,7 +92,7 @@
           </div>
         </div>
         <div class="filter-foot fixed-bottom f36 border-top ">
-          <a><em class="whitesearch"></em>共精选出 <span v-text="commodityNum"></span> 件商品</a>
+          <a><em class="whitesearch"></em>共精选出 <span>{{commodityNum | digitCommodityNum}}</span> 件商品</a>
         </div>
       </div>
     </transition>
@@ -142,7 +127,6 @@
    *  样式问题(附加)：
    *      使用scss的文件导入时，图片路径失效。
    *      把图片放到公共区，路由都改为找公共区。
-   *
    */
   import Vue from 'vue'
   var jsonData = {
@@ -490,7 +474,7 @@
       getCommodityNum: function (filter) {
         var self = this;
         setTimeout(function () {
-          self.commodityNum = Math.floor(Math.random() * 1000);
+          self.commodityNum = Math.floor(Math.random() * 10000000000);
         }, 100)
       },
       /**
@@ -506,8 +490,8 @@
         var tep = 0;
         var heighs = document.documentElement.scrollTop || document.body.scrollTop;
         tep = heighs / 100;
-                document.documentElement.scrollTop = 0;
-                document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
 //        var inteval = setInterval(function () {
 //          var heighs = document.documentElement.scrollTop || document.body.scrollTop;
 //          if (heighs < 3) {
@@ -538,6 +522,25 @@
           el.style.opacity = 0;
           el.style.height = 0;
         }, delay)
+      }
+    },
+    filters: {
+      digitCommodityNum: function (val) {
+        /**
+         * 大于 4位，如 40000，10000,99999
+         *      除以 10000，然后四舍五入 ， 加 万
+         * 大于 8位 如 1,0000,0000  除以1*10^8， 四舍五入 加亿
+         */
+        console.log("数据", val)
+        if (String(val).length < 5) {
+          return val;
+        }
+        if (String(val).length > 4 && String(val).length < 8) {
+          return "约" + Math.round(val / 10000) + "万";
+        }
+        if (String(val).length > 8) {
+          return "约" + Math.round(val / (10000 * 10000)) + "亿";
+        }
       }
     }
   }
@@ -601,6 +604,10 @@
 
   .innerPage-leave-active {
     animation: fadeOut .5s;
+  }
+
+  .maxSex-enter-active {
+    animation: fadeIn .5s;
   }
 
   /* animate.css含有的 部分动画 */
@@ -749,4 +756,5 @@
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
   }
+
 </style>
