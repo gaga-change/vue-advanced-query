@@ -14,11 +14,11 @@
         </div>
         <div class="filter-prof2 margin-top-2rem above-mask">
           <div class="filter-search border-bottom" v-if="outerName=='角色职业' ">
-            <input class="f30" type="text" placeholder="首字母搜索">
+            <input class="f30" type="text" placeholder="首字母搜索" v-model="outerQuery">
           </div>
           <div class="prof2-list f30">
             <ul>
-              <li class="border-bottom" v-for="item in outerList" @click="outerCheck(item)"
+              <li class="border-bottom" v-for="item in outerListFilter" @click="outerCheck(item)"
                   :class="{'active':item.check}">
                 <em v-text="item.name"></em>
                 <span><i><input type="checkbox"></i></span></li>
@@ -85,7 +85,6 @@
         </div>
       </div>
       <div class="filter-foot fixed-bottom f36 border-top ">
-        {{commodityNum}}
         <a><em class="whitesearch"></em>共精选出 <span v-text="commodityNum"></span> 件商品</a>
       </div>
     </div>
@@ -118,7 +117,8 @@
    *          角色职业为动态载入。（点入才去获取）   --------------------------------------------- √
    *      显示刷选出的条数
    *          实现模拟显示条数        ---------------------------------------------------------- √
-   *  样式问题：
+   *          商品数量无限大的时候 处理
+   *  样式问题(附加)：
    *      使用scss的文件导入时，图片路径失效。
    *      把图片放到公共区，路由都改为找公共区。
    *
@@ -222,6 +222,7 @@
         list: [],  //主数据
         isShowOuter: false,  //是否显示 “不限” 页面
         outerList: [],  // “不限” 页面里的数据
+        outerQuery: "", //首字母筛选条件
         outerLink: {},
         outerName: "",
         commodityNum: 0,  //筛选出的商品条数
@@ -265,8 +266,20 @@
           })
         });
         return ret;
+      },
+      /**
+       * 过滤后的外部数据(过滤后的角色职业列表)
+       */
+      outerListFilter: function () {
+        var self = this;
+        return this.outerList.filter(function (item) {
+          console.log(item)
+          if (item.check) {
+            return true;
+          }
+          return item.name.toLocaleLowerCase().indexOf(self.outerQuery.toLocaleLowerCase()) !== -1;
+        })
       }
-
     },
     /**
      * 组件加载后，获取主数据，赋值给list
@@ -374,6 +387,7 @@
        */
       hideOuter: function () {
         this.isShowOuter = false;
+        this.outerQuery = ""
       },
       /**
        * 点击“不限”页面的选项时。控制选中状态。默认“不限”页面里的数据是 多选
@@ -486,8 +500,6 @@
           }
         }, 2);
       }
-
-
     }
   }
 </script>
