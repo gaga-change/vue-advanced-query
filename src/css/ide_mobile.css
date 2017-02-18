@@ -1,0 +1,1866 @@
+/*pc端*/
+@media screen and (min-width: 770px) and (max-width: 1920px){
+    /*详细页分享*/
+    .sharediv .sharediv02{padding:5px 5px 25px 5px;  }
+    .sharediv .sharediv02 a{font-size: 14px; }
+    .sharediv .sharediv02 i{ display: block; margin-bottom: 10px;}
+    .sharediv .sharediv04{ width: 70px; height: 70px; background-size:60px; }
+    .sharediv .sharediv05{ width: 70px; height: 70px; background-size:60px; }
+    .sharediv .sharediv06{ width: 70px; height: 70px; background-size:60px; }
+    .sharediv .sharediv07{ width: 70px; height: 70px; background-size:60px; }
+    .sharediv .sharediv08{ width: 70px; height: 70px; background-size:60px; }
+    .sharediv .sharediv03{height:70px; font-size:16px;  line-height:70px; }
+
+    /*首页*/
+    /*头部*/
+    .header-top{ height:50px;}
+    .header-top span{ font-size:18px; height:50px; line-height:50px;}
+    .header-top .indclose{background: url(../images/index-close.png) 10px center no-repeat; height: 50px; padding: 0 0 0 10px;background-size: 15px;}
+
+    .header-top .backindex{ width:25px; height:20px; padding: 16px 15px 14px; top:0px; right:0px;}
+    .header-top .wtihdr{ width:auto; font-size:16px; height:50px; line-height:50px; padding-right: 15px;}
+    .header-top .wtihdr i.wdr-img{ height:50px; width:20px; background-size:100%; }
+
+    .header-top .process{width:auto; height:50px; padding-right: 15px;}
+    .header-top .process i.kf{ width:28px; height:48px; background-size:20px;}
+    .header-top .process b{width:28px; font-size:13px; margin-top:2px;}
+
+    .header-top .share{width:auto; height:50px; padding-right: 15px;}
+    .header-top .share i.yxlm{ height:50px; width:20px; background-size:100%;}
+    .header-top .serve{ width:auto; font-size:16px; height:50px; line-height:50px; padding-right: 15px;}
+
+    .header-top .shome{ width:25px; height:50px; padding-right: 10px;}
+
+    /*页面上下的间距*/
+    .m-bottom,.m-bodtom,.m-border{ margin-bottom:15px;}
+    .curent{ background-position:15px center; background-size:3px;}
+
+    .fixed-padd{ padding-bottom:100px;}
+    .fixed-bottom{ padding-bottom:50px;}
+
+    .rele-lease ul li{ padding:0 15px; height:56px;}
+    .m-padding{ padding-left:25px !important;}
+    .rele-lease ul li span{ height:56px; line-height:56px; font-size:16px;}
+    .rele-lease ul li label{ height:56px; line-height:56px; font-size:16px; margin-left:90px;}
+    .rele-lease ul li label i{ width:7px; height:56px; background-size:100%; margin-left:8px; background-position:0 center;}
+    .rele-lease ul li .grade{ height:56px; line-height:56px; font-size:16px; width:60%;}
+    .rele-list{}
+    .rele-list ul li{ padding:0 15px; height:56px; position:relative;}
+    .rele-list ul li span{height:56px; line-height:56px; font-size:16px; width:90px;}
+    .rele-list ul li strong{ height:56px; line-height:56px; font-size:16px;}
+    .rele-list ul li em{height:56px; line-height:56px; font-size:16px;}
+    .rele-list ul li .rele-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; padding-right:16px; width:58%;}
+
+    .rele-list ul li .rele-input-tx2{ height:26px; line-height:26px; padding:15px 0; font-size:16px;  width:73%;}
+    .rele-conv{  padding:20px 0 0 0;}
+    .rele-conv .re-tex{ padding: 0 20px;}
+    .rele-conv .re-tex .re-tarea{ font-size:16px; line-height:24px; height:110px;}
+    .rele-conv textarea::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 16px; }
+    .rele-conv .re-img{ padding-left: 20px;}
+    .rele-conv .re-img ul{ width:100%;}
+    .rele-conv .re-img ul li{ width:25%; height:auto; margin-bottom: 15px; }
+    .rele-conv .re-img ul li .upload-main{ width:78px; height:78px;}
+
+    .rele-conv .re-img ul li a.up-close{ width:18px; height:18px; top:-5px; left:-5px;}
+
+    .rele-conv .re-img .re-file{ width:80px; height:80px; margin-bottom: 20px;}
+    .rele-conv .re-img .re-file .up_file{ width:80px; height:80px;}
+    .rele-conv .re-img .re-file span{ width:78px; height:78px; background-size:100%;}
+    .rele-treasure{ }
+    .rele-treasure ul li{ padding:0 15px; height:56px;}
+    .rele-treasure ul li span.trea{ font-size:16px; height:56px; line-height:56px; width:72px;}
+    .rele-treasure ul li span.ment{font-size:16px; height:56px; line-height:56px; width:98px;}
+    .rele-treasure ul li.boden{ height: 35px;}
+    .rele-treasure ul li .video-title{ font-size: 14px; padding: 10px 0 0 0px;}
+
+    .rele-treasure ul li em{ font-size:15px; height:56px; line-height:56px;}
+    .rele-treasure ul li.traesn .item-input{ width:70px; height:35px; background-size:100%; margin-top:11px; margin-left: 0px;}
+    .rele-treasure ul li.traesn em{font-size:13px; height:56px; line-height:56px; margin-left:3px;}
+
+    .rele-treasure ul li .trea-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:60%;}
+    .rele-treasure ul li i.rele-ye{ height:56px; width:20px; background-size:100%;}
+    .rele-treasure ul li i.rele-ye-hov{height:56px; width:20px; background-size:100%;}
+
+    .rele-treasure ul li span.titl{ height:56px; line-height:56px; font-size:16px;}
+
+    .rele-treasure ul li i.lease-ico{ width:9px; height:15px; background-size:100%; margin-left:0px; background-position:0 0; margin-top:21px;}
+    .rele-treasure ul li span.titl font{ margin:0 5px;}
+    .rele-treasure ul li.resure{line-height:56px; height: 56px; font-size:16px;}
+    .rele-treasure ul li.resure label{ padding-left:15px; width:40%;}
+    .rele-treasure ul li.resure span.list{ height:56px; font-size: 16px; }
+    .rele-treasure ul li.resure span.list em{ height:56px; }
+    .rele-treasure ul li.resure span.list em a{ height:56px;}
+    .rele-treasure ul li.resure span.list em a.redu,
+    .rele-treasure ul li.resure span.list em a.redu-hov{background-size:35%;}
+    .rele-treasure ul li.resure span.list em a.add,
+    .rele-treasure ul li.resure span.list em a.add-hov{ background-size:35%;}
+    .rele-treasure ul li.resure span.list .inp-fabu{  height:56px; line-height:56px; font-size:16px;}
+    .rele-treasure ul li.resure .inp-chance{ height:56px; font-size:16px; line-height:56px; }
+
+
+    .rele-treasure ul li.sell label{ height:56px; line-height:56px; font-size:16px;}
+    .rele-treasure ul li.sell label.sel-la01{ width:15%;}
+    .rele-treasure ul li.sell label.sel-la02{ width:33%;padding-left:4px;}
+    .rele-treasure ul li.sell label.sel-la03{ width:45%;}
+    .rele-treasure ul li.sell label.sel-la04{ width:33%; padding-left:4px;}
+    .rele-treasure ul li.sell span.list{ height:56px; width:49%;}
+    .rele-treasure ul li.sell span.list em{ height:56px; width:25%;}
+    .rele-treasure ul li.sell span.list em a{ height:56px; width:100%;}
+    .rele-treasure ul li.sell span.list em a.redu,
+    .rele-treasure ul li.sell span.list em a.redu-hov{ background-size: 35%;}
+    .rele-treasure ul li.sell span.list em a.add,
+    .rele-treasure ul li.sell span.list em a.add-hov{  background-size: 35%;}
+
+
+    .rele-treasure ul li.sell span.list .inp-fabu{ width:48.5%; height:26px; line-height:26px; padding:15px 0; font-size:16px;}
+    .rele-treasure ul li.sell .inp-chance{height:26px; line-height:26px; padding:15px 0; font-size:16px; width:19%;}
+
+
+    .rele-photo{ }
+    .rele-photo ul li{ height:auto; padding:0 15px; }
+    .rele-photo ul li em{  line-height:56px; font-size: 16px; }
+    .rele-photo ul li .lo-del{width:18px; height:18px; margin:21px 15px 0 0;}
+    .rele-photo ul li.tion{ padding-top: 5px; padding-bottom: 5px;}
+    .rele-photo ul li span.trea{font-size:16px; height:56px; line-height:56px; width:90px;}
+    .rele-photo ul li span lable{font-size:16px; height:56px; line-height:56px; width:72px;}
+    .rele-photo ul li .photo-input-tx{ font-size:16px; height:26px; line-height:26px; padding:15px 0; width:73%;}
+    .rele-photo ul li .mobile-tel{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:40%;}
+    .rele-photo ul li a.code{   height: 38px; margin-top: 7px;  font-size: 16px; line-height: 38px; width: 100px;}
+    .rele-photo ul li .trea-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:65%;}
+
+    .rele-btn{  padding:15px;}
+    .rele-btn a{ height:46px; line-height:46px; font-size:18px;}
+
+
+
+
+
+
+    /*发布帐号*/
+    .rele-treasure ul li span,
+    .rele-treasure ul li.traesn span{ height:56px; line-height:56px; font-size:16px;}
+
+
+
+    /*代练*/
+    .whereas-main ul li{ padding:0; margin-top:30px; height:auto; padding:0 30px;}
+    .whereas-main ul li a{ width:auto; height:120px;}
+
+    /*代练入驻*/
+    .inds-login ul li{ height:56px; line-height:56px; padding:0 15px;}
+    .inds-login ul li span{ height:56px; line-height:56px; font-size:16px; width:70px;}
+    .inds-login ul li .inds-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:70%;}
+
+    /*找代练*/
+    .for-ban{ }
+    .for-ban ul li{ padding:0 15px; height:56px;}
+    .for-ban ul li span{ height:56px; line-height:56px; font-size:16px;}
+    .for-ban ul li a{ height:56px; line-height:56px; font-size:16px; margin-left:90px;}
+    .for-ban ul li a i{ width:9px; height:15px; background-size:100%; margin-left:8px; background-position:0 0; margin-top:17px;}
+    .for-textar{ padding:8px; height:150px;}
+    .for-textar .textar-conn{font-size: 16px;line-height: 24px; height: 150px;}
+
+    .for-lgoin{ }
+    .for-lgoin ul li{ padding:0 15px; height:56px;}
+    .for-lgoin ul li span{height:56px; line-height:56px; font-size:16px; width:140px;}
+    .for-lgoin ul li .lg-input-tex{height:26px; line-height:26px; padding:15px 0; font-size:16px; width:50%;}
+    .for-lgoin ul li .money-input-tex{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:38%; }
+    .for-lgoin ul li em{height:56px; line-height:56px; font-size:16px;}
+    .rele-btn p{ font-size:18px; height:24px; line-height:24px; margin:5px 0 10px 0;}
+    .rele-btn p em{ margin:0 8px;}
+
+
+
+
+
+
+    /*找代练-方案2*/
+    .for-upgre ul li{padding:0 15px; }
+    .for-upgre ul li span{height:56px; line-height:56px; font-size:16px;}
+    .for-upgre ul li a{ height:56px; line-height:56px; font-size:16px; margin-left:90px;}
+    .for-upgre ul li a i{ width:9px; height:15px; background-size:100%; margin-left:8px; background-position:0 0; margin-top:17px;}
+    .for-upgre ul li .upgre-tarea{font-size: 16px; line-height: 24px; height: 140px;}
+    .for-upgre ul li.upg-pass{ padding-top:8px; padding-bottom:8px;}
+    .for-ban ul li span.price{ width:140px;}
+    .for-ban ul li .price-input-tex{height:26px; line-height:26px; padding:15px 0; font-size: 16px; width: 38%;}
+    .for-ban ul li em{height:26px; line-height:26px; padding:15px 0; font-size: 16px; padding-right:16px;}
+
+    /*找代练-方案3*/
+    .for-lgoin ul li.process .proce-conn{ padding:20px 15px;}
+
+    /*下订单支付*/
+    .order-commod ul li{padding: 0 15px;}
+    .order-commod ul li.orderhih{ padding-top: 2px; padding-bottom: 2px;}
+    .order-commod ul li dl{ padding:15px 0;}
+    .order-commod ul li dl dt{ width:70px; height:70px;}
+
+    .comd-img{ width:70px; height:70px;}
+    .comd-img img{ max-width:70px; max-height:70px;}
+    .comd-img i{ width:22px; height:22px; line-height:18px; font-size:15px;}
+    .order-commod ul li dl dd{ margin-left:80px;}
+    .order-commod ul li dl dd h2{ font-size:15px; height:16px; line-height:16px;white-space: nowrap;overflow: hidden;}
+    .order-commod ul li dl dd p{ font-size:16px; line-height:22px; height: 22px; margin-top:7px; max-height: 42px;}
+    .order-commod ul li dl dd .det-money{height: 22px; line-height: 22px; font-size: 18px; margin-top: 2px;}
+    .order-commod ul li dl dd .det-money em{font-size: 16px; height: 22px; line-height:22px;}
+
+    .order-commod ul li label{ height:56px; line-height:56px; font-size:16px;}
+    .order-commod ul li font{ height:56px; line-height:56px; font-size:16px;}
+    .order-commod ul li em{ height:56px; line-height:56px; font-size:16px;}
+    .order-commod ul li.resure span.list{ height:30px; width:auto; margin:10px 6px 0;}
+    .order-commod ul li.resure span.list em{ height:30px; width:30px;}
+    .order-commod ul li.resure span.list em a{ width:18px;}
+    .order-commod ul li.resure span.list em a.redu,
+    .order-commod ul li.resure span.list em a.redu-hov{ height:2px; background-size:100%; margin:14px 0 0 7px;}
+    .order-commod ul li.resure span.list em a.add,
+    .order-commod ul li.resure span.list em a.add-hov{ height:18px; background-size:100%; margin:6px 0 0 6px;}
+    .order-commod ul li.resure span.list .inp-fabu{width:30px; height:30px; line-height:30px; font-size:16px;}
+    .order-commod ul li span.orderpa{ height: 35px; width:132px; margin-top: 6px;}
+    .order-commod ul li span.orderpa strong{width: 35px; height: 35px;}
+    .order-commod ul li span.orderpa strong a.redu{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa strong a.add{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa strong a.redu-hov{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa strong a.add-hov{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa .inp-order{ width: 60px; height: 35px;font-size: 16px; line-height:32px;}
+
+
+    .order-main .medeta-lease{ }
+    .servi-title{ padding:0 15px; height:56px; font-size:16px; line-height:56px;}
+    .order-service .servi-account{ padding:0 15px;}
+    .order-service .servi-account .item-input{height: 35px; width: 70px; margin-top: 15px; margin-left: 10px;}
+
+    .order-service .servi-conn ul li{ padding:0 15px; height:56px;}
+    .order-service .servi-conn ul li span{ height:56px; line-height:56px; font-size:16px; width:96px;}
+    .order-service .servi-conn ul li em{ height:56px; line-height:56px; font-size:16px;}
+    .order-service .servi-conn ul li .item-input{ width:70px; height:35px; background-size:100%; margin-top:8px; margin-left:10px;}
+
+    .order-service .servi-conn ul li .serv-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:70%;}
+
+
+
+
+    .servi-btn{  padding:15px;}
+    .servi-btn a{ width:53%; height:46px; line-height:46px; font-size:18px;}
+    .servi-btn span{ height:46px; line-height:46px; font-size:16px;}
+    .servi-btn span em{ font-size:22px;}
+    .servi-btn span font{ font-size:16px; margin-left:6px;}
+
+    .order-pay .pay-money ul li{ height:56px; line-height:56px; padding: 0 15px;}
+    .order-pay .pay-money ul li.pay-cer{ height: 56px; line-height: 56px; font-size: 16px;}
+    .order-pay .pay-money ul li input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size: 14px;}
+    .order-pay .pay-money ul li span{ line-height:56px; font-size:16px; width:85px;}
+    .order-pay .pay-money ul li .paon-input{ height: 26px;line-height: 26px;padding: 15px 0 0 6px; width:60%; font-size:16px;}
+    .order-pay .pay-money ul li input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size: 16px;}
+    .order-pay .pay-money ul li em{ font-size:18px;}
+    .order-pay .pay-money ul li em i{ font-size:16px;}
+    .order-pay .pay-money ul li i.txie{font-size:16px}
+    .order-pay .pay-money a.dialog_close{ width:15px; height:15px; margin-top:18px;}
+    .order-pay .pay-conn ul li{ height:65px; line-height:65px; padding:0 15px;}
+    .order-pay .pay-conn ul li i.lease-ico{ width:8px; height:15px; background-size:100%; margin-top:27px;}
+    .order-pay .pay-conn ul li span{width:180px; line-height:65px; font-size:16px;}
+    .order-pay .pay-conn ul li span i.pay-weix{ width:40px; height:40px; background-size:100%;  margin-right:13px; margin-top:12px;}
+    .order-pay .pay-conn ul li span i.pay-zfb{ width:40px; height:40px; background-size:100%;  margin-right:13px; margin-top:12px;}
+    .order-pay .pay-conn ul li span i.pay-cup{ width:40px; height:40px; background-size:100%;  margin-right:13px; margin-top:12px;}
+
+
+    /*个人中心-我的代练*/
+    .header-top em{ width:109px; height:35px; font-size:16px; line-height:35px; margin-top:6px;}
+    .mywhwerw-main .werw-list{ height:56px;}
+    .mywhwerw-main .werw-list ul li{ height:56px;}
+    .mywhwerw-main .werw-list ul li a{ height:49px; line-height:56px; font-size:16px;}
+    .werw-conn ul li{ }
+    .werw-conn ul li .werw-commod{ padding:15px;}
+    .werw-conn ul li .werw-commod dl dt{ width:70px; height:70px;}
+    .werw-conn ul li .werw-commod dl dt .comd-img{ width:70px; height:70px;}
+    .werw-conn ul li .werw-commod dl dt .comd-img img{ max-width:70px; max-height:70px;}
+    .werw-conn ul li .werw-commod dl dt .comd-img i{ width:25px; height:25px; line-height:25px; font-size:16px;}
+    .werw-conn ul li .werw-commod dl dd{ margin-left:80px;}
+    .werw-conn ul li .werw-commod dl dd h2{ font-size:14px; height:18px; line-height:18px;}
+    .werw-conn ul li .werw-commod dl dd p{ font-size:16px; line-height:22px; margin-top:6px;}
+
+    .werw-conn ul li .werw-conter{ padding:15px;}
+    .werw-conn ul li .werw-conter .cont-demo .wentmo-left{ font-size:16px; line-height:26px;}
+    .werw-conn ul li .werw-conter .cont-demo .wentmo-right{ font-size:16px; line-height:26px;}
+    .werw-conn ul li .werw-conter .cont-demo em.tex{ margin-left:15px;}
+
+
+    .werw-conn ul li .comp-conter{ padding:15px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-left{ line-height:40px; font-size:16px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-right{  font-size:16px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-right a.lain{ width:85px; height:38px; line-height:38px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-right a.comp{width:85px; height:40px; line-height:40px; margin-left:10px;}
+
+    .werw-conn ul li .werw-commod dl dd .con-money{ font-size:16px;}
+    .werw-conn ul li .werw-commod dl dd .con-money em{ font-size:15px;}
+    .werw-conn ul li .werw-viepl{padding:15px; font-size:16px;}
+    .werw-conn ul li .werw-viepl a.ssu{width:85px; height:40px; line-height:40px; margin-left:10px;}
+    .werw-conn ul li .werw-viepl a.pin{width:85px; height:38px; line-height:38px;}
+
+
+    /*留言详情*/
+    .message-main .werw-commod{ padding:15px;}
+    .message-main .werw-commod dl dt{ width:70px; height:70px;}
+    .message-main .werw-commod dl dt .comd-img{ width:70px; height:70px;}
+    .message-main .werw-commod dl dt .comd-img img{ max-width:70px; max-height:70px;}
+    .message-main .werw-commod dl dt .comd-img i{ width:25px; height:25px; line-height:25px; font-size:16px;}
+    .message-main .werw-commod dl dd { margin-left: 80px;}
+    .message-main .werw-commod dl dd .comdd-titl h2{ font-size:14px; line-height:20px; height:20px;}
+    .message-main .werw-commod dl dd .comdd-titl p{ font-size:16px; line-height:22px; margin-top:6px; }
+    .message-main .werw-commod dl dd .comdd-conn span{ font-size:16px;}
+    .mesaa-reply .reply-copl{ }
+    .mesaa-reply .reply-copl ul li{ padding:0 15px;}
+    .mesaa-reply .reply-copl ul li .copl-head{ margin:10px 0; width:60px; height:60px;}
+    .mesaa-reply .reply-copl ul li .copl-head img{ max-height:60px; max-width:60px;}
+    .mesaa-reply .reply-copl ul li .copl-cont{ margin:10px 0 10px 75px;}
+    .mesaa-reply .reply-copl ul li .copl-cont h2{ font-size:16px; height:20px; line-height:20px;}
+    .mesaa-reply .reply-copl ul li .copl-cont h2 span{ font-size:14px;}
+    .mesaa-reply .reply-copl ul li .copl-cont p{ font-size:16px; line-height:24px; margin-top:6px;}
+    .mesaa-reply .reply-copl ul li .del{ margin:10px 0;}
+    .mesaa-reply .reply-copl ul li .del a{ font-size:16px; height:40px; line-height:40px}
+    .mesaa-reply .reply-copl ul li .rep{width:85px; height:40px; margin:10px 0;}
+    .mesaa-reply .reply-copl ul li .rep a{ width:85px; height:40px; font-size:16px; line-height:40px;}
+
+
+    .tail-btn{padding: 8px}
+    .rele-btn a {height: 46px; line-height: 46px; font-size: 18px;}
+    .tail-btn .tail-form .relbt-inp{ height:38px; line-height:38px; font-size:16px;}
+    .tail-btn .tail-form .relbt-btn{ height:46px; line-height:46px; font-size:16px;}
+
+
+    /*弹出提示*/
+
+
+
+    /*个人中心-待付款-详情币*/
+    .header-top .member{width:20px; height: 15px; right: 8px; top: 18px;}
+    .medeta-lease ul li{ height:56px; padding:0 15px;}
+    .medeta-lease ul li span{ line-height:56px; font-size:16px; height:56px;}
+    .medeta-lease ul li em{ height:56px; line-height:56px; font-size:16px; margin-left:80px;}
+    .servi-title{padding: 0 8px; height: 56px; font-size: 16px; line-height: 56px}
+    .medeta-service .item-input{height: 35px; width:70px; margin-top:15px; margin-left:10px;}
+
+    .medeta-service .servi-conn{ padding:0 15px;}
+    .servi-conn .svi-insurance{ margin:10px 0; width:84%;}
+    .servi-conn .svi-width{ width:70%;}
+
+    .servi-conn .svi-insurance h2{ font-size:16px; line-height:24px; height:24px;}
+    .servi-conn .svi-insurance p{ font-size:14px; line-height:24px; height:auto; margin-top:5px;}
+    .servi-conn .svi-money{ height:68px; line-height:68px; font-size:16px;}
+
+    .servi-cange{ padding:0 15px; height:56px;}
+    .servi-cange span{ line-height:56px; font-size:16px; height:56px;}
+    .servi-cange em{ height:56px; line-height:56px; font-size:16px; margin-left:80px;}
+
+    .memberdetail-main .stay-customer em{ height:40px; line-height:40px; font-size:16px;}
+    .memberdetail-main .stay-customer{ padding:15px;}
+    .memberdetail-main .stay-customer .stay-img{ width:40px; height:40px;}
+    .memberdetail-main .stay-customer .stay-conn{ margin-left:52px;}
+    .memberdetail-main .stay-customer .stay-conn h2{ font-size:15px; height:20px; line-height:20px;}
+    .memberdetail-main .stay-customer .stay-conn p{ font-size:16px; margin-top:0px;}
+    .memberdetail-main .stay-customer .stay-contact{ height:38px; width:55px; margin-top:4px;}
+    .memberdetail-main .stay-customer .stay-contact a{ width:55px; height:38px; font-size:16px;}
+    .memberdetail-main .stay-customer .stay-contact a img{ width:22px;}
+    /*弹窗-取消订单*/
+    .cancel-pop .canpop-text{ height:56px; line-height:56px;}
+    .cancel-pop .canpop-text a{ font-size:16px;}
+
+
+    .staypop-text ul li{ padding:0 15px; height:56px;}
+    .staypop-text ul li span{ height:56px; line-height:56px; font-size:16px;}
+    .staypop-text ul li em{height:56px; line-height:56px;   width: 27%;}
+    .staypop-text ul li em i{width: 9px; height: 15px; background-size: 100%; margin-left: 8px; background-position: 0 0; margin-top: 17px;}
+
+
+
+    /*交易成功-评价*/
+    .memberdetail-main .evalu-score{  padding:0 15px; height:56px;}
+    .memberdetail-main .evalu-score span{ line-height:56px; font-size:16px;}
+    .memberdetail-main .evalu-score .revinp i{ margin:10px 4px 10px 12px;}
+    .level .level_solid, .level .level_hollow{ width:30px; height:31px; background-size:100%;}
+
+    /*发布职业选择样式*/
+    .newScree{ padding:0 15px;}
+    .newScree section font{ height:56px; line-height:56px; font-size:16px;}
+    .newScree section a.aRight{ display:block; color:#000;}
+    .newScree section label{height: 56px; margin-left: 74px;}
+    .newScree section label.pod{ margin-left:100px;}
+    .newScree section label em{ line-height: 56px; font-size: 16px; }
+    .newScree section label i{width: 7px; height: 15px;background-size: 100%;margin-left: 8px;background-position: 0 0;margin-top:22px}
+    .ConBox{left: 100%;margin: 0 auto;}
+    .Jbox a{ height:56px; line-height:56px; font-size:16px;}
+    .lmob{ height:auto; display:block; overflow:hidden; padding-bottom:25px;}
+    .lmob ol li a { height:56px; line-height:54px; font-size:16px;}
+    .lmob ol li a.active{ height:54px; background-size:25px;}
+
+    /*商品排序*/
+    .commod-list .comd-titl{ padding:15px; height:40px;}
+    .commod-list .comd-titl span{ height:40px; width:80px; font-size:16px; line-height:40px;}
+    .commod-list .comd-titl label{ font-size:16px; line-height:40px;}
+    .commod-list .comd-titl em{ font-size:14px; line-height:40px; margin-left:6px;}
+    .commod-list .comd-titl em i{ margin-left:4px;}
+    .commod-list .comd-conn{ padding:15px;}
+    .commod-list .comd-conn .comd-text{ margin-left:77px; min-height:65px;}
+    .commod-list .comd-conn .comd-text p{font-size:16px; line-height:22px;}
+    .commod-list .comd-conn .comd-text .money{  font-size: 18px; margin-top: 2px;}
+
+    /*弹窗登录*/
+    .pomen-login .login-qq{padding: 15px 0;}
+    .pomen-login .login-qq a{padding: 12px 0; line-height: 30px; font-size: 16px;}
+    .pomen-login .login-qq a img{ width:30px; padding-right:10px;}
+    .pomen-login .login-title{ height: 60px; line-height:60px; font-size: 16px;}
+    .login-other-bt{ margin:20px 0; }
+    .login-other-bt span{ float:left; width:100%; text-align:center; line-height:56px; font-size:30px; position:relative; margin-bottom:-25px;}
+    .login-other-bt span em{background:#f1f1f1; padding:0 10px;}
+    .login-other-bt span{ font-size:16px;}
+
+    .login-mobile ul li{padding: 0 15px;}
+    .login-mobile ul li label{height: 60px; line-height: 60px; font-size: 16px; width:62px;}
+    .login-mobile ul li .mobile-num{line-height:30px; padding:15px 0; height:30px; font-size:18px; width:34%;}
+    .login-mobile ul li a.lo-del{ width:18px; height:18px; margin-top:21px;}
+    .login-mobile ul li a.lo-del img{ width:100%;}
+    .login-mobile ul li .mobile-tel{ line-height:30px; padding:15px 0; height:30px; font-size:16px; width:45%;}
+    .login-mobile ul li a.code{ height: 42px; margin-top: 10px; font-size: 16px; line-height: 42px; width: 120px;}
+    .login-mobile ul li a.mobile-btn{ margin:12px 0;line-height:46px; font-size:18px;}
+    .login-mobile ul li .mbile-conn{ padding:20px 0;}
+    .login-mobile ul li .mbile-conn h2{ font-size:16px; height:30px; line-height:30px;}
+    .login-mobile ul li .mbile-conn p{ font-size:20px; height:30px; line-height:30px;}
+
+    .login-other-list{ padding:18px 0;}
+    .login-other-list a{ font-size:16px;}
+    .login-other-list i{ height:60px; width:60px; padding-bottom:10px; }
+
+    .login-other-back {padding:18px 0;}
+    .login-other-back a{ font-size:16px;}
+    .login-other-back i{ height:70px; width:70px; }
+
+
+    .pomen-login .canpop-text{ height:56px; line-height:60px;}
+    .pomen-login .canpop-text a{ font-size:18px;}
+    .pomen-login .canpop-text{ margin-top:12px;}
+
+    /*发布成功*/
+    .publish-main .pubsuc-ch{ padding-top:30px; padding-bottom:30px;}
+    .publish-main .pubsuc-ch .ch-img{ width:84px; height:84px;}
+    .publish-main .pubsuc-ch .ch-text{ font-size:18px; height:35px; line-height:35px; margin-top:30px;}
+    .publish-main .pubsuc-ch .ch-mon{ font-size:18px; height:35px; line-height:35px; margin-top:10px;}
+    .publish-main .pubsuc-ch .ch-btn{ padding:0 20px;}
+    .publish-main .pubsuc-ch .ch-btn a{ margin-top:26px; height:48px; line-height:48px; font-size:18px;}
+    .pubsuc-share{ padding-bottom:0px;}
+    .pubsuc-share .share-title{ height:48px; line-height:48px; font-size:16px;}
+    .pubsuc-share ul{ padding: 0 15px;}
+    .pubsuc-share ul li{ margin-top:15px;}
+    .pubsuc-share ul li img{ width:60px; height:60px;}
+    .pubsuc-share ul li p{ font-size:14px; margin:10px 0;}
+
+    /*发布区服选择*/
+    .rele-game-qfu{ padding:15px;}
+    .rele-game-qfu .reqft-img{ height:60px; width:60px;}
+    .rele-game-qfu .reqft-text{ margin-left:75px; margin-top:4px;}
+    .rele-game-qfu .reqft-text h2{ font-size:18px; height:22px; line-height:22px;}
+    .rele-game-qfu .reqft-text p{ font-size:16px; height:22px; line-height:22px; margin-top:10px;}
+    .rele-game-qfu i.lease-ico{width: 9px; height: 60px;background-size: 100%;margin-left: 8px;}
+    .rele-lease ul li em.pl{ height:56px; line-height:56px; font-size:16px;}
+    .rele-title{ padding:0 15px; height:56px; line-height:56px; font-size:16px;}
+    .rele-title i.tit-ico{ height:17px; width:3px; margin:20px 10px 0 0;}
+    .rele-rtile{ padding:15px; height:auto;}
+    .rele-rtile h2{ font-size:16px;}
+    .rele-rtile p{ font-size:13px; margin-top:6px;}
+    .rele-treasure ul li.traesn span i.tit-ico{height:17px; width:3px; margin:20px 10px 0 0;}
+    .rele-treasure ul li span.ment i.tit-ico{height:17px; width:3px; margin:20px 10px 0 0;}
+    .rele-gree{ padding:25px 0;}
+    .rele-gree .gree-f{ font-size:16px; height:25px; line-height:25px;}
+    .rele-gree .gree-f span{ width:25px; height:25px; background-size:100%; margin-right:10px;}
+    .rele-gree .gree-f span input{ width: 25px; height: 25px;}
+    .rele-gree .gree-f span.checked{ width:25px; height:25px; background-size: 100%;}
+
+    .order-title{ padding:15px;}
+    .order-title .ord-left{ width:3px; height:17px; margin-top:5px}
+    .order-title .ord-left i{ width:3px; height:17px;}
+    .order-title .ord-right{ margin-left:14px; font-size:16px; line-height:28px;}
+    /*出售协议*/
+    .agreement-main{  padding:10px 15px;}
+    .agreement-main p{ font-size:16px; line-height:36px;}
+    /*优先出售*/
+    .rele-csao{padding: 15px 15px 15px 25px; }
+    .rele-csao .sao-text{ height:30px;}
+    .rele-csao .sao-text span{ line-height:30px; font-size:16px;}
+    .rele-csao .sao-teno{ height:35px; margin-top:0px;}
+    .rele-csao .sao-teno span{ line-height:35px; font-size:16px; width: 75%;}
+    .rele-csao .sao-teno .tno-input{  height: 35px; width: 70px}
+    .sec-service-main .sec-buy .tno-input{  height: 35px; width: 70px}
+    /*加密*/
+    .rele-shumeng{ font-size:14px; margin-top:12px;}
+
+    /*出售流程*/
+    .process-main{padding-bottom: 50px;}
+    .process-conn{ margin:25px 15px 0; background-position:15px 0;}
+    .process-conn ul li{ margin-bottom:25px;}
+    .process-conn ul li .pro-left{ width:27px; height:35px;}
+    .process-conn ul li.bacder .pro-left1,
+    .process-conn ul li.bacder .pro-left{background-position: 15px 0;}
+    .process-conn ul li .pro-left span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .process-conn ul li .pro-left1{ width:27px; height:35px;}
+    .process-conn ul li .pro-left1 span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .process-conn ul li .pro-right{ margin-left:45px; padding:12px 15px;}
+    .process-conn ul li .pro-right h2{ font-size:16px; line-height:24px;}
+    .process-conn ul li .pro-right p{ font-size:14px; line-height:20px;}
+    .process-conn ul li .pro-right .prico{ width:8px; height:17px; background-size:100%; top:17px; left:-8px;}
+    .process-conn ul li .pro-right p a{ font-size:16px; line-height:24px;}
+
+    /*打款前请确认*/
+    .rele-play ul li{ padding:0 15px;}
+    .rele-play ul li span{height: 56px;line-height: 56px;font-size: 16px;}
+    .rele-play ul li label i{ height:56px; width:26px; background-size:100% !important;}
+    .rele-play ul li .refund-conn .refu-tarea{font-size: 16px; line-height: 24px; height: 110px;}
+
+
+    /*英雄联盟详情*/
+    .detail-main .yxlm-conn dl{ padding:15px;}
+    .detail-main .yxlm-conn dl dt{ width:70px; height:70px;}
+    .detail-main .yxlm-conn dl dd{margin-left: 80px;}
+    .detail-main .yxlm-conn dl dd p { font-size: 16px; line-height: 22px; max-height: 42px;}
+    .yxlm-number ul li{ padding:0 15px; height:56px;}
+    .yxlm-number ul li span{ line-height:56px; font-size:16px; height:56px; width:120px;}
+    .yxlm-number ul li label{ line-height:56px; font-size:16px; height:56px; width:40%;}
+    .yxlm-addren .addren-titl{ height:56px; padding:0 15px;}
+    .yxlm-addren .addren-titl span{line-height:56px; font-size:16px; height:56px;}
+    .yxlm-addren .addren-titl i.ylm-ico{width: 7px; height: 56px;background-size: 100%;}
+    .yxlm-addren .addren-conn{ padding:0 15px 0;}
+    .yxlm-addren .addren-conn ul{ }
+    .yxlm-addren .addren-conn ul li{ margin-bottom:15px; padding-top:15px;}
+    .yxlm-addren .addren-conn ul li .ad-img{ width:80%; height:auto;}
+    .yxlm-addren .addren-conn ul li .ad-text{ width:80%; font-size:12px; line-height:16px; height: 25px; margin-top:4px;}
+    .yxlm-addren .addren-fuwei ul li{ margin-top:15px;}
+    .yxlm-addren .addren-fuwei ul li .fu-list{margin-bottom: 15px;}
+    .yxlm-addren .addren-fuwei ul li h2{ font-size:14px; line-height:20px;}
+    .yxlm-addren .addren-fuwei ul li p{ font-size:16px; line-height:24px;}
+
+    .servi-btn label{ font-size:16px; margin-right:5px;}
+    .servi-btn a.yx-mon{ width:60%;}
+
+
+    /*买家流程*/
+    .buyer-vedio{ height:290px;}
+    .buyer-pro{ margin:5px 15px 0; background-position:15px 0;}
+    .buyer-pro ul li{ padding-bottom:25px;}
+    .buyer-pro ul li .pro-left{ width:27px; height:35px;}
+    .buyer-pro ul li .pro-left span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .buyer-pro ul li .pro-left span i.buy-ico{ width:26px; height:24px; background-size:6px;}
+    .buyer-pro ul li .pro-left1{ width:27px; height:35px;}
+    .buyer-pro ul li .pro-left1 span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .buyer-pro ul li .pro-left1 span i.buy-ico{ width:26px; height:24px; background-size:6px;}
+    .buyer-pro ul li .pro-right{ margin-left:45px; padding:12px 0;}
+    .buyer-pro ul li .pro-right h2{ font-size:16px; line-height:24px;}
+    .buyer-pro ul li .pro-right .rg-img{ margin-top:5px;}
+
+    /*交易中*/
+    .trans-main{ padding:15px 0;}
+    .trans-main .trans-img{ width:48px; height:48px; border-radius:4px;}
+    .trans-main .trans-text{ margin-left:15px;}
+    .trans-main .trans-text h2{ font-size:16px; line-height:24px; height:24px;}
+    .trans-main .trans-text p{ font-size:15px; line-height:24px; height:24px;}
+
+    .order-commod ul li dl dd h2.pti{ height:16px; line-height:16px;}
+    .order-commod ul li dl dd p.plt{ height:20px; line-height:20px;}
+
+    .trans-record{ padding:0px 15px; background-position:20px 0; max-height:400px;}
+    .trans-record .reco-title{ margin-top:15px; font-size:16px; line-height:22px; height:22px;}
+    .trans-record ul{ margin-top:15px;}
+    .trans-record ul li{ padding-bottom:20px;}
+    .trans-record ul li .trans-left{ width:27px; height:35px;}
+    .trans-record ul li .trans-left span{ width:14px; height:14px; margin:11px 6px 0 0; line-height:24px; font-size:16px;}
+    .trans-record ul li.tractive .trans-left span{ width:24px; height:24px; margin:11px 6px 0 -6px; line-height:24px; font-size:16px;}
+    .trans-record ul li.tractive .trans-left span i.buy-ico{ width:26px; height:24px; background-size:6px;}
+    .trans-record ul li.tractive .trans-left span i.pod-ico{ width:auto; height:24px; background-size:10px;}
+
+
+    .trans-record ul li .trans-right{ margin-left:38px; padding:12px 15px;}
+    .trans-record ul li .trans-right h2{ font-size:16px; line-height:24px;}
+    .trans-record ul li .trans-right p{ font-size:16px; line-height:20px; margin-top:10px;}
+    .trans-record ul li .trans-right .prico{ width:8px; height:17px; background-size:100%; top:9px; left:-8px;}
+    .trans-record ul li.tractive .trans-right .prico{ width:8px; height:17px; background-size:100%; top:16px; left:-7px;}
+    .trans-record ul li .trans-right p a{ font-size:16px; line-height:20px; margin-left:20px;}
+
+    /*代练发布*/
+    .dlpub-main .dlpub-titl{padding: 0 15px; height: 56px; line-height: 56px; font-size: 16px;}
+    .dlpub-main .dlpub-conn ul li{ height:56px;}
+    .dlpub-main .dlpub-conn ul li span{ height:56px; line-height:56px;}
+    .dlpub-main .dlpub-conn ul li span em{ font-size:16px;}
+    .repub-conn ul li .rep-list{ padding:16px 0;}
+    .repub-conn ul li .rep-list h1{ font-size:16px; line-height:24px; padding: 0 5px;}
+    .repub-conn ul li .rep-list p{ font-size:14px;height:24px; line-height:24px;}
+    .repub-conn ul li .rep-list em{ font-size:16px;height:24px; line-height:24px;}
+    .dl-pubish ul li span{ width:130px ;}
+    .dl-pubish ul li .rele-input-tx{ width:40%}
+    .dl-pubish ul li .rele-input-tx2{ width:60%;}
+    .detail-main .yxlm-datail dl dd h2{ font-size:16px; height:35px; line-height:35px;}
+    .detail-main .yxlm-datail dl dd p{ margin-top:5px;}
+    .detail-main .yxlm-datail dl dd p em{ font-size:14px;}
+    .addata-conn{ padding:15px;}
+    .addata-conn .add-left{ width:60px; height:60px;}
+    .addata-conn .add-cren{ margin-left:78px;}
+    .addata-conn .add-cren h2{ font-size:16px;}
+    .cren-post{ height:10px;background: url(../images/cren-post-bj-hov.png) repeat-x 0 0; margin:5px 0;}
+    .cren-post span{ height:10px;}
+
+    .adtail-list{ padding-bottom: 15px;}
+
+
+
+    .addata-conn .add-cren p{ font-size:14px;}
+    .addata-conn .add-cren p em{ margin-right:12px;}
+
+    .adtail-list a{ width:32px; height:32px; margin-top:12px; margin-left:12px; font-size:16px; line-height:32px;}
+    .adtail-list a.active i{ width:32px; background-size:10px;}
+    .record-list{ padding:12px 0;}
+    .record-list li{ margin-left:15px;}
+    .record-list li .detimg{ width:107px; height:40px;}
+
+    .pay-money label{ line-height:56px; font-size:16px;}
+
+    .refund a{ height:40px; line-height:40px;}
+
+
+    /*代练入驻*/
+    .settled-step{ padding:15px 0;}
+    .settled-step ul li{ margin-left:3%;}
+    .settled-step ul li.step01{ width:23%;}
+    .settled-step ul li.step02{ width:3%;}
+    .settled-step ul li.step03{ width:30%;}
+    .settled-step ul li .set-conn span{ width:24px; height:24px; font-size:14px; line-height:24px;}
+    .settled-step ul li .set-conn p{ font-size:14px; height:16px; line-height:16px; margin-top:7px;}
+    .settled-step ul li i{ height:40px; background-size:8px;}
+
+    .cerif-conn{ padding:15px;}
+    .cerif-conn p{ font-size:16px; line-height:28px;}
+    .cerif-conn a{ font-size:16px; line-height:28px; margin-top:8px;}
+
+    .dlmain-btn{ padding:15px;}
+    .dlmain-btn a{ font-size:16px;}
+    .dlmain-btn a.tran{  height:40px; line-height:40px; }
+    .dlmain-btn a.tion{  height:38px; line-height:38px; }
+
+
+    .appeal-conv{ padding-top:15px;}
+    .appeal-conv .appeal-titl{ padding:0 15px; font-size:16px; height:24px; line-height:24px;}
+    .appeal-conv .appeal-text{ padding:8px 15px;}
+    .appeal-conv .appeal-text .re-tarea{ height:110px; font-size:16px; line-height:24px;}
+
+    .pl-details .pldet-pcadd dl{ padding: 15px;}
+    .pl-details .pldet-pcadd dl dt{ width: 2.991rem; height: 2.991rem;}
+    .pl-details .pldet-pcadd dl dt .pcadd-img{ width: 2.991rem; height: 2.991rem;}
+    .pl-details .pldet-pcadd dl dt .pcadd-img img{ max-width: 2.991rem; max-height: 2.991rem;}
+
+    /*服务*/
+    .sec-service-main{ padding:15px;}
+    .sec-service-main .sec-buy{ height:35px;}
+    .sec-service-main .sec-buy span{ font-size:16px; line-height:35px;}
+    .sec-service-main .sec-buy span em{ margin-right:10px;}
+    .sec-service-main .sec-buy span i{ height:38px; background-size:18px;}
+    .min-squ i{height:38px; background-size:18px;}
+    .sec-service-main .sec-text{ height:auto; line-height:28px; font-size:14px; margin-top:5px;}
+    /*守望先锋*/
+    .swxf-main{ padding-bottom:0px;}
+    .swxf-main .xfeng-add{ padding:20px 15px;}
+    .xfeng-add .fdd-img{ width:70px; height:70px;}
+    .xfeng-add .fdd-img img{ max-width:70px; max-height:70px;}
+    .xfeng-add .fdd-img i{ width:22px; height:22px; line-height:18px; font-size:15px;}
+
+    .xfeng-add .fdd-text{ font-size:16px; padding:14px 0 10px 0; height:20px; line-height:20px;}
+    .xfeng-add .fdd-money{ font-size:18px; height:20px; line-height:20px;}
+    .xfent-note .note-titl{ height:55px; line-height:55px; padding:0 15px; font-size:16px;}
+    .xfent-note .note-conn{ padding:15px;}
+    .xfent-note .note-conn p{ line-height:24px; font-size:16px;}
+
+    .xf-deposit{ height:55px; line-height:55px; padding:0 15px; font-size:16px;}
+    .xf-mind{ padding:13px 15px;}
+    .xf-mind .mind-left .min-squ h2{ height:26px; line-height:26px; font-size:16px;}
+    .xf-mind .mind-left .min-squ p{height:26px; line-height:26px; font-size:13px;}
+    .xf-mind .mind-left .min-qia{ height:52px; line-height:52px; font-size:16px;}
+
+    .xf-mind .mind-righ{ height:35px; width:60px; margin:0; margin-top:9px;}
+
+    /*安心买*/
+    .buy-mind{ padding:12px 10px;}
+
+    .buy-mind .buid-left .mbd-tex h2{ height:25px;}
+    .buy-mind .buid-left .mbd-tex h2 span{ line-height:25px; font-size:16px;}
+    .buy-mind .buid-left .mbd-tex h2 span i{height: 25px;background-size: 18px}
+    .buy-mind .buid-left .mbd-tex h2 em{ font-size:16px; line-height:25px;}
+    .buy-mind .buid-left .mbd-tex p{ font-size:12px; height:22px; line-height:22px;}
+    .buy-mind .buid-left .mbd-ico{ height:47px; width:39px; background-size:28px;}
+    .buy-mind .buid-right{height: 28px; width: 50px;}
+
+    .explain-tile{line-height:42px; font-size:18px; color:#000000; margin-top:8px;}
+    .explain-ptext{ padding:8px 20px 8px; line-height:28px; font-size:16px; color:#000; }
+
+    .rele-yxlm ul li label{font-size:16px;}
+    .rele-yxlm ul li i.tex{font-size:16px;}
+    .rele-yxlm ul li span.list .inp-fabu{ font-size:16px;}
+	
+	
+	.flow-list .flow-bj{top: -1rem;}
+
+
+}
+
+/*手机端*/
+@media screen and (min-width: 320px) and (max-width: 764px){
+	/*详细页分享*/
+	.sharediv .sharediv02{padding:5px 5px 25px 5px;  }
+	.sharediv .sharediv02 a{font-size: 14px; } 
+	.sharediv .sharediv02 i{ display: block; margin-bottom: 10px;} 
+	.sharediv .sharediv04{ width: 70px; height: 70px; background-size:60px; } 
+	.sharediv .sharediv05{ width: 70px; height: 70px; background-size:60px; } 
+	.sharediv .sharediv06{ width: 70px; height: 70px; background-size:60px; } 
+	.sharediv .sharediv07{ width: 70px; height: 70px; background-size:60px; } 
+	.sharediv .sharediv08{ width: 70px; height: 70px; background-size:60px; } 
+	.sharediv .sharediv03{height:70px; font-size:16px;  line-height:70px; }
+	
+    /*首页*/
+    /*头部*/
+    .header-top{ height:50px;}
+    .header-top span{ font-size:18px; height:50px; line-height:50px;}
+    .header-top .indclose{background: url(../images/index-close.png) 10px center no-repeat; height: 50px; padding: 0 0 0 10px;background-size: 15px;}
+
+    .header-top .backindex{ width:25px; height:20px; padding: 16px 15px 14px; top:0px; right:0px;}
+    .header-top .wtihdr{ width:auto; font-size:16px; height:50px; line-height:50px; padding-right: 15px;}
+    .header-top .wtihdr i.wdr-img{ height:50px; width:20px; background-size:100%; }
+
+    .header-top .process{width:auto; height:50px; padding-right: 15px;}
+    .header-top .process i.kf{ width:28px; height:48px; background-size:20px;}
+    .header-top .process b{width:28px; font-size:13px; margin-top:2px;}
+
+    .header-top .share{width:auto; height:50px; padding-right: 15px;}
+    .header-top .share i.yxlm{ height:50px; width:20px; background-size:100%;}
+    .header-top .serve{ width:auto; font-size:16px; height:50px; line-height:50px; padding-right: 15px;}
+	
+	.header-top .shome{ width:25px; height:50px; padding-right: 10px;}
+
+    /*页面上下的间距*/
+    .m-bottom,.m-bodtom,.m-border{ margin-bottom:15px;}
+    .curent{ background-position:15px center; background-size:3px;}
+
+    .fixed-padd{ padding-bottom:100px;}
+    .fixed-bottom{ padding-bottom:50px;}
+
+    .rele-lease ul li{ padding:0 15px; height:56px;}
+    .m-padding{ padding-left:25px !important;}
+    .rele-lease ul li span{ height:56px; line-height:56px; font-size:16px;}
+    .rele-lease ul li label{ height:56px; line-height:56px; font-size:16px; margin-left:90px;}
+    .rele-lease ul li label i{ width:7px; height:56px; background-size:100%; margin-left:8px; background-position:0 center;}
+    .rele-lease ul li .grade{ height:56px; line-height:56px; font-size:16px; width:60%;}
+    .rele-list{}
+    .rele-list ul li{ padding:0 15px; height:56px; position:relative;}
+    .rele-list ul li span{height:56px; line-height:56px; font-size:16px; width:90px;}
+    .rele-list ul li strong{ height:56px; line-height:56px; font-size:16px;}
+    .rele-list ul li em{height:56px; line-height:56px; font-size:16px;}
+    .rele-list ul li .rele-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; padding-right:16px; width:58%;}
+
+    .rele-list ul li .rele-input-tx2{ height:26px; line-height:26px; padding:15px 0; font-size:16px;  width:73%;}
+    .rele-conv{  padding:20px 0 0 0;}
+    .rele-conv .re-tex{ padding: 0 20px;}
+    .rele-conv .re-tex .re-tarea{ font-size:16px; line-height:24px; height:110px;}
+    .rele-conv textarea::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 16px; }
+    .rele-conv .re-img{ padding-left: 20px;}
+    .rele-conv .re-img ul{ width:100%;}
+    .rele-conv .re-img ul li{ width:25%; height:auto; margin-bottom: 15px; }
+    .rele-conv .re-img ul li .upload-main{ width:78px; height:78px;}
+
+    .rele-conv .re-img ul li a.up-close{ width:18px; height:18px; top:-5px; left:-5px;}
+
+    .rele-conv .re-img .re-file{ width:80px; height:80px; margin-bottom: 20px;}
+    .rele-conv .re-img .re-file .up_file{ width:80px; height:80px;}
+    .rele-conv .re-img .re-file span{ width:78px; height:78px; background-size:100%;}
+    .rele-treasure{ }
+    .rele-treasure ul li{ padding:0 15px; height:56px;}
+    .rele-treasure ul li span.trea{ font-size:16px; height:56px; line-height:56px; width:72px;}
+    .rele-treasure ul li span.ment{font-size:16px; height:56px; line-height:56px; width:98px;}
+    .rele-treasure ul li.boden{ height: 35px;}
+    .rele-treasure ul li .video-title{ font-size: 14px; padding: 10px 0 0 0px;}
+
+    .rele-treasure ul li em{ font-size:15px; height:56px; line-height:56px;}
+    .rele-treasure ul li.traesn .item-input{ width:70px; height:35px; background-size:100%; margin-top:11px; margin-left: 0px;}
+    .rele-treasure ul li.traesn em{font-size:13px; height:56px; line-height:56px; margin-left:3px;}
+
+    .rele-treasure ul li .trea-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:60%;}
+    .rele-treasure ul li i.rele-ye{ height:56px; width:20px; background-size:100%;}
+    .rele-treasure ul li i.rele-ye-hov{height:56px; width:20px; background-size:100%;}
+
+    .rele-treasure ul li span.titl{ height:56px; line-height:56px; font-size:16px;}
+
+    .rele-treasure ul li i.lease-ico{ width:9px; height:15px; background-size:100%; margin-left:0px; background-position:0 0; margin-top:21px;}
+    .rele-treasure ul li span.titl font{ margin:0 5px;}
+    .rele-treasure ul li.resure{line-height:56px; height: 56px; font-size:16px;}
+    .rele-treasure ul li.resure label{ padding-left:15px; width:40%;}
+    .rele-treasure ul li.resure span.list{ height:56px; font-size: 16px; }
+    .rele-treasure ul li.resure span.list em{ height:56px; }
+    .rele-treasure ul li.resure span.list em a{ height:56px;}
+    .rele-treasure ul li.resure span.list em a.redu,
+    .rele-treasure ul li.resure span.list em a.redu-hov{background-size:35%;}
+    .rele-treasure ul li.resure span.list em a.add,
+    .rele-treasure ul li.resure span.list em a.add-hov{ background-size:35%;}
+    .rele-treasure ul li.resure span.list .inp-fabu{  height:56px; line-height:56px; font-size:16px;}
+    .rele-treasure ul li.resure .inp-chance{ height:56px; font-size:16px; line-height:56px; }
+
+
+    .rele-treasure ul li.sell label{ height:56px; line-height:56px; font-size:16px;}
+    .rele-treasure ul li.sell label.sel-la01{ width:15%;}
+    .rele-treasure ul li.sell label.sel-la02{ width:33%;padding-left:4px;}
+    .rele-treasure ul li.sell label.sel-la03{ width:45%;}
+    .rele-treasure ul li.sell label.sel-la04{ width:33%; padding-left:4px;}
+    .rele-treasure ul li.sell span.list{ height:56px; width:49%;}
+    .rele-treasure ul li.sell span.list em{ height:56px; width:25%;}
+    .rele-treasure ul li.sell span.list em a{ height:56px; width:100%;}
+    .rele-treasure ul li.sell span.list em a.redu,
+    .rele-treasure ul li.sell span.list em a.redu-hov{ background-size: 35%;}
+    .rele-treasure ul li.sell span.list em a.add,
+    .rele-treasure ul li.sell span.list em a.add-hov{  background-size: 35%;}
+
+
+    .rele-treasure ul li.sell span.list .inp-fabu{ width:48.5%; height:26px; line-height:26px; padding:15px 0; font-size:16px;}
+    .rele-treasure ul li.sell .inp-chance{height:26px; line-height:26px; padding:15px 0; font-size:16px; width:19%;}
+
+
+    .rele-photo{ }
+    .rele-photo ul li{ height:auto; padding:0 15px; }
+    .rele-photo ul li em{  line-height:56px; font-size: 16px; }
+    .rele-photo ul li .lo-del{width:18px; height:18px; margin:21px 15px 0 0;}
+    .rele-photo ul li.tion{ padding-top: 5px; padding-bottom: 5px;}
+    .rele-photo ul li span.trea{font-size:16px; height:56px; line-height:56px; width:90px;}
+    .rele-photo ul li span lable{font-size:16px; height:56px; line-height:56px; width:72px;}
+    .rele-photo ul li .photo-input-tx{ font-size:16px; height:26px; line-height:26px; padding:15px 0; width:73%;}
+    .rele-photo ul li .mobile-tel{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:40%;}
+    .rele-photo ul li a.code{   height: 38px; margin-top: 7px;  font-size: 16px; line-height: 38px; width: 100px;}
+    .rele-photo ul li .trea-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:65%;}
+
+    .rele-btn{  padding:15px;}
+    .rele-btn a{ height:46px; line-height:46px; font-size:18px;}
+
+
+
+
+
+
+    /*发布帐号*/
+    .rele-treasure ul li span,
+    .rele-treasure ul li.traesn span{ height:56px; line-height:56px; font-size:16px;}
+
+
+
+    /*代练*/
+    .whereas-main ul li{ padding:0; margin-top:30px; height:auto; padding:0 30px;}
+    .whereas-main ul li a{ width:auto; height:120px;}
+
+    /*代练入驻*/
+    .inds-login ul li{ height:56px; line-height:56px; padding:0 15px;}
+    .inds-login ul li span{ height:56px; line-height:56px; font-size:16px; width:70px;}
+    .inds-login ul li .inds-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:70%;}
+
+    /*找代练*/
+    .for-ban{ }
+    .for-ban ul li{ padding:0 15px; height:56px;}
+    .for-ban ul li span{ height:56px; line-height:56px; font-size:16px;}
+    .for-ban ul li a{ height:56px; line-height:56px; font-size:16px; margin-left:90px;}
+    .for-ban ul li a i{ width:9px; height:15px; background-size:100%; margin-left:8px; background-position:0 0; margin-top:17px;}
+    .for-textar{ padding:8px; height:150px;}
+    .for-textar .textar-conn{font-size: 16px;line-height: 24px; height: 150px;}
+
+    .for-lgoin{ }
+    .for-lgoin ul li{ padding:0 15px; height:56px;}
+    .for-lgoin ul li span{height:56px; line-height:56px; font-size:16px; width:140px;}
+    .for-lgoin ul li .lg-input-tex{height:26px; line-height:26px; padding:15px 0; font-size:16px; width:50%;}
+    .for-lgoin ul li .money-input-tex{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:38%; }
+    .for-lgoin ul li em{height:56px; line-height:56px; font-size:16px;}
+    .rele-btn p{ font-size:18px; height:24px; line-height:24px; margin:5px 0 10px 0;}
+    .rele-btn p em{ margin:0 8px;}
+
+
+
+
+
+
+    /*找代练-方案2*/
+    .for-upgre ul li{padding:0 15px; }
+    .for-upgre ul li span{height:56px; line-height:56px; font-size:16px;}
+    .for-upgre ul li a{ height:56px; line-height:56px; font-size:16px; margin-left:90px;}
+    .for-upgre ul li a i{ width:9px; height:15px; background-size:100%; margin-left:8px; background-position:0 0; margin-top:17px;}
+    .for-upgre ul li .upgre-tarea{font-size: 16px; line-height: 24px; height: 140px;}
+    .for-upgre ul li.upg-pass{ padding-top:8px; padding-bottom:8px;}
+    .for-ban ul li span.price{ width:140px;}
+    .for-ban ul li .price-input-tex{height:26px; line-height:26px; padding:15px 0; font-size: 16px; width: 38%;}
+    .for-ban ul li em{height:26px; line-height:26px; padding:15px 0; font-size: 16px; padding-right:16px;}
+
+    /*找代练-方案3*/
+    .for-lgoin ul li.process .proce-conn{ padding:20px 15px;}
+
+    /*下订单支付*/
+    .order-commod ul li{padding: 0 15px;}
+    .order-commod ul li.orderhih{ padding-top: 2px; padding-bottom: 2px;}
+    .order-commod ul li dl{ padding:15px 0;}
+    .order-commod ul li dl dt{ width:70px; height:70px;}
+
+    .comd-img{ width:70px; height:70px;}
+    .comd-img img{ max-width:70px; max-height:70px;}
+    .comd-img i{ width:22px; height:22px; line-height:18px; font-size:15px;}
+    .order-commod ul li dl dd{ margin-left:80px;}
+    .order-commod ul li dl dd h2{ font-size:15px; height:16px; line-height:16px;white-space: nowrap;overflow: hidden;}
+    .order-commod ul li dl dd p{ font-size:16px; line-height:22px; height: 22px; margin-top:7px; max-height: 42px;}
+    .order-commod ul li dl dd .det-money{height: 22px; line-height: 22px; font-size: 18px; margin-top: 2px;}
+    .order-commod ul li dl dd .det-money em{font-size: 16px; height: 22px; line-height:22px;}
+
+    .order-commod ul li label{ height:56px; line-height:56px; font-size:16px;}
+    .order-commod ul li font{ height:56px; line-height:56px; font-size:16px;}
+    .order-commod ul li em{ height:56px; line-height:56px; font-size:16px;}
+    .order-commod ul li.resure span.list{ height:30px; width:auto; margin:10px 6px 0;}
+    .order-commod ul li.resure span.list em{ height:30px; width:30px;}
+    .order-commod ul li.resure span.list em a{ width:18px;}
+    .order-commod ul li.resure span.list em a.redu,
+    .order-commod ul li.resure span.list em a.redu-hov{ height:2px; background-size:100%; margin:14px 0 0 7px;}
+    .order-commod ul li.resure span.list em a.add,
+    .order-commod ul li.resure span.list em a.add-hov{ height:18px; background-size:100%; margin:6px 0 0 6px;}
+    .order-commod ul li.resure span.list .inp-fabu{width:30px; height:30px; line-height:30px; font-size:16px;}
+    .order-commod ul li span.orderpa{ height: 35px; width:132px; margin-top: 6px;}
+    .order-commod ul li span.orderpa strong{width: 35px; height: 35px;}
+    .order-commod ul li span.orderpa strong a.redu{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa strong a.add{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa strong a.redu-hov{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa strong a.add-hov{width: 35px; height: 35px; background-size: 50%;}
+    .order-commod ul li span.orderpa .inp-order{ width: 60px; height: 35px;font-size: 16px; line-height:32px;}
+
+
+    .order-main .medeta-lease{ }
+    .servi-title{ padding:0 15px; height:56px; font-size:16px; line-height:56px;}
+    .order-service .servi-account{ padding:0 15px;}
+    .order-service .servi-account .item-input{height: 35px; width: 70px; margin-top: 15px; margin-left: 10px;}
+
+    .order-service .servi-conn ul li{ padding:0 15px; height:56px;}
+    .order-service .servi-conn ul li span{ height:56px; line-height:56px; font-size:16px; width:96px;}
+    .order-service .servi-conn ul li em{ height:56px; line-height:56px; font-size:16px;}
+    .order-service .servi-conn ul li .item-input{ width:70px; height:35px; background-size:100%; margin-top:8px; margin-left:10px;}
+
+    .order-service .servi-conn ul li .serv-input-tx{ height:26px; line-height:26px; padding:15px 0; font-size:16px; width:70%;}
+
+
+
+
+    .servi-btn{  padding:15px;}
+    .servi-btn a{ width:53%; height:46px; line-height:46px; font-size:18px;}
+    .servi-btn span{ height:46px; line-height:46px; font-size:16px;}
+    .servi-btn span em{ font-size:22px;}
+    .servi-btn span font{ font-size:16px; margin-left:6px;}
+
+    .order-pay .pay-money ul li{ height:56px; line-height:56px; padding: 0 15px;}
+    .order-pay .pay-money ul li.pay-cer{ height: 56px; line-height: 56px; font-size: 16px;}
+    .order-pay .pay-money ul li input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size: 14px;}
+    .order-pay .pay-money ul li span{ line-height:56px; font-size:16px; width:85px;}
+    .order-pay .pay-money ul li .paon-input{ height: 26px;line-height: 26px;padding: 15px 0 0 6px; width:60%; font-size:16px;}
+    .order-pay .pay-money ul li input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size: 16px;}
+    .order-pay .pay-money ul li em{ font-size:18px;}
+    .order-pay .pay-money ul li em i{ font-size:16px;}
+    .order-pay .pay-money ul li i.txie{font-size:16px}
+    .order-pay .pay-money a.dialog_close{ width:15px; height:15px; margin-top:18px;}
+    .order-pay .pay-conn ul li{ height:65px; line-height:65px; padding:0 15px;}
+    .order-pay .pay-conn ul li i.lease-ico{ width:8px; height:15px; background-size:100%; margin-top:27px;}
+    .order-pay .pay-conn ul li span{width:180px; line-height:65px; font-size:16px;}
+    .order-pay .pay-conn ul li span i.pay-weix{ width:40px; height:40px; background-size:100%;  margin-right:13px; margin-top:12px;}
+    .order-pay .pay-conn ul li span i.pay-zfb{ width:40px; height:40px; background-size:100%;  margin-right:13px; margin-top:12px;}
+    .order-pay .pay-conn ul li span i.pay-cup{ width:40px; height:40px; background-size:100%;  margin-right:13px; margin-top:12px;}
+
+
+    /*个人中心-我的代练*/
+    .header-top em{ width:109px; height:35px; font-size:16px; line-height:35px; margin-top:6px;}
+    .mywhwerw-main .werw-list{ height:56px;}
+    .mywhwerw-main .werw-list ul li{ height:56px;}
+    .mywhwerw-main .werw-list ul li a{ height:49px; line-height:56px; font-size:16px;}
+    .werw-conn ul li{ }
+    .werw-conn ul li .werw-commod{ padding:15px;}
+    .werw-conn ul li .werw-commod dl dt{ width:70px; height:70px;}
+    .werw-conn ul li .werw-commod dl dt .comd-img{ width:70px; height:70px;}
+    .werw-conn ul li .werw-commod dl dt .comd-img img{ max-width:70px; max-height:70px;}
+    .werw-conn ul li .werw-commod dl dt .comd-img i{ width:25px; height:25px; line-height:25px; font-size:16px;}
+    .werw-conn ul li .werw-commod dl dd{ margin-left:80px;}
+    .werw-conn ul li .werw-commod dl dd h2{ font-size:14px; height:18px; line-height:18px;}
+    .werw-conn ul li .werw-commod dl dd p{ font-size:16px; line-height:22px; margin-top:6px;}
+
+    .werw-conn ul li .werw-conter{ padding:15px;}
+    .werw-conn ul li .werw-conter .cont-demo .wentmo-left{ font-size:16px; line-height:26px;}
+    .werw-conn ul li .werw-conter .cont-demo .wentmo-right{ font-size:16px; line-height:26px;}
+    .werw-conn ul li .werw-conter .cont-demo em.tex{ margin-left:15px;}
+
+
+    .werw-conn ul li .comp-conter{ padding:15px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-left{ line-height:40px; font-size:16px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-right{  font-size:16px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-right a.lain{ width:85px; height:38px; line-height:38px;}
+    .werw-conn ul li .comp-conter .comp-demo .complai-right a.comp{width:85px; height:40px; line-height:40px; margin-left:10px;}
+
+    .werw-conn ul li .werw-commod dl dd .con-money{ font-size:16px;}
+    .werw-conn ul li .werw-commod dl dd .con-money em{ font-size:15px;}
+    .werw-conn ul li .werw-viepl{padding:15px; font-size:16px;}
+    .werw-conn ul li .werw-viepl a.ssu{width:85px; height:40px; line-height:40px; margin-left:10px;}
+    .werw-conn ul li .werw-viepl a.pin{width:85px; height:38px; line-height:38px;}
+
+
+    /*留言详情*/
+    .message-main .werw-commod{ padding:15px;}
+    .message-main .werw-commod dl dt{ width:70px; height:70px;}
+    .message-main .werw-commod dl dt .comd-img{ width:70px; height:70px;}
+    .message-main .werw-commod dl dt .comd-img img{ max-width:70px; max-height:70px;}
+    .message-main .werw-commod dl dt .comd-img i{ width:25px; height:25px; line-height:25px; font-size:16px;}
+    .message-main .werw-commod dl dd { margin-left: 80px;}
+    .message-main .werw-commod dl dd .comdd-titl h2{ font-size:14px; line-height:20px; height:20px;}
+    .message-main .werw-commod dl dd .comdd-titl p{ font-size:16px; line-height:22px; margin-top:6px; }
+    .message-main .werw-commod dl dd .comdd-conn span{ font-size:16px;}
+    .mesaa-reply .reply-copl{ }
+    .mesaa-reply .reply-copl ul li{ padding:0 15px;}
+    .mesaa-reply .reply-copl ul li .copl-head{ margin:10px 0; width:60px; height:60px;}
+    .mesaa-reply .reply-copl ul li .copl-head img{ max-height:60px; max-width:60px;}
+    .mesaa-reply .reply-copl ul li .copl-cont{ margin:10px 0 10px 75px;}
+    .mesaa-reply .reply-copl ul li .copl-cont h2{ font-size:16px; height:20px; line-height:20px;}
+    .mesaa-reply .reply-copl ul li .copl-cont h2 span{ font-size:14px;}
+    .mesaa-reply .reply-copl ul li .copl-cont p{ font-size:16px; line-height:24px; margin-top:6px;}
+    .mesaa-reply .reply-copl ul li .del{ margin:10px 0;}
+    .mesaa-reply .reply-copl ul li .del a{ font-size:16px; height:40px; line-height:40px}
+    .mesaa-reply .reply-copl ul li .rep{width:85px; height:40px; margin:10px 0;}
+    .mesaa-reply .reply-copl ul li .rep a{ width:85px; height:40px; font-size:16px; line-height:40px;}
+
+
+    .tail-btn{padding: 8px}
+    .rele-btn a {height: 46px; line-height: 46px; font-size: 18px;}
+    .tail-btn .tail-form .relbt-inp{ height:38px; line-height:38px; font-size:16px;}
+    .tail-btn .tail-form .relbt-btn{ height:46px; line-height:46px; font-size:16px;}
+
+
+    /*弹出提示*/
+
+
+
+    /*个人中心-待付款-详情币*/
+    .header-top .member{width:20px; height: 15px; right: 8px; top: 18px;}
+    .medeta-lease ul li{ height:56px; padding:0 15px;}
+    .medeta-lease ul li span{ line-height:56px; font-size:16px; height:56px;}
+    .medeta-lease ul li em{ height:56px; line-height:56px; font-size:16px; margin-left:80px;}
+    .servi-title{padding: 0 8px; height: 56px; font-size: 16px; line-height: 56px}
+    .medeta-service .item-input{height: 35px; width:70px; margin-top:15px; margin-left:10px;}
+
+    .medeta-service .servi-conn{ padding:0 15px;}
+    .servi-conn .svi-insurance{ margin:10px 0; width:84%;}
+    .servi-conn .svi-width{ width:70%;}
+
+    .servi-conn .svi-insurance h2{ font-size:16px; line-height:24px; height:24px;}
+    .servi-conn .svi-insurance p{ font-size:14px; line-height:24px; height:auto; margin-top:5px;}
+    .servi-conn .svi-money{ height:68px; line-height:68px; font-size:16px;}
+
+    .servi-cange{ padding:0 15px; height:56px;}
+    .servi-cange span{ line-height:56px; font-size:16px; height:56px;}
+    .servi-cange em{ height:56px; line-height:56px; font-size:16px; margin-left:80px;}
+
+    .memberdetail-main .stay-customer em{ height:40px; line-height:40px; font-size:16px;}
+    .memberdetail-main .stay-customer{ padding:15px;}
+    .memberdetail-main .stay-customer .stay-img{ width:40px; height:40px;}
+    .memberdetail-main .stay-customer .stay-conn{ margin-left:52px;}
+    .memberdetail-main .stay-customer .stay-conn h2{ font-size:15px; height:20px; line-height:20px;}
+    .memberdetail-main .stay-customer .stay-conn p{ font-size:16px; margin-top:0px;}
+    .memberdetail-main .stay-customer .stay-contact{ height:38px; width:55px; margin-top:4px;}
+    .memberdetail-main .stay-customer .stay-contact a{ width:55px; height:38px; font-size:16px;}
+    .memberdetail-main .stay-customer .stay-contact a img{ width:22px;}
+    /*弹窗-取消订单*/
+    .cancel-pop .canpop-text{ height:56px; line-height:56px;}
+    .cancel-pop .canpop-text a{ font-size:16px;}
+
+
+    .staypop-text ul li{ padding:0 15px; height:56px;}
+    .staypop-text ul li span{ height:56px; line-height:56px; font-size:16px;}
+    .staypop-text ul li em{height:56px; line-height:56px;   width: 27%;}
+    .staypop-text ul li em i{width: 9px; height: 15px; background-size: 100%; margin-left: 8px; background-position: 0 0; margin-top: 17px;}
+
+
+
+    /*交易成功-评价*/
+    .memberdetail-main .evalu-score{  padding:0 15px; height:56px;}
+    .memberdetail-main .evalu-score span{ line-height:56px; font-size:16px;}
+    .memberdetail-main .evalu-score .revinp i{ margin:10px 4px 10px 12px;}
+    .level .level_solid, .level .level_hollow{ width:30px; height:31px; background-size:100%;}
+
+    /*发布职业选择样式*/
+    .newScree{ padding:0 15px;}
+    .newScree section font{ height:56px; line-height:56px; font-size:16px;}
+    .newScree section a.aRight{ display:block; color:#000;}
+    .newScree section label{height: 56px; margin-left: 74px;}
+    .newScree section label.pod{ margin-left:100px;}
+    .newScree section label em{ line-height: 56px; font-size: 16px;}
+    .newScree section label i{width: 7px; height: 15px;background-size: 100%;margin-left: 8px;background-position: 0 0;margin-top:22px}
+    .ConBox{left: 100%;margin: 0 auto;}
+    .Jbox a{ height:56px; line-height:56px; font-size:16px;}
+    .lmob{ height:auto; display:block; overflow:hidden; padding-bottom:25px;}
+    .lmob ol li a { height:56px; line-height:54px; font-size:16px;}
+    .lmob ol li a.active{ height:54px; background-size:25px;}
+
+    /*商品排序*/
+    .commod-list .comd-titl{ padding:15px; height:40px;}
+    .commod-list .comd-titl span{ height:40px; width:80px; font-size:16px; line-height:40px;}
+    .commod-list .comd-titl label{ font-size:16px; line-height:40px;}
+    .commod-list .comd-titl em{ font-size:14px; line-height:40px; margin-left:6px;}
+    .commod-list .comd-titl em i{ margin-left:4px;}
+    .commod-list .comd-conn{ padding:15px;}
+    .commod-list .comd-conn .comd-text{ margin-left:77px; min-height:65px;}
+    .commod-list .comd-conn .comd-text p{font-size:16px; line-height:22px;}
+    .commod-list .comd-conn .comd-text .money{  font-size: 18px; margin-top: 2px;}
+
+    /*弹窗登录*/
+    .pomen-login .login-qq{padding: 15px 0;}
+    .pomen-login .login-qq a{padding: 12px 0; line-height: 30px; font-size: 16px;}
+    .pomen-login .login-qq a img{ width:30px; padding-right:10px;}
+    .pomen-login .login-title{ height: 60px; line-height:60px; font-size: 16px;}
+    .login-other-bt{ margin:20px 0; }
+    .login-other-bt span{ float:left; width:100%; text-align:center; line-height:56px; font-size:30px; position:relative; margin-bottom:-25px;}
+    .login-other-bt span em{background:#f1f1f1; padding:0 10px;}
+    .login-other-bt span{ font-size:16px;}
+
+    .login-mobile ul li{padding: 0 15px;}
+    .login-mobile ul li label{height: 60px; line-height: 60px; font-size: 16px; width:62px;}
+    .login-mobile ul li .mobile-num{line-height:30px; padding:15px 0; height:30px; font-size:18px; width:34%;}
+    .login-mobile ul li a.lo-del{ width:18px; height:18px; margin-top:21px;}
+    .login-mobile ul li a.lo-del img{ width:100%;}
+    .login-mobile ul li .mobile-tel{ line-height:30px; padding:15px 0; height:30px; font-size:16px; width:45%;}
+    .login-mobile ul li a.code{ height: 42px; margin-top: 10px; font-size: 16px; line-height: 42px; width: 120px;}
+    .login-mobile ul li a.mobile-btn{ margin:12px 0;line-height:46px; font-size:18px;}
+    .login-mobile ul li .mbile-conn{ padding:20px 0;}
+    .login-mobile ul li .mbile-conn h2{ font-size:16px; height:30px; line-height:30px;}
+    .login-mobile ul li .mbile-conn p{ font-size:20px; height:30px; line-height:30px;}
+
+    .login-other-list{ padding:18px 0;}
+    .login-other-list a{ font-size:16px;}
+    .login-other-list i{ height:60px; width:60px; padding-bottom:10px; }
+
+    .login-other-back {padding:18px 0;}
+    .login-other-back a{ font-size:16px;}
+    .login-other-back i{ height:70px; width:70px; }
+
+
+    .pomen-login .canpop-text{ height:56px; line-height:60px;}
+    .pomen-login .canpop-text a{ font-size:18px;}
+    .pomen-login .canpop-text{ margin-top:12px;}
+
+    /*发布成功*/
+    .publish-main .pubsuc-ch{ padding-top:30px; padding-bottom:30px;}
+    .publish-main .pubsuc-ch .ch-img{ width:84px; height:84px;}
+    .publish-main .pubsuc-ch .ch-text{ font-size:18px; height:35px; line-height:35px; margin-top:30px;}
+    .publish-main .pubsuc-ch .ch-mon{ font-size:18px; height:35px; line-height:35px; margin-top:10px;}
+    .publish-main .pubsuc-ch .ch-btn{ padding:0 20px;}
+    .publish-main .pubsuc-ch .ch-btn a{ margin-top:26px; height:48px; line-height:48px; font-size:18px;}
+    .pubsuc-share{ padding-bottom:0px;}
+    .pubsuc-share .share-title{ height:48px; line-height:48px; font-size:16px;}
+    .pubsuc-share ul{ padding: 0 15px;}
+    .pubsuc-share ul li{ margin-top:15px;}
+    .pubsuc-share ul li img{ width:60px; height:60px;}
+    .pubsuc-share ul li p{ font-size:14px; margin:10px 0;}
+
+    /*发布区服选择*/
+    .rele-game-qfu{ padding:15px;}
+    .rele-game-qfu .reqft-img{ height:60px; width:60px;}
+    .rele-game-qfu .reqft-text{ margin-left:75px; margin-top:4px;}
+    .rele-game-qfu .reqft-text h2{ font-size:18px; height:22px; line-height:22px;}
+    .rele-game-qfu .reqft-text p{ font-size:16px; height:22px; line-height:22px; margin-top:10px;}
+    .rele-game-qfu i.lease-ico{width: 9px; height: 60px;background-size: 100%;margin-left: 8px;}
+    .rele-lease ul li em.pl{ height:56px; line-height:56px; font-size:16px;}
+    .rele-title{ padding:0 15px; height:56px; line-height:56px; font-size:16px;}
+    .rele-title i.tit-ico{ height:17px; width:3px; margin:20px 10px 0 0;}
+    .rele-rtile{ padding:15px; height:auto;}
+    .rele-rtile h2{ font-size:16px;}
+    .rele-rtile p{ font-size:13px; margin-top:6px;}
+    .rele-treasure ul li.traesn span i.tit-ico{height:17px; width:3px; margin:20px 10px 0 0;}
+    .rele-treasure ul li span.ment i.tit-ico{height:17px; width:3px; margin:20px 10px 0 0;}
+    .rele-gree{ padding:25px 0;}
+    .rele-gree .gree-f{ font-size:16px; height:25px; line-height:25px;}
+    .rele-gree .gree-f span{ width:25px; height:25px; background-size:100%; margin-right:10px;}
+    .rele-gree .gree-f span input{ width: 25px; height: 25px;}
+    .rele-gree .gree-f span.checked{ width:25px; height:25px; background-size: 100%;}
+
+    .order-title{ padding:15px;}
+    .order-title .ord-left{ width:3px; height:17px; margin-top:5px}
+    .order-title .ord-left i{ width:3px; height:17px;}
+    .order-title .ord-right{ margin-left:14px; font-size:16px; line-height:28px;}
+    /*出售协议*/
+    .agreement-main{  padding:10px 15px;}
+    .agreement-main p{ font-size:16px; line-height:36px;}
+    /*优先出售*/
+    .rele-csao{padding: 15px 15px 15px 30px; }
+    .rele-csao .sao-text{ height:30px;}
+    .rele-csao .sao-text span{ line-height:30px; font-size:16px;}
+    .rele-csao .sao-teno{ height:35px; margin-top:0px;}
+    .rele-csao .sao-teno span{ line-height:35px; font-size:16px; width: 75%;}
+    .rele-csao .sao-teno .tno-input{  height: 35px; width: 70px}
+    .sec-service-main .sec-buy .tno-input{  height: 35px; width: 70px}
+    /*加密*/
+    .rele-shumeng{ font-size:14px; margin-top:12px;}
+
+    /*出售流程*/
+    .process-main{padding-bottom: 50px;}
+    .process-conn{ margin:25px 15px 0; background-position:15px 0;}
+    .process-conn ul li{ margin-bottom:25px;}
+    .process-conn ul li .pro-left{ width:27px; height:35px;}
+    .process-conn ul li.bacder .pro-left1,
+    .process-conn ul li.bacder .pro-left{background-position: 15px 0;}
+    .process-conn ul li .pro-left span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .process-conn ul li .pro-left1{ width:27px; height:35px;}
+    .process-conn ul li .pro-left1 span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .process-conn ul li .pro-right{ margin-left:45px; padding:12px 15px;}
+    .process-conn ul li .pro-right h2{ font-size:16px; line-height:24px;}
+    .process-conn ul li .pro-right p{ font-size:14px; line-height:20px;}
+    .process-conn ul li .pro-right .prico{ width:8px; height:17px; background-size:100%; top:17px; left:-8px;}
+    .process-conn ul li .pro-right p a{ font-size:16px; line-height:24px;}
+
+    /*打款前请确认*/
+    .rele-play ul li{ padding:0 15px;}
+    .rele-play ul li span{height: 56px;line-height: 56px;font-size: 16px;}
+    .rele-play ul li label i{ height:56px; width:26px; background-size:100% !important;}
+    .rele-play ul li .refund-conn .refu-tarea{font-size: 16px; line-height: 24px; height: 110px;}
+
+
+    /*英雄联盟详情*/
+    .detail-main .yxlm-conn dl{ padding:15px;}
+    .detail-main .yxlm-conn dl dt{ width:70px; height:70px;}
+    .detail-main .yxlm-conn dl dd{margin-left: 80px;}
+    .detail-main .yxlm-conn dl dd p { font-size: 16px; line-height: 22px; max-height: 42px;}
+    .yxlm-number ul li{ padding:0 15px; height:56px;}
+    .yxlm-number ul li span{ line-height:56px; font-size:16px; height:56px; width:120px;}
+    .yxlm-number ul li label{ line-height:56px; font-size:16px; height:56px; width:40%;}
+    .yxlm-addren .addren-titl{ height:56px; padding:0 15px;}
+    .yxlm-addren .addren-titl span{line-height:56px; font-size:16px; height:56px;}
+    .yxlm-addren .addren-titl i.ylm-ico{width: 7px; height: 56px;background-size: 100%;}
+    .yxlm-addren .addren-conn{ padding:0 15px 0;}
+    .yxlm-addren .addren-conn ul{ }
+    .yxlm-addren .addren-conn ul li{ margin-bottom:15px; padding-top:15px;}
+    .yxlm-addren .addren-conn ul li .ad-img{ width:80%; height:auto;}
+    .yxlm-addren .addren-conn ul li .ad-text{ width:80%; font-size:12px; line-height:16px; height: 25px; margin-top:4px;}
+    .yxlm-addren .addren-fuwei ul li{ margin-top:15px;}
+    .yxlm-addren .addren-fuwei ul li .fu-list{margin-bottom: 15px;}
+    .yxlm-addren .addren-fuwei ul li h2{ font-size:14px; line-height:20px;}
+    .yxlm-addren .addren-fuwei ul li p{ font-size:16px; line-height:24px;}
+
+    .servi-btn label{ font-size:16px; margin-right:5px;}
+    .servi-btn a.yx-mon{ width:60%;}
+
+
+    /*买家流程*/
+    .buyer-vedio{ height:290px;}
+    .buyer-pro{ margin:5px 15px 0; background-position:15px 0;}
+    .buyer-pro ul li{ padding-bottom:25px;}
+    .buyer-pro ul li .pro-left{ width:27px; height:35px;}
+    .buyer-pro ul li .pro-left span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .buyer-pro ul li .pro-left span i.buy-ico{ width:26px; height:24px; background-size:6px;}
+    .buyer-pro ul li .pro-left1{ width:27px; height:35px;}
+    .buyer-pro ul li .pro-left1 span{ width:24px; height:24px; margin-top:11px; line-height:24px; font-size:16px;}
+    .buyer-pro ul li .pro-left1 span i.buy-ico{ width:26px; height:24px; background-size:6px;}
+    .buyer-pro ul li .pro-right{ margin-left:45px; padding:12px 0;}
+    .buyer-pro ul li .pro-right h2{ font-size:16px; line-height:24px;}
+    .buyer-pro ul li .pro-right .rg-img{ margin-top:5px;}
+
+    /*交易中*/
+    .trans-main{ padding:15px 0;}
+    .trans-main .trans-img{ width:48px; height:48px; border-radius:4px;}
+    .trans-main .trans-text{ margin-left:15px;}
+    .trans-main .trans-text h2{ font-size:16px; line-height:24px; height:24px;}
+    .trans-main .trans-text p{ font-size:15px; line-height:24px; height:24px;}
+
+    .order-commod ul li dl dd h2.pti{ height:16px; line-height:16px;}
+    .order-commod ul li dl dd p.plt{ height:20px; line-height:20px;}
+
+    .trans-record{ padding:0px 15px; background-position:20px 0; max-height:400px;}
+    .trans-record .reco-title{ margin-top:15px; font-size:16px; line-height:22px; height:22px;}
+    .trans-record ul{ margin-top:15px;}
+    .trans-record ul li{ padding-bottom:20px;}
+    .trans-record ul li .trans-left{ width:27px; height:35px;}
+    .trans-record ul li .trans-left span{ width:14px; height:14px; margin:11px 6px 0 0; line-height:24px; font-size:16px;}
+    .trans-record ul li.tractive .trans-left span{ width:24px; height:24px; margin:11px 6px 0 -6px; line-height:24px; font-size:16px;}
+    .trans-record ul li.tractive .trans-left span i.buy-ico{ width:26px; height:24px; background-size:6px;}
+    .trans-record ul li.tractive .trans-left span i.pod-ico{ width:auto; height:24px; background-size:10px;}
+
+
+    .trans-record ul li .trans-right{ margin-left:38px; padding:12px 15px;}
+    .trans-record ul li .trans-right h2{ font-size:16px; line-height:24px;}
+    .trans-record ul li .trans-right p{ font-size:16px; line-height:20px; margin-top:10px;}
+    .trans-record ul li .trans-right .prico{ width:8px; height:17px; background-size:100%; top:9px; left:-8px;}
+    .trans-record ul li.tractive .trans-right .prico{ width:8px; height:17px; background-size:100%; top:16px; left:-7px;}
+    .trans-record ul li .trans-right p a{ font-size:16px; line-height:20px; margin-left:20px;}
+
+    /*代练发布*/
+    .dlpub-main .dlpub-titl{padding: 0 15px; height: 56px; line-height: 56px; font-size: 16px;}
+    .dlpub-main .dlpub-conn ul li{ height:56px;}
+    .dlpub-main .dlpub-conn ul li span{ height:56px; line-height:56px;}
+    .dlpub-main .dlpub-conn ul li span em{ font-size:16px;}
+    .repub-conn ul li .rep-list{ padding:16px 0;}
+    .repub-conn ul li .rep-list h1{ font-size:16px; line-height:24px; padding: 0 5px;}
+    .repub-conn ul li .rep-list p{ font-size:14px;height:24px; line-height:24px;}
+    .repub-conn ul li .rep-list em{ font-size:16px;height:24px; line-height:24px;}
+    .dl-pubish ul li span{ width:130px ;}
+    .dl-pubish ul li .rele-input-tx{ width:40%}
+    .dl-pubish ul li .rele-input-tx2{ width:60%;}
+    .detail-main .yxlm-datail dl dd h2{ font-size:16px; height:35px; line-height:35px;}
+    .detail-main .yxlm-datail dl dd p{ margin-top:5px;}
+    .detail-main .yxlm-datail dl dd p em{ font-size:14px;}
+    .addata-conn{ padding:15px;}
+    .addata-conn .add-left{ width:60px; height:60px;}
+    .addata-conn .add-cren{ margin-left:78px;}
+    .addata-conn .add-cren h2{ font-size:16px;}
+    .cren-post{ height:10px;background: url(../images/cren-post-bj-hov.png) repeat-x 0 0; margin:5px 0;}
+    .cren-post span{ height:10px;}
+
+    .adtail-list{ padding-bottom: 15px;}
+
+
+
+    .addata-conn .add-cren p{ font-size:14px;}
+    .addata-conn .add-cren p em{ margin-right:12px;}
+
+    .adtail-list a{ width:32px; height:32px; margin-top:12px; margin-left:12px; font-size:16px; line-height:32px;}
+    .adtail-list a.active i{ width:32px; background-size:10px;}
+    .record-list{ padding:12px 0;}
+    .record-list li{ margin-left:15px;}
+    .record-list li .detimg{ width:107px; height:40px;}
+
+    .pay-money label{ line-height:56px; font-size:16px;}
+
+    .refund a{ height:40px; line-height:40px;}
+	
+	
+	/*代练入驻*/
+	.settled-step{ padding:15px 0;}
+	.settled-step ul li{ margin-left:3%;}
+	.settled-step ul li.step01{ width:23%;}
+	.settled-step ul li.step02{ width:3%;}
+	.settled-step ul li.step03{ width:30%;}
+	.settled-step ul li .set-conn span{ width:24px; height:24px; font-size:14px; line-height:24px;}
+	.settled-step ul li .set-conn p{ font-size:14px; height:16px; line-height:16px; margin-top:7px;}
+	.settled-step ul li i{ height:40px; background-size:8px;}
+	
+	.cerif-conn{ padding:15px;}
+	.cerif-conn p{ font-size:16px; line-height:28px;}
+	.cerif-conn a{ font-size:16px; line-height:28px; margin-top:8px;}
+	
+	.dlmain-btn{ padding:15px;}
+	.dlmain-btn a{ font-size:16px;}
+	.dlmain-btn a.tran{  height:40px; line-height:40px; }
+	.dlmain-btn a.tion{  height:38px; line-height:38px; }
+	
+	
+	.appeal-conv{ padding-top:15px;}
+	.appeal-conv .appeal-titl{ padding:0 15px; font-size:16px; height:24px; line-height:24px;}
+	.appeal-conv .appeal-text{ padding:8px 15px;}
+	.appeal-conv .appeal-text .re-tarea{ height:110px; font-size:16px; line-height:24px;}
+
+    .pl-details .pldet-pcadd dl{ padding: 15px;}
+    .pl-details .pldet-pcadd dl dt{ width: 2.991rem; height: 2.991rem;}
+    .pl-details .pldet-pcadd dl dt .pcadd-img{ width: 2.991rem; height: 2.991rem;}
+    .pl-details .pldet-pcadd dl dt .pcadd-img img{ max-width: 2.991rem; max-height: 2.991rem;}
+
+    /*服务*/
+    .sec-service-main{ padding:15px;}
+    .sec-service-main .sec-buy{ height:35px;}
+    .sec-service-main .sec-buy span{ font-size:16px; line-height:35px;}
+    .sec-service-main .sec-buy span em{ margin-right:10px;}
+    .sec-service-main .sec-buy span i{ height:38px; background-size:18px;}
+    .min-squ i{height:38px; background-size:18px;}
+    .sec-service-main .sec-text{ height:auto; line-height:28px; font-size:14px; margin-top:5px;}
+
+    /*守望先锋*/
+    .swxf-main{ padding-bottom:0px;}
+    .swxf-main .xfeng-add{ padding:20px 15px;}
+    .xfeng-add .fdd-img{ width:70px; height:70px;}
+    .xfeng-add .fdd-img img{ max-width:70px; max-height:70px;}
+    .xfeng-add .fdd-img i{ width:22px; height:22px; line-height:18px; font-size:15px;}
+
+    .xfeng-add .fdd-text{ font-size:16px; padding:14px 0 10px 0; height:20px; line-height:20px;}
+    .xfeng-add .fdd-money{ font-size:18px; height:20px; line-height:20px;}
+    .xfent-note .note-titl{ height:55px; line-height:55px; padding:0 15px; font-size:16px;}
+    .xfent-note .note-conn{ padding:15px;}
+    .xfent-note .note-conn p{ line-height:24px; font-size:16px;}
+
+    .xf-deposit{ height:55px; line-height:55px; padding:0 15px; font-size:16px;}
+    .xf-mind{ padding:13px 15px;}
+    .xf-mind .mind-left .min-squ h2{ height:26px; line-height:26px; font-size:16px;}
+    .xf-mind .mind-left .min-squ p{height:26px; line-height:26px; font-size:13px;}
+    .xf-mind .mind-left .min-qia{ height:52px; line-height:52px; font-size:16px;}
+
+    .xf-mind .mind-righ{ height:35px; width:60px; margin:0; margin-top:9px;}
+
+    /*安心买*/
+    .buy-mind{ padding:12px 10px;}
+
+    .buy-mind .buid-left .mbd-tex h2{ height:25px;}
+    .buy-mind .buid-left .mbd-tex h2 span{ line-height:25px; font-size:16px;}
+    .buy-mind .buid-left .mbd-tex h2 span i{height: 25px;background-size: 18px}
+    .buy-mind .buid-left .mbd-tex h2 em{ font-size:16px; line-height:25px;}
+    .buy-mind .buid-left .mbd-tex p{ font-size:12px; height:22px; line-height:22px;}
+    .buy-mind .buid-left .mbd-ico{ height:47px; width:39px; background-size:28px;}
+    .buy-mind .buid-right{height: 28px; width: 50px;}
+
+    .explain-tile{ height:42px; line-height:42px; text-align:center; font-size:18px; color:#000000; margin-top:15px;}
+    .explain-ptext{ padding:4px 20px 15px; line-height:28px; font-size:16px; color:#000;}
+
+    .rele-yxlm ul li label{font-size:16px;}
+    .rele-yxlm ul li i.tex{font-size:16px;}
+    .rele-yxlm ul li span.list .inp-fabu{ font-size:16px;}
+
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 764px){
+    #Wrapper{ width:auto; max-width:764px; }
+    .rele-treasure ul li em{ font-size:16px;}
+
+
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 410px){
+    #Wrapper{ width:auto; max-width:410px;}
+    .rele-treasure ul li.resure span.list{}
+    .rele-conv{  padding:15px 0 0 0;}
+    .rele-conv .re-tex{ padding: 0 15px;}
+    .rele-conv .re-img{ padding-left: 15px;}
+    .rele-conv .re-img ul li .upload-main{ width: 75px; height: 75px;}
+    .yxlm-addren .addren-fuwei ul li h2{font-size: 13px;}
+    .sec-service-main .sec-text{ font-size:13px}
+
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 370px){
+
+    #Wrapper{ width:auto; max-width:370px;}
+    .m-bodtom, .m-border, .m-bottom{ margin-bottom: 10px;}
+    .curent{ background-position:10px center; background-size:3px;}
+    .header-top .return{ background-size: 8px;}
+    .header-top .indclose{ background-size: 10px;}
+    .header-top .backindex{ width:20px; height:16px; padding: 18px 10px 16px;}
+    .header-top .wtihdr{ font-size:16px; padding-right: 10px;}
+    .header-top span{ font-size:16px;}
+    .header-top .wtihdr i.wdr-img{ width:16px;}
+
+    .header-top .share{width:auto; height:50px; padding-right: 10px;}
+    .header-top .share i.yxlm{ height:50px; width:18px; background-size:100%;}
+    .header-top .serve{ font-size:14px; padding-right: 10px;}
+
+
+
+    .m-padding{ padding-left:20px !important;}
+
+
+    .rele-lease ul li span{ font-size:14px;}
+    .rele-lease ul li label{ font-size:14px; margin-left:70px}
+    .rele-lease ul li label i{ width:6px;}
+    .rele-lease ul li .grade{ font-size:14px;}
+
+    .rele-list ul li span{ font-size:14px; width:70px;}
+    .rele-list ul li .rele-input-tx{ font-size:14px;}
+    .rele-list ul li .rele-input-tx2{ font-size:14px; width: 75%;}
+    .rele-conv{ padding:10px 0 0 0;}
+    .rele-conv .re-tex{ padding: 0 10px;}
+    .rele-conv textarea::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 14px; }
+    .rele-conv .re-tex .re-tarea{ font-size:14px; line-height:20px; height:80px;;}
+    .rele-conv .re-img{ padding-left: 10px;}
+    .rele-conv .re-img ul li{ margin-bottom: 10px;}
+    .rele-conv .re-img ul li .upload-main{ width:65px; height:65px;}
+
+
+    .rele-conv .re-img .re-file{ width:67px; height:67px; margin-bottom: 10px;}
+    .rele-conv .re-img .re-file .up_file{ width:65px; height:65px;}
+    .rele-conv .re-img .re-file span{ width:65px; height:65px;}
+    .rele-treasure ul li{ padding: 0 10px; height:50px; line-height:50px;}
+    .rele-treasure ul li span.trea{ font-size:14px; width:75px;}
+    .rele-treasure li lable{line-height: 56px !important;}
+    .rele-treasure ul li .video-title{ font-size: 12px;}
+    .rele-treasure ul li em{ font-size:13px;}
+    .rele-treasure ul li .trea-input-tx{ font-size:14px;}
+    .rele-treasure ul li span.titl{ font-size:13px;}
+    .rele-treasure ul li span font{ margin:0 4px;}
+    .rele-treasure ul li.traesn .item-input{ width:55px; height:30px; margin-top:12px; }
+    .rele-treasure ul li.traesn em{ font-size:12px; margin-left: 0px;}
+
+
+    .rele-treasure ul li i.lease-ico{width:6px; height:10px; margin-top:20px;}
+    .rele-photo ul li{ padding: 0 10px;}
+    .rele-photo ul li.tion{ padding-top: 3px; padding-bottom: 3px;}
+    .rele-photo ul li span.trea{ font-size:14px;width:60px;}
+    .rele-photo ul li .photo-input-tx{ width:70%; font-size:14px;}
+    .rele-photo ul li a.code{ font-size: 14px; width: 93px;}
+    .rele-photo ul li .mobile-tel{ font-size: 14px; width: 35%;}
+    .rele-photo ul li .trea-input-tx{ font-size:14px;}
+    .rele-treasure ul li.resure{ font-size:14px;}
+    .rele-treasure ul li.resure label{ width:40%; padding-left: 10px;}
+    .rele-treasure ul li.resure span.list .inp-fabu{ font-size:14px;}
+    .rele-treasure ul li.resure .inp-chance{ font-size:14px; }
+
+
+    .rele-treasure ul li.sell label,
+    .rele-treasure ul li.sell span.list .inp-fabu,
+    .rele-treasure ul li.sell .inp-chance{ font-size:14px;}
+    .rele-treasure ul li.sell span.list em a{ height: 56px; width: 100%;}
+
+
+    /*发布帐号*/
+    .rele-list ul li{ padding: 0 10px;}
+    .rele-list ul li em{ font-size:14px;}
+    .rele-treasure ul li span, .rele-treasure ul li.traesn span{ font-size:14px;}
+    .rele-treasure ul li span.ment{ width:83px;}
+	.rele-rtile{ padding:5px 15px!important;}
+ .tymyd ul li{ height: 48px !important; line-height: 48px !important;}
+    .rele-csao{padding-top: 10px !important; padding-bottom: 6px !important;}
+
+    /*找代练*/
+    .adtail-list{ padding-bottom: 12px;}
+    .for-ban ul li span{ font-size:14px;}
+    .for-ban ul li a{ font-size:14px; margin-left:60px;}
+    .for-ban ul li a i{ width:6px; height:10px; margin-top:20px;}
+    .for-textar{ height:100px;}
+    .for-textar .textar-conn{ font-size:14px; line-height: 20px; height: 100px}
+    .for-lgoin ul li span{ font-size:14px; width:115px;}
+    .for-lgoin ul li .lg-input-tex{ font-size:14px;}
+    .for-lgoin ul li .money-input-tex{ font-size:14px;}
+    .for-lgoin ul li em{ font-size:14px;}
+    .rele-btn{ padding:10px;}
+    .rele-btn p{ font-size:16px; }
+    .rele-btn p em{ margin:0 5px;}
+
+    /*找代练-方案2*/
+    .for-upgre ul li span{ font-size:14px;}
+    .for-upgre ul li a{font-size:14px; margin-left:60px;}
+    .for-upgre ul li a i{ width:6px; height:10px; margin-top:20px;}
+    .for-upgre ul li .upgre-tarea{font-size: 14px; line-height: 20px; height: 100px;}
+    .for-ban ul li span.price{font-size: 14px; width: 115px;}
+    .for-ban ul li em{ font-size:14px;padding-right: 15px}
+    .for-ban ul li .price-input-tex{ font-size:14px; width:45%;}
+
+    /*找代练-方案3*/
+    .for-lgoin ul li.process .proce-conn{ padding:15px 6px;}
+
+    /*下订单支付*/
+    .medeta-lease ul li{ padding: 0 10px;}
+    .medeta-lease ul li span{ font-size:14px;}
+    .medeta-lease ul li em{ font-size:14px;}
+
+    .order-commod ul li{padding: 0 10px;}
+    .order-commod ul li dl{ padding: 10px 0;}
+    .order-commod ul li dl dt{ width:60px; height:60px;}
+    .comd-img{ width:60px; height:60px;}
+    .comd-img img{ max-height:60px; max-width:60px;}
+    .comd-img i{ font-size:14px; width:20px; height:20px; line-height:20px;}
+
+    .order-commod ul li dl dd{ margin-left:70px;}
+    .order-commod ul li dl dd h2{ font-size:13px; height:15px; line-height:15px; }
+    .order-commod ul li dl dd p{ font-size: 14px; line-height: 20px; height: 20px; margin-top: 2px; max-height: 40px;}
+    .order-commod ul li dl dd .det-money{ font-size: 16px; line-height: 20px; height: 20px; margin-top: 2px;}
+    .order-commod ul li dl dd .det-money em{font-size: 14px;}
+    .order-commod ul li span.orderpa{ width: 122px;}
+    .order-commod ul li span.orderpa .inp-order{ width: 50px;}
+    .order-commod ul li span.orderpa strong a.add, .order-commod ul li span.orderpa strong a.redu{ background-size: 40%;}
+    .order-commod ul li label{ font-size:14px;}
+    .order-commod ul li font{ font-size:14px;}
+    .order-commod ul li font em{ font-size:14px;}
+    .order-commod ul li.resure span.list{ height:25px; margin-top:12px;}
+    .order-commod ul li.resure span.list em{ width:25px; height:25px;}
+    .order-commod ul li.resure span.list em a{ width:16px;}
+    .order-commod ul li.resure span.list em a.redu, .order-commod ul li.resure span.list em a.redu-hov{ height:1px; margin:13px 0 0 5px;}
+    .order-commod ul li.resure span.list em a.add, .order-commod ul li.resure span.list em a.add-hov{ width:12px; height:12px;margin:7px 0 0 7px;}
+    .order-commod ul li.resure span.list .inp-fabu{ width:25px; height:25px; font-size:14px; line-height:25px;}
+
+
+
+    .servi-title{ height:40px; line-height:40px; font-size:14px;}
+    .order-service .servi-conn ul li{ padding: 0 10px;}
+
+    .order-service .servi-conn ul li span{ font-size:14px; width:85px;}
+    .order-service .servi-conn ul li em{ font-size:14px;}
+    .order-service .servi-conn ul li .serv-input-tx{ font-size:14px;}
+    .order-service .servi-conn ul li .item-input{ height: 30px; width: 55px;}
+    .order-service .servi-account .item-input{ height: 30px; margin-top: 15px; width: 55px;}
+
+    .servi-btn{ padding: 10px;}
+    .servi-btn span{ font-size:14px; height:40px; line-height:40px;}
+    .servi-btn span em{ font-size:16px;}
+
+
+    .servi-btn a{  height:40px; font-size:16px; line-height:40px;}
+    .order-pay .pay-money{ height:auto;}
+    .order-pay .pay-money ul li{ padding:0 10px; height:56px; line-height:56px;}
+    .order-pay .pay-money ul li span.ord-mony{ line-height:56px;}
+    .order-pay .pay-money ul li.pay-cer{ height: 40px; line-height: 40px; font-size: 16px;}
+    .order-pay .pay-money ul li input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size: 16px;}
+    .order-pay .pay-money ul li span{ font-size:14px; width:70px;}
+    .order-pay .pay-money ul li .paon-input{ font-size:14px;}
+    .order-pay .pay-money ul li em{ font-size:16px;}
+    .order-pay .pay-money ul li em i{ font-size:14px;}
+    .order-pay .pay-money a.dialog_close{ width:10px; height:10px;}
+    .order-pay .pay-conn ul li{ height:60px; line-height:60px; padding:0 10px;}
+
+    .order-pay .pay-conn ul li span{ height:60px; line-height:60px; font-size:14px;}
+    .order-pay .pay-conn ul li span i.pay-weix{ width:38px; height:38px;margin-right:9px; margin-top:10px;}
+    .order-pay .pay-conn ul li span i.pay-zfb{ width:38px; height:38px;margin-right:9px; margin-top:10px;}
+    .order-pay .pay-conn ul li span i.pay-cup{ width:38px; height:38px;margin-right:9px; margin-top:10px;}
+    .order-pay .pay-conn ul li i.lease-ico{ width:7px; height:14px; margin-top:20px;}
+
+    /*留言详情*/
+    .message-main .werw-commod dl dt{ width:60px; height:60px;}
+    .message-main .werw-commod .comd-img{width:60px; height:60px;}
+    .message-main .werw-commod .comd-img img{ max-width:60px; max-height:60px;}
+    .message-main .werw-commod .comd-img i {font-size: 14px; width: 20px; height: 20px; line-height: 20px;}
+    .message-main .werw-commod dl dd{ margin-left:70px;}
+    .message-main .werw-commod dl dd .comdd-titl{ width:75%}
+    .message-main .werw-commod dl dd .comdd-titl h2{ font-size:12px; height:16px; line-height:16px;}
+    .message-main .werw-commod dl dd .comdd-titl p{ font-size:14px; line-height:18px;}
+    .message-main .werw-commod dl dd .comdd-conn span{ font-size:14px;}
+    .mesaa-reply .reply-copl ul li .copl-head{ width:40px; height:40px;}
+    .mesaa-reply .reply-copl ul li .copl-head img{ max-height:40px; max-width:40px;}
+    .mesaa-reply .reply-copl ul li .copl-cont{ margin-left:50px;}
+    .mesaa-reply .reply-copl ul li .copl-cont h2{ height:18px; line-height:18px; font-size:14px;}
+    .mesaa-reply .reply-copl ul li .copl-cont p{ font-size:14px; line-height:20px; margin-top:4px;}
+    .mesaa-reply .reply-copl ul li .del a{ font-size:14px;}
+    .mesaa-reply .reply-copl ul li .rep a{ font-size:14px;}
+
+    /*个人中心-待付款-详情币*/
+    .memberdetail-main .medeta-lease ul li span{ font-size:14px;}
+    .memberdetail-main .medeta-lease ul li em{ font-size:14px;}
+
+    .medeta-service .item-input{height: 30px; margin-top: 15px; width: 55px;}
+    .servi-title{ height:40px; line-height:40px; font-size:15px;}
+    .servi-conn .svi-insurance h2{ font-size:14px; line-height:20px; height:20px;}
+    .servi-conn .svi-insurance p{ font-size:13px; line-height:20px; height:auto;}
+    .servi-conn .svi-money{ height:60px; line-height:60px; font-size:14px;}
+    .servi-conn .svi-width{ width:65%}
+
+    .memberdetail-main .stay-customer{padding:10px; }
+    .memberdetail-main .stay-customer em{ height:35px; line-height:35px; font-size:14px; }
+    .memberdetail-main .stay-customer .stay-conn h2{ font-size:13px; height:18px; line-height:18px;}
+    .memberdetail-main .stay-customer .stay-conn p{ font-size:13px; line-height:18px; margin-top:4px;}
+    .memberdetail-main .stay-customer .stay-contact{ width:37px; height:26px;}
+    .memberdetail-main .stay-customer .stay-contact a{ width:35px; height:24px; font-size:14px;}
+    .memberdetail-main .stay-customer .stay-contact a img{ width:18px;}
+
+
+    .servi-cange span{ font-size:14px;}
+    .servi-cange em{ font-size:14px;}
+    .servi-btn span font{ font-size:14px;}
+    .cancel-pop .canpop-text{ height:45px; line-height:45px;}
+    .cancel-pop .canpop-text a{ font-size:14px;}
+
+    .staypop-text ul li span{ font-size:14px;}
+    .staypop-text ul li em i {width: 6px;height: 10px;margin-top: 20px;}
+
+
+
+    /*交易成功-评价*/
+    .memberdetail-main .evalu-score span{ font-size:14px;}
+    .memberdetail-main .evalu-score .revinp i{ margin:10px 2px 10px 6px;}
+
+    /*发布职业选择样式*/
+    .newScree{ padding: 0 10px;}
+    .newScree section font{ font-size:14px;}
+
+    .newScree section a.aRight{ display:block; color:#000;}
+    .rele-lease ul li label{ margin-left:60px;}
+    .newScree section label.pod{ margin-left:80px;}
+    .newScree section label em{ font-size:14px;}
+    .newScree section label i{width: 6px; height: 10px; margin-top: 20px;}
+    .Jbox a{ font-size:14px;}
+    .lmob ol li a{ font-size:14px;}
+
+    /*商品排序*/
+    .commod-list .comd-titl{ padding:12px 10px; height:30px;}
+    .commod-list .comd-titl span{ height:30px; line-height:30px; font-size:14px; width:65px;}
+    .commod-list .comd-titl label{ line-height:30px; font-size:14px;}
+    .commod-list .comd-titl em{ font-size:13px; line-height:30px; }
+    .commod-list .comd-conn{ padding: 12px 10px;}
+    .commod-list .comd-conn .comd-text{ margin-left:70px; min-height:60px;}
+    .commod-list .comd-conn .comd-text p{ font-size:14px; line-height:20px;}
+    .commod-list .comd-conn .comd-text .money{ font-size:16px;}
+    /*弹窗登录*/
+    .login-mobile ul li label{ height:56px; line-height:56px; font-size:14px; width:56px;}
+    .login-other-list i{ width:56px; height:56px; }
+    .login-other-list a{ font-size:14px;}
+    .login-other-back i{ height:65px; width:65px;}
+    .login-other-back a{ font-size:14px;}
+    .login-mobile ul li .mobile-num{font-size:14px; padding:15px 0; height:26px; line-height:26px;}
+    .login-mobile ul li a.lo-del{ margin-top:15px;}
+    .login-mobile ul li .mobile-tel{font-size:14px; padding:15px 0; height:26px; line-height:26px;}
+    .login-mobile ul li a.code{ height:32px; line-height:32px; font-size:14px; margin-top:8px; width: 85px;}
+    .login-mobile ul li a.mobile-btn{ line-height:46px; font-size:16px;}
+    .login-mobile ul li .mbile-conn{ padding:15px 0;}
+    .login-mobile ul li .mbile-conn h2{ font-size:14px; height:24px; line-height:24px;}
+    .login-mobile ul li .mbile-conn p{ font-size:16px; height:30px; line-height:30px;}
+    .login-other-bt span{ font-size:14px; line-height:30px; margin-bottom:-15px;}
+    .login-other-list a{ font-size:14px;}
+
+    /*发布成功*/
+    .publish-main .pubsuc-ch{ padding-top:20px; padding-bottom:20px;}
+    .publish-main .pubsuc-ch .ch-img{ width:80px; height:80px;}
+    .publish-main .pubsuc-ch .ch-text{ font-size:16px; margin-top:10px;}
+    .publish-main .pubsuc-ch .ch-mon{ font-size:16px; margin-top:8px;}
+    .publish-main .pubsuc-ch .ch-btn a{ margin-top:15px; height:45px; line-height:45px; font-size:16px;}
+    .pubsuc-share .share-title{ height:45px; line-height:45px; font-size:16px;}
+    .pubsuc-share ul li{ margin-top:10px;}
+    .pubsuc-share ul li img{ width:50px; height:50px;}
+    .pubsuc-share ul li p{ font-size:14px; margin:10px 0;}
+
+    /*发布区服选择*/
+    .rele-game-qfu{ padding:12px 10px;}
+    .rele-game-qfu .reqft-img{ width:60px; height:60px;}
+    .rele-game-qfu .reqft-text{ margin-top:6px; margin-left:75px;}
+    .rele-game-qfu .reqft-text h2{ font-size:16px; height:18px; line-height:18px;}
+    .rele-game-qfu .reqft-text p{ font-size:14px; height:18px; line-height:18px;}
+    .rele-game-qfu i.lease-ico{width: 6px; height: 60px;}
+    .rele-title{ font-size:13px; padding: 0 10px;}
+    .rele-title i.tit-ico{ height:16px; margin-top:19px; margin-right: 5px;}
+    .rele-treasure ul li.traesn span i.tit-ico{height:16px;  margin-right:5px;}
+    .rele-treasure ul li span.ment i.tit-ico{height:16px;  margin-right: 5px;}
+
+
+    /*出售协议*/
+    .agreement-main{  padding:6px 10px;}
+    .agreement-main p{ font-size:14px; line-height:30px;}
+
+    .rele-btn a{ height:46px; line-height:46px; font-size:16px;}
+    .order-title{ padding:10px;}
+    .order-title .ord-left{ height:16px; margin-top:5px;}
+    .order-title .ord-left i{ height:16px;}
+    .order-title .ord-right{ font-size:14px; line-height:24px; margin-left:9px;}
+    /*优先出售*/
+    .rele-csao{padding: 10px 15px 10px 20px;}
+    .rele-csao .sao-text span{ font-size:14px;}
+    .rele-csao .sao-teno span{ line-height:30px; font-size:14px;}
+    .rele-csao .sao-teno .tno-input{ width:55px; height:30px;}
+    /*加密*/
+    .rele-shumeng{ font-size:14px; margin-top:8px;}
+
+    /*出售流程*/
+    .process-conn{ margin:20px 8px 0; background-position:13px 0;}
+    .process-conn ul li{ margin-bottom:20px;}
+    .process-conn ul li .pro-left span{ font-size:14px;}
+    .process-conn ul li.bacder .pro-left1, .process-conn ul li.bacder .pro-left{background-position: 13px 0;}
+    .process-conn ul li .pro-right{ margin-left:40px; padding:8px 10px;}
+    .process-conn ul li .pro-right h2{ font-size:14px; }
+    .process-conn ul li .pro-right p{ font-size:12px;}
+    .process-conn ul li .pro-right p a{ font-size:14px;}
+
+    /*打款前请确认*/
+    .rele-play ul li{ padding:0 10px;}
+    .rele-play ul li span{height: 50px;line-height: 50px;font-size: 14px;}
+    .rele-play ul li label i{ height:50px; width:20px; background-size:100% !important;}
+    .rele-play ul li .refund-conn .refu-tarea{font-size: 14px; line-height: 20px; height: 80px;}
+    .rele-play ul li .refund-conn input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size:14px;}
+
+    /*英雄联盟详情*/
+    .detail-main .yxlm-conn dl{ padding:10px;}
+    .detail-main .yxlm-conn dl dt{ width:60px; height:60px;}
+    .detail-main .yxlm-conn dl dd{ margin-left:70px;}
+    .detail-main .yxlm-conn dl dd p{ font-size:14px; line-height:20px; min-height:60px;}
+    .yxlm-number ul li{ padding:0 10px; height:50px;}
+    .yxlm-number ul li span{ font-size:14px; height:50px; line-height:50px;}
+    .yxlm-number ul li label{font-size:14px; height:50px; line-height:50px;}
+    .yxlm-addren .addren-titl{ height:50px; padding:0 10px;}
+    .yxlm-addren .addren-titl span{ line-height:50px; font-size:14px; height:50px;}
+    .yxlm-addren .addren-titl i.ylm-ico{ height:50px;}
+    .yxlm-addren .addren-conn{ padding:10px 8px 0;}
+    .yxlm-addren .addren-conn ul{ width:113%;}
+    .yxlm-addren .addren-conn ul li .ad-img{ width:85%;}
+    .yxlm-addren .addren-conn ul li .ad-text{ width:85%; font-size:10px;}
+    .yxlm-addren .addren-fuwei{ padding-bottom:10px;}
+    .yxlm-addren .addren-fuwei ul li{ margin-top:10px;}
+    .yxlm-addren .addren-fuwei ul li h2{ font-size:12px;}
+    .yxlm-addren .addren-fuwei ul li p{ font-size:14px;}
+    .servi-btn label{ font-size:14px; margin-right:2px;}
+
+    /*买家流程*/
+    .buyer-pro{ margin:0px 8px 0; background-position:13px 0;}
+    .buyer-pro ul li{ padding-bottom:20px;}
+    .buyer-pro ul li .pro-left span{ font-size:14px;}
+    .buyer-pro ul li .pro-right{ margin-left:38px; padding:8px 0;}
+    .buyer-pro ul li .pro-right h2{ font-size:14px; }
+    .buyer-pro ul li .pro-right p{ font-size:12px;}
+    .buyer-pro ul li .pro-right p a{ font-size:14px;}
+
+    /*交易中*/
+    .trans-main{ padding:10px 0;}
+    .trans-main .trans-img{ width:40px; height:40px;}
+    .trans-main .trans-text h2{ font-size:14px; height:20px; line-height:20px;}
+    .trans-main .trans-text p{ font-size:13px; height:20px; line-height:20px;}
+
+    .trans-record .reco-title{ margin-top:10px; font-size:14px; height:18px; line-height:18px;}
+    .trans-record ul{ margin-top:10px;}
+    .trans-record ul li{ padding-bottom:10px;}
+    .trans-record ul li .trans-right{ padding:10px 12px; }
+    .trans-record ul li .trans-right h2{font-size:14px; line-height:20px;}
+    .trans-record ul li .trans-right p{ font-size:12px; margin-top:5px;}
+    .trans-record ul li .trans-right p a{font-size:12px; margin-left:15px;}
+
+    .refund a{height: 40px; line-height: 40px; font-size: 14px;}
+	
+	/*代练入驻*/
+	.settled-step ul li .set-conn span{ width:20px; height:20px; font-size:12px; line-height:20px;}
+	.settled-step ul li .set-conn p{ font-size:12px;}
+	.settled-step ul li i{ height:34px; background-size:7px;}
+	.cerif-conn{ padding:10px;}
+	.cerif-conn p{ font-size:14px;}
+	.cerif-conn a{ font-size:14px;}
+	
+	.dlmain-btn{ padding:10px;}
+	.dlmain-btn a{ font-size:14px;}
+	
+	.appeal-conv{ padding-top:10px;}
+	.appeal-conv .appeal-titl{ padding:0 10px; font-size:14px;}
+	.appeal-conv .appeal-text{ padding:4px 10px;}
+	.appeal-conv .appeal-text .re-tarea{ font-size:14px;}
+    /*代练发布*/
+    .dl-pubish ul li span{ width:113px ;}
+    .dl-pubish ul li .rele-input-tx2{ width: 60%;}
+
+    /*服务*/
+    .sec-service-main .sec-buy .tno-input{height: 28px;width: 50px}
+    .sec-service-main{ padding:10px;}
+    .sec-service-main .sec-buy{ height:30px;}
+    .sec-service-main .sec-buy span{ font-size:14px; line-height:30px;}
+    .sec-service-main .sec-buy span em{ margin-right:5px;}
+    .sec-service-main .sec-buy span i{ height:30px; background-size:14px;}
+    .min-squ i{height:30px; background-size:14px;}
+    .sec-service-main .sec-text{ height:auto; line-height:24px; font-size:12px; margin-top:2px;}
+
+    /*守望先锋*/
+    .swxf-main .xfeng-add{ padding:10px;}
+    .xfeng-add .fdd-img{ width:60px; height:60px;}
+    .xfeng-add .fdd-img img{ max-height:60px; max-width:60px;}
+    .xfeng-add .fdd-img i{ font-size:14px; width:20px; height:20px; line-height:20px;}
+    .xfeng-add .fdd-text{ font-size:14px; padding:7px 0 5px 0;}
+    .xfeng-add .fdd-money{ font-size:16px;}
+    .xfent-note .note-titl{ height:50px; line-height:50px; font-size:14px;}
+    .xfent-note .note-conn{ padding:10px;}
+    .xfent-note .note-conn p{ line-height:20px; font-size:14px;}
+
+    .xf-deposit{ font-size:14px; height:50px; line-height:50px; padding:0 10px;}
+    .xf-mind{ padding:10px;}
+    .xf-mind .mind-left{ width:75%;}
+    .xf-mind .mind-left .min-squ h2{ height:20px; line-height:20px; font-size:14px;}
+    .xf-mind .mind-left .min-squ p{ height:20px; line-height:20px; font-size:12px;}
+    .xf-mind .mind-righ{ width:50px; height:28px; margin-top: 12px;}
+
+    /*安心买*/
+    .buy-mind{ padding:6px;}
+    .buy-mind .buid-left .mbd-ico{ width:33px; height:38px; background-size:20px;}
+    .buy-mind .buid-left{ width:80%;}
+    .buy-mind .buid-left .mbd-tex h2{ height:20px;}
+    .buy-mind .buid-left .mbd-tex h2 span{ line-height:20px; font-size:14px;}
+    .buy-mind .buid-left .mbd-tex h2 em{line-height:20px; font-size:14px;}
+    .buy-mind .buid-left .mbd-tex p{ font-size:12px; height:auto; line-height:18px;}
+    .buy-mind .buid-left .mbd-tex h2 span i{ height:20px;}
+    .buy-mind .buid-left .mbd-tex{ width:194px;}
+    .buy-mind .buid-right{ margin-top:7px;}
+
+    .explain-tile{ line-height:32px; font-size:16px; color:#000000; margin-top:6px;}
+    .explain-ptext{ padding:6px 10px 6px; line-height:20px; font-size:14px; color:#000;}
+
+    .rele-yxlm ul li label{font-size:14px;}
+    .rele-yxlm ul li i.tex{font-size:14px;}
+    .rele-yxlm ul li span.list .inp-fabu{ font-size:14px;}
+	
+}

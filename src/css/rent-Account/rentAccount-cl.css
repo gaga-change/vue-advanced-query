@@ -1,0 +1,285 @@
+/*common*/
+td{background:#fff;}
+.active-red{border-bottom: 2px solid #f65e46;color:#f65e46;}
+.fixedFill-lg{width: 100%;height: 1.92rem;}
+.fixedFill-mx{width: 100%;height: 0.96rem;}
+.fixed-box{width: 100%;height: auto;z-index: 500}
+.common-color{color:#f65e46;}
+.display-none{display: none}
+.display-block{display: block}
+.rent-img{width: 0.3rem;height: 0.3rem;margin:-0.08rem 0.1rem 0 0}/*租用小图标css样式*/
+.rent-img-state{width: 0.3rem;height: 0.3rem;position: absolute;top: 0;left: 1.4rem}
+.placeholder::-webkit-input-placeholder{
+    color:#ff0000;
+}
+
+
+/*我是玩家租赁页面css样式*/
+/*tab切换*/
+.tab{width: 100%;height: 0.96rem;background: #fbfbfb}
+.tab .tab-nav li{width: 33.3%;height: 0.96rem;line-height: 0.96rem;position: relative}
+.tab .tab-nav li a{width: 100%;height: 0.96rem;display: inline-block;position: absolute;top:0;}
+
+/*tab-item公用*/
+.tab-item{width: 100%;}
+.tab-item ul li{width: 100%;height: auto;padding: 0.3rem 0 ;position: relative;background: #fff;margin-top: 0.2rem;
+    border-bottom: 1px solid #e8e8e8;border-top: 1px solid #e8e8e8}
+.tab-item ul li a{display: inline-block;width: 100%;padding: 0 0.3rem;position: relative}
+.tab-item ul li a .commodity-img{width: 1.4rem;height: 1.4rem;}
+.tab-item ul li a p{text-indent: 0.2rem;text-overflow: ellipsis;overflow: hidden;position: absolute}
+.tab-item ul li a p span{float: right}
+.puk{margin-left: 0.2rem}
+
+.contact-kf{width:1rem;height:1rem;position: fixed;right: 0;top:4.6rem;z-index: 999}
+.commodity-title{top:0;left: 1.7rem;text-overflow: ellipsis;overflow: hidden}
+.commodity-unlock{top:0.5rem;left: 1.7rem}
+.commodity-state{top:0.5rem;left: 1.7rem}
+.commodity-sellTime{top:0.5rem;left: 1.7rem}
+.commodity-money{top: 1rem;left: 1.7rem}
+.commodity-price{top: 1rem;left: 1.7rem}
+.commodity-state{display:inline-block;text-indent: 0.2rem;margin-top:0.12rem;}
+.rent-state{display:inline-block;text-indent: 0.2rem;height: 0.8rem;position: absolute;top: 0}
+.title-tip{width: 3px;height: 0.3rem;background: #f65e46;display: inline-block;position: absolute;
+    top:0.25rem;left: 0.3rem}
+.title-tip1{width: 3px;height: 0.3rem;background: #f65e46;display: inline-block;position: absolute;left: 0.3rem;top:0.38rem;}
+
+/*tab-item1*/
+.tab-item1 ul li a:first-child{height: 1.7rem;border-bottom: 1px solid #eee}
+.tab-item1 ul li a:last-child{height: 0.8rem;line-height: 0.8rem;position: relative}
+.refresh{width: 1.8rem;height: 0.8rem;border: 1px solid #F85E46;text-align: center;line-height: 0.8rem ;
+    display: inline-block;position: absolute;right: 0.3rem;top:0.1rem;}
+.refresh:disabled{color:#999;border:1px solid #ddd}
+	
+/*tab-item2*/
+.tab-item2 ul li{padding: 0.3rem 0 }
+.tab-item2 ul li a:nth-child(2){height: 0.8rem;line-height: 1.2rem;margin-top:0.2rem;border-top:1px solid #e8e8e8;position: relative;}
+.tab-item2 ul li a:nth-child(2) .title-tip{top:0.44rem;}
+.more{width:1.2rem;height: 0.5rem;display: inline-block;border: 1px solid #eee;
+        position: absolute;right: 0.3rem;bottom:0.2rem;}
+.more span{width: 0.1rem;height: 0.1rem;display:inline-block;border-radius: 50%;background: #666;margin: 0.2rem 0 0.2rem 0.22rem;float: left}
+.tab-item2 ul li .rent-again{width: 1.8rem;height: 0.8rem;padding:0;background:#f85e46;border:none;text-align: center;line-height: 0.8rem ;
+    display: inline-block;position: absolute;right: 0.3rem;bottom:0.2rem;color:#fff;}
+
+/*tab-item3*/
+.tab-item3 ul li{height: 2rem;margin: 0;border-top: 1px solid #e8e8e8;border-top: none;}
+.tab-item3 ul li i{width: 0.5rem;height: 0.5rem;display: inline-block;border-radius: 50%;border: 2px solid #f85e46;position: absolute;
+        top:0.75rem;left:0.2rem;background: url("../../images/re-redu-l.png")no-repeat center;background-size: 88%}
+.tab-item3 ul li a{width: 100%;padding-left:0;position: absolute;left: 0.9rem}
+.tab-item3 ul li a .rent-img-state{left: 1.1rem}
+.tab-item3 ul li a p{text-indent: 0}
+.tab-item3 ul li a input{width: 1.4rem;height: 0.6rem;color:#f65e46;border: 1px solid #f65e46;text-align: center;font-size: 0.22rem;
+    background: #fff;position: absolute;right: 1.2rem;bottom: 0}
+.tab-item3 ul li a input:disabled{color:#666;border: 1px solid #666;}
+
+/*删除商品租赁信息*/
+
+.delete-commodity{width: 100%;height: 100vh;background: rgba(0,0,0,0.3);position: fixed;top: 0;z-index: 999}
+.confirm{width: 80%;margin: 4rem auto;text-align: center;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;}
+.confirm h2{padding: 0.7rem 0;border-bottom: 1px solid #e8e8e8}
+.confirm span{width:3rem;height: 1rem;line-height: 1rem;display:inline-block;color: #0079fe;}
+
+/*验证码提示*/
+.puk-tip{width:100%;height:100vh;background: rgba(0,0,0,0.3);position: fixed;top: 0;z-index: 999}
+.puk-tip .confirm h2{padding:0.7rem 0.2rem;border-bottom:1px solid #e8e8e8;}
+
+/*上号器提示*/
+.shq{width:100%;height:100vh;background: rgba(0,0,0,0.3);position: fixed;top: 0;z-index: 999}
+.shq  .shq-img{width:80%;height:auto;margin:4rem 10% 0 10%;}
+.shq .shq-tip{width:80%;padding:0.6rem 0.5rem;background:#fff;margin-left:10%;text-align:center;
+	border-bottom-left-radius:6px;border-bottom-right-radius:6px;}
+.shq .shq-tip p:last-of-type{width:80%;height:0.8rem;margin-left:10%;background:#3b8dfb;border-radius:6px;line-height:0.8rem;}
+.shq .close{position:fixed;top:2.7rem;right:8%;}
+.shq .close .close-shq{width:0.6rem;height:1.3rem;}
+
+
+/*订单详情（已完成）页css样式*/
+.item-detail ul li{height: 2rem;margin: 0}
+.item-detail ul li a{width:100%;padding-left: 0.3rem}
+
+.downLoad{width: 100%;height: 1.2rem ;margin:0.2rem 0;background: #fff;position: relative}
+.title{width: 100%;height: 1.2rem;padding-left:0.3rem;text-indent:0.2rem;display: inline-block;line-height: 1.2rem;position: relative }
+.title .more{right: 0.3rem;top:0.35rem;}
+.title .title-tip{left: 0.3rem;top:0.45rem;}
+
+.order-detail{width: 100%;height: auto;background: #fff}
+.order-detail p{width: 100%;padding-left: 0.4rem;height: 1rem;line-height: 1rem;position: relative;}
+.order-detail p span{position: absolute;left: 3rem}
+
+.order-cancel{height:1.6rem;padding:0.3rem 0;background: #fff;position: relative}
+.order-cancel a{width: 2.5rem;height:1rem;line-height: 1rem;text-align:center;display: inline-block;border: 1px solid #e8e8e8;}
+.order-cancel a:first-child{position: absolute;left: 0.3rem;top:0.3rem;}
+.order-cancel a:last-child{position: absolute;right: 0.3rem;top:0.3rem;}
+
+/*我是卖家租赁页面css样式*/
+.seller-tab ul li{padding: 0.3rem 0 0.02rem 0}
+.seller-tab ul li a .more{bottom: 0.2rem}
+.pos-5{top:0.5rem;}
+.seller-tab ul li a .price{float: none}
+
+/*卖家修改租赁信息*/
+.revise-modal{width: 100%;height:100vh;position: fixed;top:0;z-index: 999;background: rgba(0,0,0,0.3)}
+.revise-modal .revise-list{width:100%;position: fixed;bottom: 1.1rem}
+.revise-modal .quxiao{position: fixed;bottom: 0;width: 100%;height: 1rem;background: #fff;text-align: center;line-height: 1rem}
+.revise-modal .revise-list li{width: 100%;height: 1rem;text-align: center;line-height: 1rem;background: #fff;font-size: 0.3rem;
+    border-top: 1px solid #e8e8e8;color:#000;}
+
+.revise-item{width: 100%;height: 100vh;background: rgba(0,0,0,0.3);position: fixed;top: 0;z-index: 999}
+.revise-item-other{background: none}
+.confirm h2{padding: 0.4rem  0;border: none;}
+.confirm h3{text-align: left;padding: 0 0 0.4rem 0.3rem;}
+.confirm h3 strong{font-weight: normal}
+.confirm h3 input{width: 3rem;border: none;font-size: 0.32rem;}
+.confirm h3:last-of-type{border-bottom: 1px solid #e8e8e8}
+.confirm .other-h2{padding: 0.8rem 0;border-bottom: 1px solid #e8e8e8}
+
+
+/*发布/修改账号页css样式*/
+.select-item{width: 100%;height: 1rem;position:relative;background: #fff;border-bottom: 1px solid #e8e8e8;font-size: 0.3rem;line-height: 1rem}
+.select-item span{font-size:0.28rem}
+.select-item span:first-of-type{padding-left: 0.3rem}
+.select-item span:nth-child(2){float: right;margin-right: 0.3rem}
+.select-item .span-other{position: absolute;right: 0.5rem}
+.select-item input{width:44%;height:0.42rem;font-size:0.28rem;border: none;position: absolute;left: 2.2rem;top: 0.29rem}
+.select-item input:disabled{background:#fff}
+.select-item img{width: 0.4rem;height: 0.4rem;position: absolute;right: 0.3rem;top: 0.3rem}
+.select-item .select-img{width: 0.15rem;height: 0.3rem;top: 0.35rem}
+.yuyue-able{padding: 0.3rem 0.3rem}
+.yuyue-able p{height:0.5rem;position: relative;text-align: left;line-height: 0.5rem}
+.yuyue-able p img{width: 1rem;height: 0.5rem;position: absolute;right: 0}
+.warn{width: 100%;height: 100vh;background: rgba(0,0,0,0.3);position: fixed;top:0;z-index: 999}
+.warn .warn-tip{width: 80%;height: 2.8rem;text-align:center;border-radius: 10px;position: fixed;top: 4rem;left: 10%}
+.warn .warn-tip h2{padding: 0.6rem 0;}
+.warn .warn-tip span{padding: 0.6rem 0;line-height: 1.1rem;color:#0079fe;}
+
+.release{padding: 0.3rem 0.3rem;text-align: center;background: #fff}
+
+.release input{width: 7.08rem;height: 1rem;border: none;background: #F85E46;color:#fff;font-size: 0.36rem}
+
+/*下单页css*/
+.order-detail .order-padding{padding-left: 0.6rem}
+.order-detail .order-padding span{left: 2.4rem}
+.rent-style {padding:0.3rem 0.3rem;height: 1.6rem;position: relative}
+.rent-style a{display: inline-block;width: 3rem;height: 1rem;line-height: 1rem;position: absolute;top: 0.3rem;
+    border: 1px solid #e8e8e8;text-align: center;font-size: 0.32rem}
+.rent-style a:first-child{left: 0.6rem; width: 40%}
+.rent-style a:last-child{right: 0.6rem;width: 40%}
+.rent-style .button-active{color:#F85E46;border: 1px solid #F85E46}
+.order-totalTime{padding: 0.3rem 0.6rem}
+.order-totalTime input{width: 3.6rem;height: 0.5rem;margin-left: 0.6rem;border: none;font-size: 0.32rem}
+
+.nice-price{padding:0.3rem 0;height: 1.8rem;position: relative}
+.nice-price a{display: inline-block;width: 30%;height: 1.2rem;position: absolute;top: 0.3rem;
+    border: 1px solid #e8e8e8;text-align: center;font-size: 0.32rem}
+.nice-price button{display: inline-block;width: 30%;height: 1.2rem;  border: 1px solid #e8e8e8;margin-left: 2%;
+    text-align: center;font-size: 0.32rem}
+.nice-price a:first-child{left: 0.3rem}
+.nice-price a:nth-child(2){left: 35%}
+.nice-price a:last-child{right: 0.3rem}
+.nice-price a span:first-of-type{line-height: 0.72rem}
+.nice-price a span:last-of-type{line-height: 0.1rem}
+.nice-price .button-active{color:#F85E46;border: 1px solid #F85E46}
+
+.rent-pay{padding: 0.3rem 0.3rem;line-height: 1rem}
+.rent-pay input{width: 4rem;height: 1rem;background: #F85E46;border: none;position: absolute;top: 0.3rem;right: 0.3rem}
+
+.style-item .select-startTime{border-bottom: 1px solid #eeeeee;padding: 0.3rem 0.6rem}
+.style-item .select-startTime input{width:70%;border: none;margin-left: 0.4rem}
+.style-item .select-endTime{padding: 0.3rem 0.6rem}
+.style-item .select-endTime input{width:70%;border: none;margin-left: 0.4rem}
+
+/*租赁列表页css*/
+.sort{width: 100%;height: 0.96rem;position: relative;border-bottom: 1px solid #e8e8e8;background: #fff}
+.sort div{width: 33.3%;height: 0.96rem;position: absolute;text-align: center;line-height: 0.96rem}
+.sort div:nth-child(1){left: 0;top:0}
+.sort div:nth-child(2){left: 33.3%;top:0}
+.sort div:nth-child(3){right: 0;top:0}
+.sort div span{width: 100%;padding-right: 0.1rem;font-size: 0.3rem}
+.sort div ul{height: 0;font-size: 0.30rem;background: #fff;overflow: hidden;transition: all 0.1s ease}
+.sort div ul li{height: 0.96rem;text-align: center;line-height: 0.96rem;border: 1px solid #e8e8e8;border-top:none;}
+.sort div img{width: 0.3rem;height: 0.18rem;}
+
+.rent-commodity-list ul li{border-top: none}
+.rent-commodity-list ul li .toRent{width: 1.2rem;height: 0.5rem;line-height:0.5rem;padding: 0 0;color:#f65e46;border: 1px solid #f65e46;
+    text-align: center;font-size: 0.22rem;  background: #fff;position: absolute;right: 0.3rem;bottom: 0.3rem}
+.rent-commodity-list ul li .disabled{color:#666;border: 1px solid #666;}
+.rent-commodity-list ul li a{position: relative}
+.rent-commodity-list ul li .rent-img-state{position:absolute;top: 0.3rem}
+.rent-commodity-list ul li a p strong{margin-right: 0.1rem}
+.rent-commodity-list ul li a p span{float: none;margin-left: 0.1rem}
+/*支付页面*/
+.pay-money{width: 100%;;padding: 0.2rem 0.3rem;background: #fff;line-height: 1.2rem}
+.pay-money span{font-size: 0.36rem;}
+#pay-money{font-size: 0.42rem}
+.WeChat-pay{padding: 0.2rem 0.3rem;background: #fff;border-bottom: 1px solid #e8e8e8;position: relative}
+.WeChat-pay img:first-child{width: 1rem;height: 1rem;position: absolute;top:0}
+.WeChat-pay img:last-child{width: 0.2rem;height: 0.4rem;position: absolute;right: 0.3rem;top:0.3rem;}
+.WeChat-pay a{display: inline-block;width: 100%;height: 1rem;line-height: 1rem;position: relative}
+.Alipay-pay{padding: 0.2rem 0.3rem;background: #fff;position: relative}
+.Alipay-pay img:first-child{width: 1rem;height: 1rem;position: absolute;top:0}
+.Alipay-pay img:last-child{width: 0.2rem;height: 0.4rem;position: absolute;right: 0.3rem;top:0.3rem;}
+.Alipay-pay a{display: inline-block;width: 100%;height: 1rem;line-height: 1rem;position: relative}
+.Alipay-pay a span{padding-left: 1rem}
+.WeChat-pay a span{padding-left: 1rem}
+
+.WeChat-pay
+/*租赁列表详情页*/
+.item-detail ul li a .title-detail{line-height: 0.46rem;text-indent: 0;padding:0 0.1rem 0 0.2rem;text-align: left}
+.item-detail ul li a .title-detail span{float: none}
+.order-detail .order-padding .style-right{right: 0.3rem;left: auto}
+
+.rent-detail-pay a{width: 30%;height: 1rem;display: inline-block;text-align: center;position: absolute}
+.rent-detail-pay a:first-of-type{right: 38%;background: #fff;border: 1px solid #e8e8e8;color: #000;}
+.rent-detail-pay a:last-of-type{right: 0.3rem;background: #F85E46}
+
+/*下载上号器*/
+.downLoad_shq{width: 100%;height:1.6rem;padding:0.3rem 0.3rem;background: #fff;text-align:center;margin-top:0.6rem;}
+
+.downLoad_shq input{width:90%;height:1rem;background:#F85E46;border:none;color:#fff;font-size:0.36rem;}
+
+/*租号引导页*/
+.player-rent,.seller-rent{width: 100%;height: 1.6rem;position:relative;background: #fff;margin-top: 0.2rem;}
+.player-seller {width: 0.8rem;height: 0.7rem;position: absolute;top:0.45rem;left: 0.6rem}
+.player-rent a{width:100%;height: 1.6rem;display: inline-block;line-height: 1.6rem;position: absolute;left:0;}
+.seller-rent a{width:100%;height: 1.6rem;display: inline-block;line-height: 1.6rem;position: absolute;left:0;}
+.player-rent a span{padding-left: 2rem}
+.seller-rent a span{padding-left: 2rem}
+.toRight{width: 0.2rem;height: 0.36rem;position: absolute;right: 0.6rem;top:0.62rem}
+
+.player-rent1,.seller-rent1{width: 100%;position:relative;background: #fff;padding: 0 0.3rem;}
+.player-rent1 .toRight{width: 0.2rem;height: 0.36rem;position: absolute;right: 0.3rem;top: 0.32rem;}
+.seller-rent1 .toRight{width: 0.2rem;height: 0.36rem;position: absolute;right: 0.3rem;top: 0.32rem;}
+.seller-rent1 a{width: 100%;height: 1rem;display: inline-block;line-height: 1rem}
+.player-rent1 a{width: 100%;height: 1rem;display: inline-block;line-height: 1rem}
+/*选择游戏区服*/
+.recharge-content{position:relative;}
+.recharge-content  .search_qf{border:1px solid #e8e8e8;height:0.8rem;position:absolute;right:0.3rem;top:0.12rem;
+		text-align:center;background:url("../../images/search4.png")no-repeat;background-size:12%;background-position:0.4rem 0.2rem;}
+/*上传图片*/
+.upload-img {padding:0.4rem 0.4rem;}
+.upload-img div{width:1.4rem;height:1.4rem;border:1px solid #e8e8e8;text-align:center;}
+.upload-img div input{visibility:hidden;}
+.upload-img label {width:1.2rem;height:1.2rem;margin-top:0.1rem;background:url("../../images/tu.png") no-repeat center;background-size:cover;
+	display:inline-block;cursor:pointer;}
+/*上传图片描述*/
+.upload-img-detail textarea{border:none;width:100%;height:2rem;resize:none;font-size:0.30rem;padding:0.2rem 0.2rem;}
+.upload-img2{height:1.8rem;padding:0 0.3rem;}
+.upload-img2 div input{visibility:hidden;}
+.upload-img2 div img{width:1.6rem;height:1.6rem;margin-right:0.2rem;}
+.upload-img2 label{width:1.6rem;height:1.6rem;}
+.upload-img2 div label{width:1.6rem;height:1.6rem;border:1px solid #e8e8e8;background:url("../../images/expo-increase-hov.png")no-repeat center;
+	background-size:cover;display:inline-block}
+.upload-img2 div{position:relative;}
+.upload-img2 div .close-img{width:0.3rem;height:0.3rem;position:absolute;top:-0.1rem;left:-0.1rem;}
+
+
+
+
+
+
+
+
+
+

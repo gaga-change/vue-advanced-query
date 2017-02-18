@@ -1,0 +1,150 @@
+/*页面路由*/
+
+/*页面路由效果*/ 
+.sidebarMove {height: 100%;overflow: hidden;animation: sidebar-body-move .5s ease;-webkit-animation: sidebar-body-move .5s ease;position: relative;left: -100%}
+.sidebarBack {height: 100%;overflow: hidden; position: relative; animation: sidebar-body-back .50s ease;-webkit-animation: sidebar-body-back .50s ease; left: 0;}
+.sidebarMove body {height: 100%;overflow: hidden}
+.sidebarMove-hov {height: 100%;overflow: hidden;position: relative;left: -100%;}
+
+
+.sidebarMove-01 {height: 100%;overflow: hidden;animation: sidebar-body-move-01 .5s ease;-webkit-animation: sidebar-body-move-01 .5s ease;position: relative;left: -200%}
+.sidebarMove-01 body {height: 100%;overflow: hidden}
+.sidebarBack-01 {position: relative; height: 100%;overflow: hidden;animation: sidebar-body-back-01 .50s ease;-webkit-animation: sidebar-body-back-01 .50s ease; left: -100%;}
+.sidebarMove-01-hov{height: 100%;overflow: hidden;position: relative;left: -200%}
+
+
+.sidebarMove-02 {height: 100%;overflow: hidden;animation: sidebar-body-move-02 .5s ease;-webkit-animation: sidebar-body-move-02 .5s ease;position: relative;left: -300%}
+.sidebarMove-02 body {height: 100%;overflow: hidden}
+.sidebarBack-02 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-02 .50s ease;-webkit-animation: sidebar-body-back-02 .50s ease; left: -200%;}
+.sidebarMove-02-hov {height: 100%;overflow: hidden;position: relative;left: -300%}
+
+
+.sidebarMove-03 {height: 100%;overflow: hidden;animation: sidebar-body-move-03 .5s ease;-webkit-animation: sidebar-body-move-03 .5s ease;position: relative;left: -400%}
+.sidebarMove-03 body {height: 100%;overflow: hidden}
+.sidebarBack-03 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-03 .50s ease;-webkit-animation: sidebar-body-back-03 .50s ease; left: -300%;}
+.sidebarMove-03-hov {height: 100%;overflow: hidden;position: relative;left: -400%}
+
+.sidebarMove-04 {height: 100%;overflow: hidden;animation: sidebar-body-move-04 .5s ease;-webkit-animation: sidebar-body-move-04 .5s ease;position: relative;left: -500%}
+.sidebarMove-04 body {height: 100%;overflow: hidden}
+.sidebarBack-04 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-04 .50s ease;-webkit-animation: sidebar-body-back-04 .50s ease; left: -400%;}
+.sidebarMove-04-hov {height: 100%;overflow: hidden;position: relative;left: -500%}
+
+.sidebarMove-05 {height: 100%;overflow: hidden;animation: sidebar-body-move-05 .5s ease;-webkit-animation: sidebar-body-move-05 .5s ease;position: relative;left: -600%}
+.sidebarMove-05 body {height: 100%;overflow: hidden}
+.sidebarBack-05 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-05 .50s ease;-webkit-animation: sidebar-body-back-05 .50s ease; left: -500%;}
+.sidebarMove-05-hov {height: 100%;overflow: hidden;position: relative;left: -600%}
+
+@keyframes sidebar-body-move {0% {left: 0}100% {left: -100%}}
+@keyframes sidebar-body-back {0% {left: -100%}100% {left: 0}}
+@-webkit-keyframes sidebar-body-move {0% {left: 0}100% {left: -100%}}
+@-webkit-keyframes sidebar-body-back {0% {left: -100%}100% {left: 0}}
+
+@keyframes sidebar-body-move-01 {0% {left: -100%}100% {left: -200%}}
+@keyframes sidebar-body-back-01 {0% {left: -200%}100% {left: -100%}}
+@-webkit-keyframes sidebar-body-move-01 {0% {left: -100%}100% {left: -200%}}
+@-webkit-keyframes sidebar-body-back-01 {0% {left: -200%}100% {left:-100%}}
+
+@keyframes sidebar-body-move-02 {0% {left: -200%}100% {left: -300%}}
+@keyframes sidebar-body-back-02 {0% {left: -300%}100% {left: -200%}}
+@-webkit-keyframes sidebar-body-move-02 {0% {left: -200%}100% {left: -300%}}
+@-webkit-keyframes sidebar-body-back-02 {0% {left: -300%}100% {left:-200%}}
+
+@keyframes sidebar-body-move-03 {0% {left: -300%}100% {left: -400%}}
+@keyframes sidebar-body-back-03 {0% {left: -400%}100% {left: -300%}}
+@-webkit-keyframes sidebar-body-move-03 {0% {left: -300%}100% {left: -400%}}
+@-webkit-keyframes sidebar-body-back-03 {0% {left: -400%}100% {left:-300%}}
+
+
+@keyframes sidebar-body-move-04 {0% {left: -400%}100% {left: -500%}}
+@keyframes sidebar-body-back-04 {0% {left: -500%}100% {left: -400%}}
+@-webkit-keyframes sidebar-body-move-04 {0% {left: -400%}100% {left: -500%}}
+@-webkit-keyframes sidebar-body-back-04 {0% {left: -500%}100% {left:-400%}}
+
+@keyframes sidebar-body-move-05 {0% {left: -500%}100% {left: -600%}}
+@keyframes sidebar-body-back-05 {0% {left: -600%}100% {left: -500%}}
+@-webkit-keyframes sidebar-body-move-05 {0% {left: -500%}100% {left: -600%}}
+@-webkit-keyframes sidebar-body-back-05 {0% {left: -600%}100% {left:-500%}}
+
+
+/*路由过渡效果*/
+.gdu { display:none; height:100% !important; background: #f1f1f1 !important;}
+.rele { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-01 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-02 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-03 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-04 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-05 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+
+.conpl {width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 0;right: 0;/* margin: 0 -384px; */z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 150%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+
+
+.conhv-01{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 250%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-02{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 350%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-03{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 450%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-04{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 550%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-05{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 650%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+
+
+/**/
+.coinpub-main{ height:auto; display:block; overflow:hidden;}
+.coinpbsh-content{ height:auto; display:block; overflow:hidden;}
+
+.coinpbsh-content .coinspsh-list ul li{height:1.1rem;}
+.coinpbsh-content .coinspsh-list ul li .copsh-lf{ height:1.1rem; line-height:1.1rem; min-width:1.2rem;}
+.coinpbsh-content .coinspsh-list ul li .copsh-cn{ height:1.1rem; line-height:1.1rem; margin-left:0.8rem;}
+
+.coinpbsh-content .coinspsh-list ul li .clist-rg{ width:auto; display:block;}
+.coinpbsh-content .coinspsh-list ul li .copsh-rg { width:70%; display:block; overflow:hidden; height:auto;}
+
+.coinpbsh-content .coinspsh-list ul li em.sh-tex{height:1.1rem; line-height:1.1rem; text-align:right; display:inline-block; width:12%;}
+.coinpbsh-content .coinspsh-list ul li em.sh-tner{height:1.1rem; line-height:1.1rem; display:inline-block;}
+.rest-fabu{ width:88%; height:0.98rem; line-height:0.98rem; border:none;webkit-appearance: none; outline:none; border-radius:0px; opacity:1;  }
+
+.coinpbsh-content .coinspsh-list ul li span.list{ width:auto; display:block; margin-top:0.23rem;}
+.coinpbsh-content .coinspsh-list ul li span.list em{ display:inline-block; width:0.64rem; height:0.64rem; background-color:#ffffff; float:left;}
+.coinpbsh-content .coinspsh-list ul li span.list em a{float:left; width:0.64rem; height:0.64rem; background-size:40% !important; display:block; border:1px solid #d3d3d3;}
+.coinpbsh-content .coinspsh-list ul li span.list em a.ch_redu{ background:url(../../images/co_redu.png) no-repeat center center;background-color:#f4f4f4;}
+.coinpbsh-content .coinspsh-list ul li span.list em a.ch_redu_hov{ background:url(../../images/ch_redu_hov.png) no-repeat center center;background-color:#f4f4f4;}
+.coinpbsh-content .coinspsh-list ul li span.list em a.ch_add{ background:url(../../images/co_add.png) no-repeat center center; background-color:#f4f4f4;}
+.coinpbsh-content .coinspsh-list ul li span.list .char-fabu{ height:0.64rem; line-height:0.64rem; border:1px solid #d3d3d3; border-left:none; border-right:none; background-color:#fff; color:#000000; width:1.21rem; float:left; text-align:center; -webkit-appearance: none; outline:none; border-radius:0px; opacity:1; font-family:"Arial"; padding:0;}
+
+.coinpbsh-content .coinspsh-list ul li .copsh-lf i.send-ico{ display:inline-block; width:0.34rem; height:0.34rem; float:left; text-align:center; line-height:0.34rem; margin-top:0.38rem;}
+.coinpbsh-content .coinspsh-list ul li .copsh-lf i.sale-ico{ display:inline-block; width:0.68rem; height:1.1rem; background:url(../../images/anfw-ico.png) no-repeat center center; background-size:0.34rem;}
+
+
+/*左右切换按钮*/
+.button-switch{ display: block; width: 1.18rem; height: .59rem}
+.label-switch {display: inline-block;vertical-align: middle;width: 100%;border-radius:.4rem;box-sizing: border-box;height: 100%;position: relative;cursor: pointer;-webkit-align-self: center;align-self: center;}
+.label-switch .checkbox {width: 100%;border-radius: .4rem;box-sizing: border-box;height: 100%;background: #9f9d9d;z-index: 0;margin: 0;padding: 0;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;appearance: none;border: none;cursor: pointer;position: relative;}
+.label-switch .checkbox:before {content: ' ';position: absolute;left: 0px;top: 0px; margin:2%; width:96%;border-radius: .4rem;box-sizing: border-box;height: 98%;background: #9f9d9d;z-index: 1;-webkit-transition-duration: 300ms;transition-duration: 300ms;-webkit-transform: scale(1);transform: scale(1);}
+.label-switch .checkbox:after {content: ' ';height: 92%;width: 50%;border-radius: .4rem;background: #fff;position: absolute;z-index: 2;top: 0px;left: 0px;margin:2%;box-shadow: 0 .05rem 0.12rem rgba(0, 0, 0, 0.4);-webkit-transform: translateX(0px);transform: translateX(0px);-webkit-transition-duration: 300ms;transition-duration: 300ms;}
+.label-switch input[type="checkbox"] {display: none;}
+.label-switch input[type="checkbox"]:checked + .checkbox {background: #4cd964;}
+.label-switch input[type="checkbox"]:checked + .checkbox:before {-webkit-transform: scale(0);transform: scale(0);}
+.label-switch input[type="checkbox"]:checked + .checkbox:after {-webkit-transform: translateX(92%);transform: translateX(92%);}
+.label-switch input[type="checkbox"] + .checkbox {-webkit-transition-duration: 0;transition-duration: 0;}
+.label-switch input[type="checkbox"] + .checkbox:after,html.android .label-switch input[type="checkbox"] + .checkbox:before {-webkit-transition-duration: 0;transition-duration: 0;}
+
+/*底部按钮*/
+.coinspsh-btn{ display:block; height:auto; overflow:hidden; width:100%;}
+.coinspsh-btn a.ph-btn{height:0.92rem; line-height:0.92rem; text-align:center; display:block; background:#cfcfcf;}
+.coinspsh-btn a.active{ background:#f75e46;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

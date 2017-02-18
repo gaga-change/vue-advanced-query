@@ -1,0 +1,96 @@
+
+/*WJR Personal style*/
+/*折扣图标*/
+.discount-conn{ position:relative; width:auto; height:0.48rem;}
+.discount-conn span.ct-folded{ display:inline-block;  background:url(../../images/ct-ico.png) no-repeat 0 0; width:1.29rem; height:0.48rem; line-height:0.48rem; border-radius:0.06rem; padding-left:0.18rem; text-align:center; background-size:100%;}
+.discount-conn span.ct-folded em{font-family:"Arial";}
+
+.recharge-content{ height:auto; display:block; overflow:hidden;}
+.recharge-content .rechcon-titl{ height:1rem; line-height:1rem;}
+
+.recharge-content .rechcon-list{height:auto; display:block; overflow:hidden;}
+
+.recharge-content .rechcon-list ul li{height:1rem;}
+.recharge-content .rechcon-list ul li .relist-lf{ height:1rem; line-height:1rem; min-width:1.2rem;}
+.recharge-content .rechcon-list ul li .relist-cn{ height:1rem; line-height:1rem; margin-left:0.8rem;}
+
+.recharge-content .rechcon-list ul li .relist-rg{ width:auto; display:block; overflow:hidden;}
+.recharge-content .rechcon-list ul li .relcon-rg { width:70%; display:block; overflow:hidden; height:auto;}
+
+.recharge-btn{ display:block; height:auto; overflow:hidden; width:100%;}
+.recharge-btn a{height:0.92rem; line-height:0.92rem; text-align:center; display:block;}
+
+/*图片垂直居中*/
+#wrapper span.middle{height:100%; display:inline-block; vertical-align:middle;}
+/*顶部右右侧分享*/
+.top-header .share{display:block; height:.96rem; width:.75rem; background:url(../../images/share.png) 0 center no-repeat; text-indent:-9999px; background-size:.44rem;}
+.top-header .button01{display:block; line-height:.72rem;  padding:0 .4rem; margin-top:.12rem}
+
+/*表格*/
+.table{width:100%;max-width:100%;border-collapse:collapse;border-spacing:0;}
+.table th{border-bottom:2px solid #e8e8e8;vertical-align:bottom;padding:.08rem 0;text-align:left; width:25%;}
+.table td{border:1px solid #e8e8e8;padding:.08rem 0;vertical-align:middle; width:25%;}
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th{background-color:#f9f9f9;}/*条纹-IE9以下无效果*/
+.table-bordered th,.table-bordered td{border:solid 1px #e8e8e8;}
+.table-bordered th{border-bottom:2px solid #e8e8e8;}
+.table-hover > tbody > tr:hover > td,.table-hover > tbody > tr:hover > th{background-color:#f5f5f5;}/*不支持IE6*/
+.table-condensed th,.table-condensed td{padding:.05rem;}
+@media (max-width:760px){
+    .table-responsive{width:100%;overflow-x:scroll;overflow-y:hidden;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar;}
+    .table-responsive .table tr th, .table-responsive .table tr td{white-space:nowrap;}
+}
+
+/*可带图标列表01*/
+.setup01{ line-height:1rem;}
+.setup01 .list-left{float:left;  position: relative; text-align:left; }
+.setup01 .list-left span{display:block; padding-left:.3rem; color:#333; line-height:1rem;}
+.setup01 .list-left span.icon01{ background:url(../../images/icon-s01.png) .3rem center no-repeat; padding-left:.9rem; background-size:.4rem;}
+.setup01 .list-left span.icon02{ background:url(../../images/icon-s02.png) .3rem center no-repeat; padding-left:.9rem; background-size:.4rem;}
+.setup01 .list-left span.icon03{ background:url(../../images/icon-s03.png) .3rem center no-repeat; padding-left:.9rem; background-size:.4rem;}
+.setup01 .list-left span.icon04{ background:url(../../images/icon-s04.png) .3rem center no-repeat; padding-left:.9rem; background-size:.4rem;}
+.setup01 .list-left span.icon05{ background:url(../../images/icon-s05.png) .3rem center no-repeat; padding-left:.9rem; background-size:.4rem;}
+.setup01 .list-right{float:right; position: relative; text-align:right; color:#333;}
+.setup01 .list-right span{ background:url(../../images/right.png) right center no-repeat; margin-right:.3rem; padding-right:.5rem; background-size:.13rem; }
+
+/*带图片列表01*/
+.setup02{}
+.setup02 .list-col{ padding:.3rem .4rem;}
+.setup02 .col-left{ }
+.setup02 .col-left img{ width:1.28rem; height:1.28rem; border-radius:15%;}
+.setup02 .col-left p.sp01{ height:1.28rem; }
+.setup02 .col-left p span.ss01{ line-height:.6rem; padding-top:.04rem;}
+.setup02 .col-left p span.ss02{ line-height:.6rem; }
+.setup02 .col-right{ line-height:1.28rem;}
+.setup02 .col-right span{ background:url(../../images/right.png) right center no-repeat; padding-right:.5rem; background-size:.13rem;}
+
+/*左右切换按钮*/
+.button-switch{ display: block; width: 1.18rem; height: .59rem}
+.label-switch {display: inline-block;vertical-align: middle;width: 100%;border-radius:.4rem;box-sizing: border-box;height: 100%;position: relative;cursor: pointer;-webkit-align-self: center;align-self: center;}
+.label-switch .checkbox {width: 100%;border-radius: .4rem;box-sizing: border-box;height: 100%;background: #9f9d9d;z-index: 0;margin: 0;padding: 0;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;appearance: none;border: none;cursor: pointer;position: relative;}
+.label-switch .checkbox:before {content: ' ';position: absolute;left: 0px;top: 0px; margin:2%; width:96%;border-radius: .4rem;box-sizing: border-box;height: 98%;background: #9f9d9d;z-index: 1;-webkit-transition-duration: 300ms;transition-duration: 300ms;-webkit-transform: scale(1);transform: scale(1);}
+.label-switch .checkbox:after {content: ' ';height: 92%;width: 50%;border-radius: .4rem;background: #fff;position: absolute;z-index: 2;top: 0px;left: 0px;margin:2%;box-shadow: 0 .05rem 0.12rem rgba(0, 0, 0, 0.4);-webkit-transform: translateX(0px);transform: translateX(0px);-webkit-transition-duration: 300ms;transition-duration: 300ms;}
+.label-switch input[type="checkbox"] {display: none;}
+.label-switch input[type="checkbox"]:checked + .checkbox {background: #4cd964;}
+.label-switch input[type="checkbox"]:checked + .checkbox:before {-webkit-transform: scale(0);transform: scale(0);}
+.label-switch input[type="checkbox"]:checked + .checkbox:after {-webkit-transform: translateX(92%);transform: translateX(92%);}
+.label-switch input[type="checkbox"] + .checkbox {-webkit-transition-duration: 0;transition-duration: 0;}
+.label-switch input[type="checkbox"] + .checkbox:after,html.android .label-switch input[type="checkbox"] + .checkbox:before {-webkit-transition-duration: 0;transition-duration: 0;}
+
+/*下拉选择*/
+.list-select{  position: relative; z-index:61;  }
+.list-select .select-main{ position: relative; line-height:.96rem; font-size:.3rem;}
+.list-select .select-left{z-index:2; float:left; width:50%; border-right:1px solid #e8e8e8; }
+.list-select .select-right{z-index:2; float:right; width:50%;}
+.list-select #divselect{ float:left; width:100%; margin:0 auto; position:relative; z-index:4;}
+.list-select #divselect2{ float:left; width:100%; margin:0 auto; position:relative; z-index:4;}
+.list-select .select-main span{display:block; width:100%; height:.96rem;line-height:.96rem; text-align:center; cursor:pointer; background: transparent; outline: 0; color:#000;}
+.list-select .select-main span cite{font-style:normal; color:#000;}
+.list-select .select-main span img{ padding-left:.2rem; width:.43rem; height:.14rem; }
+.list-select .showcata, .list-select .showcata2, .list-select .showcata3 ul{width:100%;border:1px solid #e8e8e8; position:relative; font-size:.3rem; }
+.list-select .showcata ul li, .list-select .showcata2 ul li, .list-select .showcata3 ul li{line-height:.96rem; border-bottom:1px solid #e8e8e8;  }
+.list-select .showcata ul li a, .list-select .showcata2 ul li a, .list-select .showcata3 ul li a{display:block; color:#333; text-decoration:none; }
+.list-select .showcata, .list-select .showcata2, .list-select .showcata3{ z-index:31; position:absolute; top:.96rem; width:100%; background:#fbfbfb; display:none; text-align:center;}
+.list-select .showcata4, .list-select .showcata5{width:100%;border:1px solid #e8e8e8; position:relative; font-size:.3rem; }
+.list-select .showcata4 ul li, .list-select .showcata5 ul li{line-height:.96rem; border-bottom:1px solid #e8e8e8;  }
+.list-select .showcata4 ul li a, .list-select .showcata5 ul li a{display:block; color:#333; text-decoration:none; }
+.list-select .showcata4, .list-select .showcata5{ z-index:31; position:absolute; top:.96rem; width:100%; background:#fbfbfb; display:none; text-align:center;}

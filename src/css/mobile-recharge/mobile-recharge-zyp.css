@@ -1,0 +1,109 @@
+/*zyp-5173*/
+
+.recharge{}
+.recharge-list{ padding:.3rem 0; }
+.recharge-list a{ float:left; width:25%; display:inline-block; text-align:center; color:#000; }
+.recharge-list i{ display:block; padding-top:1.3rem;  }
+.recharge-list i.re01{ background:url(../../images/re01.png) center 0 no-repeat; background-size:1.09rem; }
+.recharge-list i.re02{ background:url(../../images/re02.png) center 0 no-repeat; background-size:1.09rem; }
+.recharge-list i.re03{ background:url(../../images/re03.png) center 0 no-repeat; background-size:1.09rem; }
+.recharge-list i.re04{ background:url(../../images/re04.png) center 0 no-repeat; background-size:1.09rem; }
+
+.game-list{}
+.game-list .tab .tab-nav li{float:left; width:50%; text-align:center;}
+.game-list .tab .tab-nav li a{width:100%; float:left; border-right:1px solid #ddd; font-size:.32rem; color:#000; line-height:1.16rem; text-align:center;  border-bottom: 1px solid #ddd;  padding-left:.48rem;}
+.game-list .tab .tab-nav .active a{color:#f75e46; background:#fff; border-bottom: 1px solid #fff; }
+.game-list .tab .tab-nav li a.dn{ background:#f8f8f8 url(../../images/re05.png) 38% center no-repeat; background-size:.42rem;}
+.game-list .tab .tab-nav li.active a.dn{ background:url(../../images/re05b.png) 38% center no-repeat; background-size:.42rem;}
+.game-list .tab .tab-nav li a.sj{ background:#f8f8f8 url(../../images/re06.png) 38% center no-repeat; background-size:.42rem;}
+.game-list .tab .tab-nav li.active a.sj{ background:url(../../images/re06b.png) 38% center no-repeat; background-size:.42rem;}
+.game-list .tab-class01{float:left; width:86%; padding-top:.2rem; background:#fff; margin-bottom:1rem; }
+.game-list .tab-class01 ul li{width:33%; padding:.1rem 0 .2rem 0; font-size: .28rem; line-height:.68rem; text-align: center; float:left;  }
+.game-list .tab-class01 ul li a{ display:block; text-align: center; color:#333; }
+.game-list .tab-class01 ul li img{display:block; margin-bottom:.06rem; width:1.42rem; height:1.42rem; border-radius:15%; margin:0 auto; }
+.game-list .tab-class01 ul li a p{  white-space:nowrap; overflow:hidden; width:100%; padding:0 5%; margin-top:0;}
+.game-list .tab-letter{ position:relative; right:0; width:14%; overflow-y: scroll; z-index:59 ; background:#f1f1f1; -webkit-overflow-scrolling : touch;}
+.game-list .tab-letter a{ display:block; line-height:1rem; text-align:center; font-size:.42rem; color:#333;background:#f1f1f1;}
+.game-list .tab-letter a span{display:block; height:1rem; }
+.game-list .tab-letter a span.hot-img{background:url(../../images/hot.png) center center no-repeat; background-size:.39rem;}
+.game-list .tab-letter a.active span.hot-img{background:url(../../images/hot2.png) center center no-repeat; background-size:.39rem; }
+.game-list .tab-letter a.active{background:#fff; color:#f75e46;}
+
+.dcong-list{}
+.dcong-list .tab .tab-head{position:relative; z-index:32; }
+.dcong-list .tab .tab-nav li{float:left; width:50%; text-align:center;}
+.dcong-list .tab .tab-nav li a{width:100%; float:left; color:#000; line-height:.96rem; text-align:center; padding-left:.48rem;}
+.dcong-list .tab .tab-nav .active a{ color:#f75e46; border-bottom: .05rem solid #f75e46; }
+.dcong-list .tab .tab-nav li a.ios{ background:url(../../images/re07.png) 38% center no-repeat; background-size:.42rem;}
+.dcong-list .tab .tab-nav li.active a.ios{ background:url(../../images/re07b.png) 38% center no-repeat; background-size:.42rem;}
+.dcong-list .tab .tab-nav li a.android{ background:url(../../images/re08.png) 38% center no-repeat; background-size:.42rem;}
+.dcong-list .tab .tab-nav li.active a.android{ background:url(../../images/re08b.png) 38% center no-repeat; background-size:.42rem;}
+.dcong-list .tab .tab-body{  margin-bottom:1rem;}
+
+
+.list-con{}
+.list-con .list-col{ padding:.2rem .3rem;}
+.list-con .list-col h3{line-height:.5rem; }
+.list-con .list-col .col-left{ line-height:.5rem;}
+.list-con .col-left .p2 i.shang{ padding:0 .05rem; line-height:.24rem; background:#66c6fb; }
+.list-con .list-col .col-right{ line-height:1rem;}
+.list-con .list-col .col-right span{ float:left;}
+.list-con .col-right .s1{ min-width:1.5rem; background:url(../../images/zhe.png) left center no-repeat; background-size:1.29rem; }
+
+.store01{}
+.store01 .store01-img{ min-height:2.5rem; padding:.7rem .3rem 0 .3rem; background:url(../../images/bgstore01.jpg) 0 0 no-repeat; background-size:100%; }
+.store01 .store01-img img{ width:1.4rem; height:1.4rem; border:.03rem solid #7e7f8f; border-radius:15%;}
+.store01 .store01-img p{ height:1.4rem; line-height:.6rem; max-width:70%; overflow:hidden; padding-top:.1rem; }
+.store01 .store01-info span.sp01{ width:49%;}
+.store01 .store01-info span.sp02{ width:2%;}
+.store01 .store01-info span.sp03{ width:49%;}
+.game-list .game2{float:left; width:100%; padding:.15rem .3rem; height:1.2rem; position: relative; background:#fff; }
+.game-list .game2 span{float:left; width:50%; height:.36rem; line-height:.36rem; padding-left:.2rem; margin-top:.25rem; border-left:.06rem solid #f75e46; white-space:nowrap; }
+.game-list .game2 .text-input{float:left; height:.88rem; width:50%; padding-left:.96rem;  border:1px solid #e8e8e8; border-radius:0; background:url(../../images/search4.png) .3rem center no-repeat #fff; background-size:.33rem }
+
+.frs-share{ z-index:101; }
+.frs-share p{ line-height:1.1rem; text-align:center; margin-top:.5rem; }
+.frs-share .frs03{ background:#fff ; padding:.3rem .15rem;  }
+.frs-share .frs03 h3{ color:#666; text-align:center; margin-bottom:.2rem;}
+.frs-share .frs03 a{ float:left; width:25%; color:#333; text-align:center; }
+.frs-share .frs03 a em{ display:block; width:1.1rem; height:1.1rem; line-height:1.1rem; border:1px solid #dadada; text-align:center; border-radius:15%; margin:.2rem auto;  }
+.frs-share .frs03 a.fr-wx em{ background:url(../../images/fr-wx.png) center center no-repeat; background-size:.6rem;  }
+.frs-share .frs03 a.fr-friend em{ background:url(../../images/fr-friend.png) center center no-repeat; background-size:.6rem;  }
+.frs-share .frs03 a.fr-qq em{ background:url(../../images/fr-qq.png) center center no-repeat; background-size:.6rem;  }
+.frs-share .frs03 a.fr-zone em{ background:url(../../images/fr-zone.png) center center no-repeat; background-size:.6rem;  }
+
+.recharge-class table tr td a{width:100%; display:block; height:1.1rem; line-height:1.1rem; text-align:center; color:#000; overflow:hidden; }
+.recharge-tx img{ width:100%;}
+
+.setup-tx{ position: relative; border-bottom:1px solid #e8e8e8; background-color:#fff; line-height:1rem; padding:.3rem;  }
+.setup-tx .list-left-tx{float:left;  position: relative; text-align:left; }
+.setup-tx .list-left-tx span{display:block; font-size:.32rem; color:#333; line-height:1rem;}
+.setup-tx .list-right-tx{float:right; position: relative; text-align:right; color:#333;}
+.setup-tx .list-right-tx span{  display: inline-block; background:url(../../images/right.png) right center no-repeat;  background-size:.13rem;  }
+.setup-tx .list-right-tx span img{ height:1rem; width:1rem; margin-right:.5rem; }
+
+
+/*修改头像*/
+#clipArea {height: 6.5rem;}
+#clipBtn { display:none;}
+#view {margin: 0 auto;width: 2rem;height: 2rem; margin-top:2.3rem;}
+.top-right #file{}
+.top-right .input-file{display:inline-block; float:left; position:relative;overflow:hidden; }
+.top-right .input-file input[type="file"]{position:absolute;top:0;right:0;background-color:#fff;transform:translate(-300px, 0px) scale(4);height:.4rem;opacity:0;filter:alpha(opacity=0);}
+.top-right .input:focus{border-color:#09c;transition:all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;}
+.photo-clip-view{}
+#fabuDl{display:none;}
+
+.stat-list{}
+.stat-list .table td{padding:.32rem 0;}
+.stat-list .table td i{ display:inline-block; width:.28rem; height:.28rem; border:1px solid #d7d7d7; margin-right:.2rem;vertical-align:-.05rem; margin-left:.4rem;}
+.stat-list .table td i.active{ background:url(../../images/ok2.png) center center no-repeat ; background-size: .24rem;}
+.stat-list .table td i.fix{ background:url(../../images/ok2.png) center center no-repeat ; background-size: .24rem;}
+.date-choice{ padding:.17rem .3rem; }
+.date-choice span{ display:block; height:.66rem; line-height:.66rem; }
+.date-choice .dtitle{ float:Left; width:30%; }
+.date-choice .dtime01{ float:Left; width:30%; }
+.date-choice .dtime01 input{ border:1px solid #d4d4d4; height:.66rem; }
+.date-choice .dtime02{ float:left; width:30%; }
+.date-choice .dtime02 input{ border:1px solid #d4d4d4; height:.66rem; }
+.date-choice .dzi{ float:left; width:10%; }

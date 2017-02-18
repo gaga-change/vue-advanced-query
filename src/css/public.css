@@ -1,0 +1,343 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html,body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,textarea,p,blockquote,td {margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+html{height: 100%;}
+body {
+    font-size: 12px;
+    font-family: "Microsoft Yahei",'Arial',sans-serif;
+    background:url(../images/bodybj.png) center 0 repeat-y #f1f1f1;
+}
+label, select {vertical-align:middle; border:none; font-family: "Microsoft Yahei"; }
+input{vertical-align:middle; border:none;font-family:"Arial";}
+strong{ font-weight:normal}
+img, button {background:none;border:0 none;}
+ol,ul,li {list-style:none;}
+i,em{ font-style:normal;}
+a {outline: 0; background-color: transparent; text-decoration: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color:#333;}
+a:link {text-decoration: none;}
+table{border-spacing:0;border-collapse:collapse;}
+input,div{outline: 0; background-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+.lf{ float:left;}
+.rt{ float:right;}
+.fuwenpage{clear:both;}
+
+/*IOS*/
+input[type="button"]{-webkit-appearance: none; outline:none; cursor:pointer; border-radius:0;}
+input[type="submit"]{-webkit-appearance: none; outline:none; cursor:pointer; border-radius:0;}
+input[type="text"]{-webkit-appearance: none; outline:none; cursor:pointer; border-radius:0; }
+input[type="number"]{-webkit-appearance: none; outline:none; cursor:pointer; border-radius:0; }
+input[type="tel"]{-webkit-appearance: none; outline:none; cursor:pointer; border-radius:0; }
+a:focus,*:focus { outline:none;}
+.clearfix:before,.clearfix:after { content:""; display:table;}
+.clearfix:after {clear:both; overflow:hidden;}
+.clearfix { zoom:1; /* for ie6 & ie7 */}
+.clearer { clear:both; display:block;	*display:none; font-size:0; height:0; line-height:0; overflow:hidden;}
+.clear { clear:both; display:block; font-size:0; height:0; line-height:0; overflow:hidden;}
+
+/*移除HTML5 input在type="number"时的上下小箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+/* scorll */
+/*::-webkit-scrollbar-track-piece{ background-color:#fff; -webkit-border-radius:0;ss}
+::-webkit-scrollbar{ width:15px; height:8px;}
+::-webkit-scrollbar-thumb{ height:50px; background-color:#999; -webkit-border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{ height:50px; background-color:#9f9f9f; -webkit-border-radius:10px;}*/
+/* scorll end */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #c7c4c4;  font-family: "Microsoft Yahei";
+}
+input::-moz-placeholder, textarea:-moz-placeholder {
+    color: #c7c4c4;  font-family: "Microsoft Yahei";
+}
+
+input::-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #c7c4c4;  font-family: "Microsoft Yahei";
+}
+
+
+
+
+
+
+/*页面路由效果*/ 
+.sidebarMove {height: 100%;overflow: hidden;animation: sidebar-body-move .5s ease;-webkit-animation: sidebar-body-move .5s ease;position: relative;left: -100%}
+.sidebarBack {height: 100%;overflow: hidden; position: relative; animation: sidebar-body-back .50s ease;-webkit-animation: sidebar-body-back .50s ease; left: 0;}
+.sidebarMove body {height: 100%;overflow: hidden}
+.sidebarMove-hov {height: 100%;overflow: hidden;position: relative;left: -100%;}
+
+
+.sidebarMove-01 {height: 100%;overflow: hidden;animation: sidebar-body-move-01 .5s ease;-webkit-animation: sidebar-body-move-01 .5s ease;position: relative;left: -200%}
+.sidebarMove-01 body {height: 100%;overflow: hidden}
+.sidebarBack-01 {position: relative; height: 100%;overflow: hidden;animation: sidebar-body-back-01 .50s ease;-webkit-animation: sidebar-body-back-01 .50s ease; left: -100%;}
+.sidebarMove-01-hov{height: 100%;overflow: hidden;position: relative;left: -200%}
+
+
+.sidebarMove-02 {height: 100%;overflow: hidden;animation: sidebar-body-move-02 .5s ease;-webkit-animation: sidebar-body-move-02 .5s ease;position: relative;left: -300%}
+.sidebarMove-02 body {height: 100%;overflow: hidden}
+.sidebarBack-02 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-02 .50s ease;-webkit-animation: sidebar-body-back-02 .50s ease; left: -200%;}
+.sidebarMove-02-hov {height: 100%;overflow: hidden;position: relative;left: -300%}
+
+
+.sidebarMove-03 {height: 100%;overflow: hidden;animation: sidebar-body-move-03 .5s ease;-webkit-animation: sidebar-body-move-03 .5s ease;position: relative;left: -400%}
+.sidebarMove-03 body {height: 100%;overflow: hidden}
+.sidebarBack-03 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-03 .50s ease;-webkit-animation: sidebar-body-back-03 .50s ease; left: -300%;}
+.sidebarMove-03-hov {height: 100%;overflow: hidden;position: relative;left: -400%}
+
+.sidebarMove-04 {height: 100%;overflow: hidden;animation: sidebar-body-move-04 .5s ease;-webkit-animation: sidebar-body-move-04 .5s ease;position: relative;left: -500%}
+.sidebarMove-04 body {height: 100%;overflow: hidden}
+.sidebarBack-04 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-04 .50s ease;-webkit-animation: sidebar-body-back-04 .50s ease; left: -400%;}
+.sidebarMove-04-hov {height: 100%;overflow: hidden;position: relative;left: -500%}
+
+.sidebarMove-05 {height: 100%;overflow: hidden;animation: sidebar-body-move-05 .5s ease;-webkit-animation: sidebar-body-move-05 .5s ease;position: relative;left: -600%}
+.sidebarMove-05 body {height: 100%;overflow: hidden}
+.sidebarBack-05 {height: 100%;overflow: hidden;position: relative;animation: sidebar-body-back-05 .50s ease;-webkit-animation: sidebar-body-back-05 .50s ease; left: -500%;}
+.sidebarMove-05-hov {height: 100%;overflow: hidden;position: relative;left: -600%}
+
+@keyframes sidebar-body-move {0% {left: 0}100% {left: -100%}}
+@keyframes sidebar-body-back {0% {left: -100%}100% {left: 0}}
+@-webkit-keyframes sidebar-body-move {0% {left: 0}100% {left: -100%}}
+@-webkit-keyframes sidebar-body-back {0% {left: -100%}100% {left: 0}}
+
+@keyframes sidebar-body-move-01 {0% {left: -100%}100% {left: -200%}}
+@keyframes sidebar-body-back-01 {0% {left: -200%}100% {left: -100%}}
+@-webkit-keyframes sidebar-body-move-01 {0% {left: -100%}100% {left: -200%}}
+@-webkit-keyframes sidebar-body-back-01 {0% {left: -200%}100% {left:-100%}}
+
+@keyframes sidebar-body-move-02 {0% {left: -200%}100% {left: -300%}}
+@keyframes sidebar-body-back-02 {0% {left: -300%}100% {left: -200%}}
+@-webkit-keyframes sidebar-body-move-02 {0% {left: -200%}100% {left: -300%}}
+@-webkit-keyframes sidebar-body-back-02 {0% {left: -300%}100% {left:-200%}}
+
+@keyframes sidebar-body-move-03 {0% {left: -300%}100% {left: -400%}}
+@keyframes sidebar-body-back-03 {0% {left: -400%}100% {left: -300%}}
+@-webkit-keyframes sidebar-body-move-03 {0% {left: -300%}100% {left: -400%}}
+@-webkit-keyframes sidebar-body-back-03 {0% {left: -400%}100% {left:-300%}}
+
+
+@keyframes sidebar-body-move-04 {0% {left: -400%}100% {left: -500%}}
+@keyframes sidebar-body-back-04 {0% {left: -500%}100% {left: -400%}}
+@-webkit-keyframes sidebar-body-move-04 {0% {left: -400%}100% {left: -500%}}
+@-webkit-keyframes sidebar-body-back-04 {0% {left: -500%}100% {left:-400%}}
+
+@keyframes sidebar-body-move-05 {0% {left: -500%}100% {left: -600%}}
+@keyframes sidebar-body-back-05 {0% {left: -600%}100% {left: -500%}}
+@-webkit-keyframes sidebar-body-move-05 {0% {left: -500%}100% {left: -600%}}
+@-webkit-keyframes sidebar-body-back-05 {0% {left: -600%}100% {left:-500%}}
+
+
+/*路由过渡效果*/
+.gdu { display:none; height:100% !important; background: #f1f1f1 !important;}
+.rele { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-01 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-02 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-03 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-04 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+.rele-05 { display:none; height:100% !important; background: #f1f1f1 !important;    overflow: hidden;}
+
+.conpl {width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 0;right: 0;/* margin: 0 -384px; */z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 150%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+
+
+.conhv-01{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 250%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-02{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 350%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-03{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 450%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-04{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 550%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+.conhv-05{width: 100%;height: auto;max-width: 768px;position: absolute;top: 0;left: 650%;right: 0;margin: 0 -50%; z-index: 120;overflow-y: hidden;overflow-x: hidden;-webkit-transform-origin: 0px 0px;-webkit-transform: scale(1, 1);opacity: 1;background: white; display:block;}
+
+
+.kf2{bottom:40%; width:2.04rem; height:2.4rem;  max-width:768px; text-align:right; position:fixed;right:0}
+.kf2 img{ float:right; width:2rem; }
+
+
+
+.pop-share {z-index: 1000;position: fixed;left: 0; right: 0;top: 0;bottom: 0;width: 100%;height: 100%;background-size: 100% auto !important;opacity:0.85;filter:alpha(opacity=85);-moz-opacity:0.85;}
+.pop-share3 {background:#000 url(../images/bg_pop.png) center top no-repeat;}
+.pop-share2 {background:#000 url(../images/android.png)center top no-repeat;}
+
+/*对话框*/
+.fr{float:right;}
+.fl{float:left; }
+.margin-top{margin-top:20px;}
+.border-top{ border-top:1px solid #e8e8e8;}
+.border-bottom{ border-bottom:1px solid #e8e8e8;}
+.border-right{ border-right:1px solid #e8e8e8;}
+.border-left{ border-left:1px solid #e8e8e8;}
+.dialog-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:#000;z-index:2010;filter:alpha(opacity=50);opacity:.5;display:block;overflow-x:hidden;overflow-y:auto;}
+.dialog{border:1px solid #ddd;box-shadow:0 3px 9px rgba(0, 0, 0, 0.5);border-radius:10px;background-color:#fff;display:none;}
+.dialog .dialog-head,.dialog .dialog-foot{padding:.2rem .5rem;}
+.dialog .dialog-head{border-bottom:solid 1px #ddd;background-color:#f5f5f5;border-radius:4px 4px 0 0;}
+.dialog .dialog-head strong{font-size:.333rem;}
+.dialog .dialog-head .close{float:right;}
+.dialog .dialog-body{padding:.2rem .5rem;}
+.dialog .dialog-foot{text-align:right;border-top:solid 1px #ddd;}
+
+.plcheck{font-size:.667rem;}
+.plcheck .dialog-head{background-color:#fff; border-bottom:0;}
+.plcheck .plcheck02{float:left ; width:100%; height:2.2rem; line-height:2.2rem; text-align:center; }
+.plcheck .plcheck02 span{padding:0 .4rem; color:#f75e46;font-size:.833rem; }
+.plcheck .plcheck03{float:left ; width:100%; box-sizing:border-box;  }
+.plcheck .plcheck03 a{float:left ; width:50%; box-sizing:border-box; color:#007aff; line-height:2.1rem; text-align:center;  }
+.plcheck .plcheck01{float:left ; width:100%;  line-height:1.667rem; vertical-align:middle; text-align:center;padding-top:1rem; padding-left:1rem; box-sizing:border-box;}
+.plcheck .plcheck01 .cart-add{display:inline-block; float:left; width:1.667rem; height:1.667rem; border:1px solid #f75e46; text-align:center; line-height:1.6rem; color:#f75e46; cursor:pointer; font-size:1rem; margin-right:.5rem;}
+.plcheck .plcheck01 .cart-reducation{display:inline-block; float:left; width:1.667rem; height:1.667rem; border:1px solid #dedede; text-align:center; line-height:1.6rem; color:#999; cursor:pointer ;font-size:1rem; margin-left:.5rem;}
+.plcheck .plcheck01  input{display:inline-block; margin:0 .333rem; float:left; width:2.95rem; height:1.667rem; border:1px solid #dedede; text-align:center; font-size:.833rem;  }
+
+.maskdiv {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 30;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.maskdiv2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 30;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.maskdiv3 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 30;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html {  font-size : 20px;  }
+@media only screen and (min-width:320px) {
+    html {  font-size: 20px; }
+}
+@media only screen and (min-width:360px) {
+    html {  font-size: 22.5px; }
+}
+@media only screen and (min-width:375px) {
+    html {  font-size: 23.4375px; }
+}
+@media only screen and (min-width:384px) {
+    html {  font-size: 24px; }
+}
+@media only screen and (min-width:412px) {
+    html {  font-size: 25.75px; }
+}
+@media only screen and (min-width:414px) {
+    html {  font-size: 25.875px; }
+}
+@media only screen and (min-width:600px) {
+    html {  font-size: 37.5px; }
+}
+@media only screen and (min-width:760px) {
+    html {  font-size: 48px ; }
+}
+@media only screen and (min-width:769px) {
+    html {  font-size: 24px ; }
+}
+
+
+/*弹窗-标准*/
+.dialog_cover { width: 100%; height: 100%; /* 设置背景的高度 */ position:fixed; _position:absolute;background: #333; filter: alpha(opacity=50); opacity: 0.5; left: 0; top: 0; display: block; z-index: 555; }
+.raffle-box { width: 600px;height: auto; border-radius: 20px; margin: 35px auto 25px; position: relative; background-color:#fff; opacity:1;}
+.hide {display: none;}
+.pubhide{display: none !important;}
+.fortunel-main{ height:auto; display:block; overflow:hidden;}
+.fortunel-main  .fortun-conn{height:auto; display:block; overflow:hidden;}
+.fortunel-main .fortun-conn .rtun-plo {text-align: center; font-size: 36px; padding: 60px 0; line-height: 56px;}
+.fortunel-main .fortun-conn .rtun-btn {height: 94px;border-top: 1px solid #e8e8e8;text-align: center}
+.fortunel-main .fortun-conn .rtun-btn a {display: inline-block;height: 100px;line-height: 100px;color: #007aff;font-size: 30px;width: 49%;}
+.fortunel-main .fortun-conn .rtun-btn a.bordrht{border-right: 1px solid #e8e8e8;}
+.fortunel-main .fortun-conn .rtun-btn a.closeSmb{border-right: 1px solid #e8e8e8;}
+.fortunel-main .fortun-conn .rtun-btn a#isSure_form{border-right: 1px solid #e8e8e8;}
+
+.fortunel-main .fortun-conn .rtun-ord{padding: 38px 38px 0; text-align: center;}
+.fortunel-main .fortun-conn .rtun-ord h2{height: 72px; line-height: 72px; font-size: 32px; color: #000000;}
+.fortunel-main .fortun-conn .rtun-ord p{line-height: 66px; font-size: 36px; color: #000000;}
+.fortunel-main .fortun-conn .rtun-ord p strong{ color: #f75e46; display:block;}
+.fortunel-main .fortun-conn .rtun-ord p strong i{ font-size: 40px; font-family:"Arial"}
+.fortunel-main .fortun-conn .ord-btn{ padding: 30px 38px;}
+.fortunel-main .fortun-conn .ord-btn a{ display: block; height: 92px; line-height:92px; text-align: center; font-size: 36px; color: #ffffff; background: #f75e46;}
+.fortunel-main .fortun-conn .ord-cxin{ padding: 0 38px 38px;}
+.fortunel-main .fortun-conn .ord-cxin a{display: block; text-align: right; height: 50px; line-height: 50px; font-size: 30px; color: #464646;}
+
+@media screen and (min-width: 770px) and (max-width: 1920px){
+    /*弹窗*/
+    .raffle-box { width: 300px; height:auto; border-radius: 10px;}
+    .fortunel-main .fortun-conn .rtun-plo{ text-align: center; font-size: 18px; padding: 20px; line-height: 35px; height: auto;}
+    .fortunel-main .fortun-conn .rtun-btn{ height:60px;}
+    .fortunel-main .fortun-conn .rtun-btn a{ height:60px; line-height:60px; font-size:18px;}
+    .fortunel-main .fortun-conn .rtun-ord{ padding: 20px 20px 0;}
+    .fortunel-main .fortun-conn .rtun-ord h2{ height: 30px; line-height: 30px; font-size: 16px;}
+    .fortunel-main .fortun-conn .rtun-ord p{ line-height: 28px; font-size: 18px; margin-top: 10px;}
+    .fortunel-main .fortun-conn .rtun-ord p strong i{ font-size: 18px;}
+    .fortunel-main .fortun-conn .ord-btn{ padding: 20px;}
+    .fortunel-main .fortun-conn .ord-btn a{ font-size: 18px; height: 56px; line-height: 56px;}
+    .fortunel-main .fortun-conn .ord-cxin{ padding: 0 20px 20px;}
+    .fortunel-main .fortun-conn .ord-cxin a{ font-size: 18px; height: 24px; line-height: 24px;}
+}
+
+@media screen and (min-width: 320px) and (max-width: 764px){
+    /*弹窗*/
+    .raffle-box { width: 300px; height:auto; border-radius: 10px;}
+    .fortunel-main .fortun-conn .rtun-plo{ text-align: center; font-size: 18px; padding: 20px; line-height: 35px; height: auto;}
+    .fortunel-main .fortun-conn .rtun-btn{ height:60px;}
+    .fortunel-main .fortun-conn .rtun-btn a{ height:60px; line-height:60px; font-size:18px;}
+    .fortunel-main .fortun-conn .rtun-ord{ padding: 20px 20px 0;}
+    .fortunel-main .fortun-conn .rtun-ord h2{ height: 30px; line-height: 30px; font-size: 16px;}
+    .fortunel-main .fortun-conn .rtun-ord p{ line-height: 28px; font-size: 18px; margin-top: 10px;}
+    .fortunel-main .fortun-conn .rtun-ord p strong i{ font-size: 18px;}
+    .fortunel-main .fortun-conn .ord-btn{ padding: 20px;}
+    .fortunel-main .fortun-conn .ord-btn a{ font-size: 18px; height: 56px; line-height: 56px;}
+    .fortunel-main .fortun-conn .ord-cxin{ padding: 0 20px 20px;}
+    .fortunel-main .fortun-conn .ord-cxin a{ font-size: 18px; height: 24px; line-height: 24px;}
+}
+@media screen and (min-width: 320px) and (max-width: 370px){
+    /*弹窗*/
+    .raffle-box{ width: 260px;}
+    .fortunel-main .fortun-conn .rtun-plo{ font-size: 16px; padding: 15px;}
+    .fortunel-main .fortun-conn .rtun-btn{ height: 56px;}
+    .fortunel-main .fortun-conn .rtun-btn a{ font-size: 16px;}
+    .fortunel-main .fortun-conn .rtun-ord{ padding: 15px 15px 0;}
+    .fortunel-main .fortun-conn .rtun-ord h2{font-size: 14px;}
+    .fortunel-main .fortun-conn .rtun-ord p{font-size: 16px; margin-top: 2px;}
+    .fortunel-main .fortun-conn .ord-btn{ padding: 15px;}
+    .fortunel-main .fortun-conn .ord-btn a{ font-size: 16px; height: 40px; line-height: 40px;}
+    .fortunel-main .fortun-conn .ord-cxin{ padding: 0 15px 15px;}
+    .fortunel-main .fortun-conn .ord-cxin a{ font-size: 16px;}
+
+    .rele-gree{ padding:20px 0;}
+    .rele-gree .gree-f span input{ width: 18px; height: 18px;}
+    .rele-gree .gree-f{ font-size:14px;}
+
+}
+
+
+
+

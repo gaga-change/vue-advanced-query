@@ -1,0 +1,35 @@
+.list-select{  position: relative; z-index:61;  }
+.list-select .select-main{ position: relative; line-height:.96rem; font-size:.3rem;}
+.list-select .select-left{z-index:2; float:left; width:50%; border-right:1px solid #e8e8e8; }
+.list-select .select-right{z-index:2; float:right; width:50%;}
+.list-select #divselect{ float:left; width:100%; margin:0 auto; position:relative; z-index:4;}
+.list-select #divselect2{ float:left; width:100%; margin:0 auto; position:relative; z-index:4;}
+.list-select .select-main span{display:block; width:100%; height:.96rem;line-height:.96rem; text-align:center; cursor:pointer; background: transparent; outline: 0; color:#000;}
+.list-select .select-main span cite{font-style:normal; color:#000;}
+.list-select .select-main span img{ padding-left:.2rem; width:.43rem; height:.14rem; }
+
+.list-select .showcata, .list-select .showcata2, .list-select .showcata3 ul{width:100%; position:relative; font-size:.3rem; }
+.list-select .showcata ul li, .list-select .showcata2 ul li, .list-select .showcata3 ul li{line-height:.96rem; border-bottom:1px solid #e8e8e8;  }
+.list-select .showcata ul li a, .list-select .showcata2 ul li a, .list-select .showcata3 ul li a{display:block; color:#333; text-decoration:none; }
+.list-select .showcata, .list-select .showcata2, .list-select .showcata3{ z-index:31; position:absolute; top:.96rem; width:100%; background:#fbfbfb; display:none; text-align:center;}
+
+.list-select .showcata4, .list-select .showcata5{width:100%;border:1px solid #e8e8e8; position:relative; font-size:.3rem; }
+.list-select .showcata4 ul li, .list-select .showcata5 ul li{line-height:.96rem; border-bottom:1px solid #e8e8e8;  }
+.list-select .showcata4 ul li a, .list-select .showcata5 ul li a{display:block; color:#333; text-decoration:none; }
+.list-select .showcata4, .list-select .showcata5{ z-index:31; position:absolute; top:.96rem; width:100%; background:#fbfbfb; display:none; text-align:center;}
+
+.coins-list{}
+.coins-list .coins-col{}
+.coins-list .col-left{}
+.coins-list .col-left .col-left01{ line-height:.48rem; height:.48rem; }
+.coins-list .col-left .col-left01 i.ji{ display:inline-block; width:.48rem; height:.5rem; background:url(../../images/coins/coins.png) 0 -.67rem no-repeat; background-size:.48rem;}
+.coins-list .col-left .col-left01 i.bao{ display:inline-block; width:.48rem; height:.5rem; background:url(../../images/coins/coins.png) 0 -1.34rem no-repeat; background-size:.48rem;}
+.coins-list .col-left .col-left01 span.sp01{ display:inline-block; vertical-align:top; padding-left:.1rem; line-height:.48rem;}
+.coins-list .col-left .col-left02{ padding-left:.65rem; padding-top:.2rem;}
+.coins-list .col-right{}
+.coins-list .col-right span{ display:block; }
+.coins-list .col-right span.s1{ line-height:.48rem; height:.48rem;  }
+.coins-list .col-right span.s2{ padding-top:.2rem; line-height:.4rem; vertical-align:middle;}
+.coins-list .col-right span.s2 em.mob{display:inline-block; margin-right:.1rem; width:.34rem; height:.4rem;  background:url(../../images/icon-mob.png) center center no-repeat; background-size:.34rem; }
+.coins-list .col-right span.s2 em.pc{display:inline-block; margin-right:.1rem; width:.34rem; height:.4rem;  background:url(../../images/icon-pc.png) center center no-repeat; background-size:.34rem; }
+.coins-list .col-right span.s2 em.e1{ display:inline-block;line-height:.4rem; vertical-align:top;}

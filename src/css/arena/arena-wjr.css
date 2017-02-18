@@ -1,0 +1,300 @@
+/*base*/
+#wrapper span.middle {height: 100%;display: inline-block;vertical-align: middle}
+.arena-header{ background-color:#0e3345;}
+.bg158{ background-color:#1e5d89}
+
+/*竞技场-头部商城*/
+.top-header .top-back a.arena-back{ background-image:url(../../images/arena/arena-left.png);}
+.top-header .top-right .arena-shop{display:inline-block; height:.96rem; width:1.4rem; background:url(../../images/arena/arena-shop.png) no-repeat 0 center; background-size: .34rem; padding-left:0.52rem; text-align:left; }
+
+
+/*底部*/
+.arena-footer{ height:auto; display:block; overflow:hidden;}
+.arena-footer .foot-mine{ height:0.6rem; line-height:0.6rem; width:24%;}
+.arena-footer .foot-mine span{ display:block; background:url(../../images/arena/mine-ico.png) no-repeat 0.3rem center; background-size:0.39rem; padding-left:0.84rem;}
+.arena-footer .foot-recharge{ height:0.6rem; line-height:0.6rem; width:21%;}
+.arena-footer .foot-recharge span{ display:block; text-align:right; }
+.arena-footer .foot-recharge span em.recharge-ico{ display:block; height:0.6rem;background:url(../../images/arena/recharge-ico.png) no-repeat 0 center; width:0.17rem; background-size:0.17rem 0.28rem;}
+
+.arena-footer .foot-goldbean{ height:0.6rem; line-height:0.6rem; width:55%; text-align:center;}
+.arena-footer .foot-goldbean span{ display:block; height:0.6rem; line-height:0.6rem;}
+.arena-footer .foot-goldbean span em{ display:inline-block; height:0.6rem; background:url(../../images/arena/goldbean-ico.png) no-repeat left center; padding-left:0.58rem; background-size:0.42rem;}
+.arena-footer .foot-goldbean span em i{ font-family:"Arial";}
+
+/*竞技场-内容*/
+.arena-main{ height:auto; display:block; overflow:hidden;}
+.arena-content{ height:auto; display:block; overflow:hidden;}
+
+.arena-nav{height:auto; display:block; overflow:hidden;}
+.arena-nav ul li{ width:50%; height:0.98rem; text-align:center; line-height:0.98rem;}
+.arena-nav ul li a{display:block; width:auto; height:0.98rem; border-bottom:3px solid #fff;}
+.arena-nav ul li.active{  border-bottom:1px solid #f75e46;}
+.arena-nav ul li.active a{border-bottom:3px solid #f75e46;}
+
+.arena-nav ul li a span{ display:inline-block; height:0.98rem;}
+.arena-nav ul li a.yxlm span{ background:url(../../images/arena/xxlm-ico.png) no-repeat left center; padding-left:1.14rem; background-size:1.02rem;}
+.arena-nav ul li a.wzly span{background:url(../../images/arena/wzly-ico.png) no-repeat left center; background-size:0.87rem 0.64rem; padding-left:1rem;}
+
+.pattern-nav ul li{ height:1rem; line-height:1rem; }
+.pattern-nav ul li a{ display:block;height:1rem; border-bottom:1px solid #e8e8e8; }
+.pattern-nav ul li.active{ border-bottom:1px solid #e8e8e8;}
+.pattern-nav ul li.active a{border-bottom:1px solid #fff; color:#f75e46; background-color:#fff;}
+
+/*模式*/
+.pattern-conn{ height:auto; display:block; overflow:hidden;}
+
+
+.arepern-list{ height:auto; display:block; overflow:hidden;}
+.arepern-list .pern-img{ width:1.6rem; height:1.6rem; position:relative;}
+.arepern-list .pern-img img{vertical-align: middle;width: 100%;height: 100%;}
+.arepern-list .pern-img i{ display:block; width:0.33rem; height:0.33rem; text-align:center; line-height:0.33rem; position:absolute; top:0; right:0;}
+.arepern-list .pern-img i.jin{ background-color:#e7b955;}
+
+.arepern-list .pern-ctn{ margin-left:1.85rem; height:auto; display:block; overflow:hidden;}
+.arepern-list .pern-ctn .ctn-h2{ height:0.46rem; line-height:0.46rem; font-weight:bolder;}
+.arepern-list .pern-ctn .ctn-h2 span{ display:inline-block; height:0.46rem; }
+.arepern-list .pern-ctn .ctn-h2 i.petn-ico{ width:0.36rem; padding-left:0.54rem;  display:inline-block; height:0.46rem; background:url(../../images/arena/ctn-h2-ico.png) no-repeat right center; background-size:0.36rem;}
+.arepern-list .pern-ctn .ctn-p{ line-height:0.32rem;}
+
+
+/*最强KDA大奖赛*/
+.arepern-part{height:auto; display:block; overflow:hidden;}
+.arepern-part .recdrg-ico{ width:0.22rem; height:0.92rem; background:url(../../images/arena/recdrg-ico.png) no-repeat right center; background-size:0.22rem;}
+.arepern-part span{ display:inline-block; height:0.92rem;}
+.arepern-part span.per-titl{line-height:0.92rem;}
+.arepern-part span.kda-titl h6{ height:0.54rem; line-height:0.54rem;}
+.arepern-part span.kda-titl p{ height:0.38rem;}
+
+.arepern-detail div.title-hg{ width:0.26rem; height:0.42rem; float:left;}
+.arepern-detail div.title-detail{ line-height:0.46rem;}
+
+.arepern-part a{display:block; text-align:center; height:0.92rem; width:32%; position:relative;}
+.arepern-part a h6{ height:0.52rem; line-height:0.4rem;}
+.arepern-part a p{ height:0.3rem; line-height:0.3rem;}
+.arepern-part a.week{ line-height:0.92rem;}
+.arepern-part a.week .badge{display:inline-block; position:absolute; width:0.35rem; height:0.35rem; line-height:0.32rem;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:50%; border:1px solid #f75e46; top:-0.09rem; right:-0.13rem;}
+.arepern-part a.week .badge:empty{display:none}
+.arepern-part a.week .active .badge{display:none}
+
+
+.kda-rank{ height:0.9rem; line-height:0.85rem;}
+.kda-rank span.rk-titl{ display:inline-block; background:url(../../images/arena/ctn-h2-ico.png) no-repeat right center; height:0.9rem; padding-right:0.52rem; background-size:0.36rem;}
+
+.kda-list{height:auto; display:block; overflow:hidden;}
+.kda-list ul li{ height:auto; display:block; overflow:hidden;}
+.kda-list ul li.active{ background-color:#fffbfa;}
+.kda-list ul li.kda-time{ height:0.6rem; line-height:0.6rem;}
+
+.kda-list ul li .kli-01{ height:0.85rem; width:21%;}
+.kda-list ul li .kli-02{ height:0.85rem; width:26%;}
+.kda-list ul li .kli-03{ height:0.85rem; width:22%; text-align:center;}
+.kda-list ul li .kli-04{ height:0.85rem; width:13%; text-align:center;}
+.kda-list ul li .kli-05{ height:0.85rem; width:18%; text-align:center;}
+.kda-list ul li .kli-06{ height:0.85rem; width:31%; text-align:center;}
+
+
+.kda-list ul li .kli-01 span{ height:0.85rem; line-height:0.90rem; text-align:center; display:block; width:0.70rem; overflow:hidden; font-family:"Arial";}
+.kda-list ul li .kli-01 span.one{ background:url(../../images/arena/one.png) no-repeat center center; background-size:0.4rem 0.58rem;}
+.kda-list ul li .kli-01 span.two{ background:url(../../images/arena/two.png) no-repeat center center; background-size:0.4rem 0.58rem;}
+.kda-list ul li .kli-01 span.three{ background:url(../../images/arena/three.png) no-repeat center center; background-size:0.4rem 0.58rem;}
+
+
+.kda-list ul li .kli-01 i{ display:inline-block; width:0.21rem;height:0.85rem; }
+.kda-list ul li .kli-01 i.rise{ background:url(../../images/arena/kad-rise.png) no-repeat left center; background-size:0.21rem 0.25rem;}
+.kda-list ul li .kli-01 i.drop{ background:url(../../images/arena/kad-drop.png) no-repeat left center; background-size:0.21rem 0.25rem;}
+
+.kda-list ul li h6{ height:0.45rem; line-height:0.50rem;}
+.kda-list ul li p{ height:0.40rem; line-height:0.40rem;}
+
+.kda-list ul li .kli-04 span{ display:block; height:0.85rem; line-height:0.85rem;}
+.kda-list ul li .kli-04 span.win{ color:#f86b55;}
+.kda-list ul li .kli-04 span.fail{ color:#47d714;}
+
+.kda-more{ height:1rem; line-height:1rem; text-align:center;}
+
+
+.kda-option{ height:auto; display:block; overflow:hidden;}
+.kda-option .option-case{ width:36%; height:0.9rem; text-align:center;}
+.kda-option .option-case a{height:0.9rem; line-height:0.9rem; display:block; border:1px solid #f75e46;}
+.kda-option .option-join{width:28%; height:0.9rem; text-align:center; margin-left:4%; }
+.kda-option .option-join a{height:0.9rem; line-height:0.9rem; display:block; border:1px solid #f75e46;}
+
+.kda-explain{ height:auto; display:block; overflow:hidden;}
+.kda-explain dl dt{ height:0.68rem; line-height:0.68rem;}
+.kda-explain dl dd{ line-height:0.4rem;}
+
+
+/*上期大乐透开奖号码*/
+.lotto-lottery{ background-color:#fffbfa; height:auto; display:block; overflow:hidden; text-align:center;}
+.lotto-lottery span{ display:inline-block; width:1.52rem; height:auto;}
+.lotto-lottery span h6{ height:0.44rem; line-height:0.44rem; font-family:"Arial"; font-weight:bolder;}
+.lotto-lottery span p{ height:0.4rem; line-height:0.4rem;}
+
+
+
+/*参加竞技场*/
+.area-titl{ height:1rem; line-height:1rem;}
+.area-list{ height:auto; display:block; overflow:hidden; padding-bottom:0.6rem;}
+.area-list ul li{ width:29.3%; margin-top:0.4rem; margin-right:4%;}
+.area-list ul li span{ display:block; border:1px solid #f75e46; text-align:center; height:0.9rem; line-height:0.96rem;}
+
+
+/*请输入您的角色名*/
+.for-box{ height:auto; overflow:hidden;}
+.area-title{ height:0.5rem; position:relative;}
+.area-title span{ display:block; text-align:center; height:0.5rem; line-height:0.5rem;}
+.area-title .diaclose{ position:absolute; top:0px; right:0px; width:0.5rem; height:0.5rem; background:url(../../images/arena/pop-close.png) no-repeat right center; background-size:0.5rem; display:block;}
+.area-con{ height:1rem; }
+.area-con .area-input{ height:1rem; line-height:1rem; text-align:center; border-radius:0.1rem; width:100%;}
+.area-btn{ height:1rem; }
+.area-btn a{height:1rem; line-height:1rem; background-color:#fa5e48; text-align:center; border-radius:0.1rem; display:block; color:#fff; }
+
+/*个人资料*/
+.mine-box{ left:0.3rem; bottom:0.8rem; z-index:100;position:fixed; width:36%;}
+
+.mine-conn{ width:100%; height:auto; display:block; overflow:hidden; position:relative; padding-bottom:0.31rem; }
+.mine-conn ul { height:auto; display:block; overflow:hidden;}
+.mine-conn ul li{ height:0.88rem; line-height:0.88rem; text-align:center;}
+.mine-conn ul li span{ display:inline-block; height:0.88rem; padding-left:0.5rem;}
+.mine-conn ul li span.use01{ background:url(../../images/arena/mine-use01.png) no-repeat left center; background-size:0.32rem 0.36rem;}
+.mine-conn ul li span.use02{ background:url(../../images/arena/mine-use02.png) no-repeat left center; background-size:0.32rem 0.35rem;}
+.mine-conn ul li span.use03{ background:url(../../images/arena/mine-use03.png) no-repeat left center; background-size:0.4rem;}
+.mine-conn ul li span.use04{ background:url(../../images/arena/mine-use04.png) no-repeat left center; background-size:0.38rem;}
+.mine-conn ul li span.use05{ background:url(../../images/arena/mine-use05.png) no-repeat left center; background-size:0.36rem;}
+.mine-conn .mine-conn-bj{ width:100%; height:0.31rem; background:url(../../images/arena/mine-conn-bj.png) no-repeat left center; background-size:0.47rem 0.31rem; position:absolute; left:0; bottom:1px;}
+
+/*金豆明细*/
+.beanslist-rank{ height:0.73rem; line-height:0.73rem;}
+.beanslist-list .pern-img{ width:1.13rem; height:1.13rem;}
+.arepern-list .beans-etn{ margin-left:0.2rem;}
+.arepern-list .beans-etn .etn-h2{ height:0.46rem; line-height:0.46rem; font-weight:bolder;}
+.arepern-list .beans-etn .etn-h2 em{ font-weight:normal;}
+.arepern-list .beans-etn .etn-income{ height:0.37rem; line-height:0.46rem;}
+.arepern-list .beans-etn .etn-time{height:0.30rem; line-height:0.35rem;}
+.arepern-list .beans-money{ height:1.13rem; line-height:1.13rem;}
+
+.arepern-list .record-ent .etn-income{ height:0.45rem; line-height:0.60rem;}
+.arepern-list .record-ent .etn-time{height:0.34rem; line-height:0.40rem;}
+
+
+/*客服中心*/
+.sev-rank{ height:1rem; line-height:1rem;}
+.service-rule{ height:auto; display:block; overflow:hidden;}
+.service-rule .serrule-title{ height:0.7rem; line-height:0.7rem;}
+.service-rule .serrule-title span{ display:block; width:100%; height:0.7rem;background:url(../../images/arena/serrule-title-ico01.png) no-repeat center right; background-size:0.22rem 0.35rem; }
+.service-rule .serrule-title span.tit-hov{background:url(../../images/arena/serrule-title-ico.png) no-repeat center right; background-size:0.35rem 0.22rem;}
+.service-rule .serrule-conn{ height:auto;}
+.service-rule .serrule-conn p{ line-height:0.32rem;}
+
+.service-weix{ height:1.53rem; line-height:1.53rem;}
+.svweix-conn{ height:auto; display:block; overflow:hidden;}
+.svweix-conn .svweix-titl{ height:0.65rem; line-height:0.65rem;}
+.svweix-conn .svweix-pic{ width:4.88rem; height:4.88rem; margin:0 auto;}
+
+
+/*详情倒计时*/
+.record-time{ height:auto; display:block; overflow:hidden; padding-bottom:0.5rem;}
+.record-time .time-conn{height:0.48rem; background:url(../../images/arena/record-time-bj.png) repeat-x left center}
+.record-time .time-conn .surplus{ width:3.54rem; margin:0 auto; height:0.48rem; line-height:0.48rem;}
+.record-time .time-conn .surplus i{ display:inline-block; width:0.48rem; height:0.48rem; background-color:#404040; text-align:center; line-height:0.48rem; border-radius:0.08rem;}
+
+.recharge-btn{ display:block; height:auto; overflow:hidden; width:100%;}
+.recharge-btn a{height:0.92rem; line-height:0.92rem; text-align:center; display:block;}
+
+/*挑战弹窗*/
+.examine-main{ height:auto; display:block; overflow:hidden;}
+.examine-main .examine-conn .rtun-plo{ min-height:2.5rem;}
+.examine-main .examine-conn .rtun-plo span{ display:block;}
+.examine-main .examine-conn .rtun-plo span.examine-text{ line-height:2.5rem; text-align:center;}
+.examine-main .examine-conn .rtun-plo span.continue-text{ line-height:0.52rem; text-align:center; padding-top:0.75rem;}
+.examine-main .examine-conn .rtun-btn{ height:auto;}
+.examine-main .examine-conn .rtun-btn a{ display:block; height:1.1rem; line-height:1.1rem; text-align:center;}
+.examine-main .examine-conn .rtun-btn a.rech-sub{ float:left; width:49.5%;}
+
+
+/*二维码生成器*/
+.svweix-pic #output canvas{ width:4.88rem; height:4.88rem; padding:0.2rem; background-color:#fff;  }
+
+
+.for-box {width:94%; max-width: 7.20rem; height: auto; border-radius: 0.2rem; position: relative; background-color:#2f568c; }
+.pop-box {width:85%; max-width: 7.20rem; height: auto; border-radius: 0.2rem; position: relative; background-color:#2f568c; }
+.success-box{width: 73%; height: auto;  position: relative; background-color:#2f568c; border-radius:0.2rem;}
+/*充值*/
+.fortunel-main{ height:auto; display:block; overflow:hidden; padding:0.18rem 0.15rem;}
+.fortunel-main .fnel-title{ height:0.68rem;}
+.fortunel-main .fnel-title span{ display:block; height:0.68rem; line-height:0.68rem; float:left; font-size:0.32rem; color:#fff; padding-left:0.2rem;}
+.fortunel-main .fnel-title span i.po-ico{ display:inline-block; float:right; width:0.1rem; height:0.68rem; background:url(../../images/dekaron/pop-ico.png) no-repeat right center; background-size:0.1rem 0.19rem; margin-left:0.22rem;}
+.fortunel-main .fnel-title .diaclose{ float:right; width:0.5rem; height:0.68rem; background:url(../../images/dekaron/pop-close.png) no-repeat right top; background-size:0.5rem;}
+
+.fortunel-main .cien-title{ height:auto; overflow:hidden;}
+.fortunel-main .cien-title .cien-left{ float:left; height:1.06rem; background:url(../../images/dekaron/cient-img.png) no-repeat left center; background-size:0.73rem; margin-left:0.12rem;}
+.fortunel-main .cien-title .cien-left h2{ height:0.45rem; line-height:0.45rem; font-size:0.32rem; color:#ffffff; padding:0.1rem 0 0 0.93rem;}
+.fortunel-main .cien-title .cien-left p{ height:0.38rem; line-height:0.38rem; font-size:0.24rem; color:#4aa4e3; padding-left:0.93rem;}
+.fortunel-main .cien-title .cien-right{ float:right; height:1.06rem;}
+.fortunel-main .cien-title .cien-right .diaclose{ display:inline-block;width:0.5rem; height:1.06rem; background:url(../../images/dekaron/pop-close.png) no-repeat right 0.2rem; background-size:0.5rem;}
+
+.fortgold_main {height:auto; display:block; overflow:hidden;}
+.fortgold_main .fortgold_titl{ height:1rem; line-height:1rem; font-size:0.32rem; text-align:center; color:#333; border-bottom:1px solid #e8e8e8; }
+.fortgold_main .fortgold_conn{ height:auto; display:block; overflow:hidden;}
+.fortgold_main .fortgold_conn .gold-plo {font-size:0.3rem;line-height:0.45rem; padding: 0.3rem;}
+.fortgold_main .fortgold_conn .gold-btn {height: 0.93rem;border-top: 1px solid #e8e8e8;text-align: center}
+.fortgold_main .fortgold_conn .gold-btn a {display: inline-block;height: 1rem;line-height: 1rem;color: #007aff;font-size: 0.3rem;width: 49%;}
+.fortgold_main .fortgold_conn .gold-btn a.cenle{border-right: 1px solid #e8e8e8;}
+
+.fortunel-main  .fortun-conn{height:auto; display:block; overflow:hidden;}
+.fortunel-main .fortun-conn .rtun-plo {text-align: center; font-size: 0.36rem; padding: 0.60rem 0; line-height: 0.56rem;}
+.fortunel-main .fortun-conn .rtun-btn {height: 0.94rem;border-top: 1px solid #e8e8e8;text-align: center}
+.fortunel-main .fortun-conn .rtun-btn a {display: inline-block;height: 1rem;line-height: 1rem;color: #007aff;font-size: 0.30rem;width: 49%;}
+.fortunel-main .fortun-conn .rtun-btn a.bordrht{border-right: 1px solid #e8e8e8;}
+.fortunel-main .fortun-conn .rtun-btn a.closeSmb{border-right: 1px solid #e8e8e8;}
+.fortunel-main .fortun-conn .rtun-btn a#isSure_form{border-right: 1px solid #e8e8e8;}
+
+.fortunel-main .fnel-advert{ height:0.54rem; margin-top:0.15rem; line-height:0.54rem; background-color:#25436d; color:#3978b3; font-size:0.24rem; border-radius:0.1rem; padding:0 0.15rem;}
+.fortunel-main .fnel-advert i.adv-ico{ display:inline-block; float:left; width:0.31rem; height:0.54rem; background:url(../../images/dekaron/apo-advert.png) no-repeat left center; background-size:0.31rem; margin-right:0.25rem;}
+
+.fnal-conn{ height:auto; display:block; overflow:hidden;}
+.fnal-conn ul li{ height:1.2rem; background:url(../../images/dekaron/popbj.png) no-repeat 0 0; background-size:100%; margin-top:0.15rem;}
+.fnal-conn ul li .fal-left{ float:left; width:50%; height:1.2rem;}
+.fnal-conn ul li .fal-left .lpm-img{ width:1.17rem; height:1.2rem; text-align:center; float:left;}
+.fnal-conn ul li .fal-left .lpm-img span{height:100%; display:inline-block; vertical-align:middle;}
+.fnal-conn ul li .fal-left .lpm-img img{ max-width:1.17rem; max-height:1.2rem; vertical-align: middle; width:60%;}
+.fnal-conn ul li .fal-left .lpm-text{ float:left; font-size:0.24rem; height:1.2rem; line-height:1.2rem; color:#fff;}
+.fnal-conn ul li .fal-left .lpm-text em{ font-size:0.36rem; margin:0 0.09rem}
+.fnal-conn ul li .fal-right{ float:right; width:48%; height:0.8rem; padding:0.2rem 0; line-height:0.8rem; font-size:0.36rem; color:#fff;}
+.fnal-conn ul li .fal-right a.ter{ display:inline-block; float:right; width:1.4rem; height:0.8rem; background-color:#e54b4b; text-align:center; border-radius:0.1rem; color:#fff; margin-right:0.2rem;}
+.fnal-conn ul li .fal-right em{ font-size:0.3rem;}
+
+
+.pop-pay{height:auto; display:block; overflow:hidden; background-color:#2f568c; border-radius:0.2rem; z-index:999;}
+.success-pay{height:auto; display:block;  background-color:#2f568c; border-radius:0.2rem; z-index:999;}
+
+
+.ppym-main{ height:auto;  display:block; overflow:hidden; background-color:#fff; border-radius:0.2rem;}
+.ppym-main .pym-titl{ height:1.22rem; border-bottom:1px solid #e3e3e3; text-align:center; line-height:1.22rem; font-size:0.4rem; color:#000; position:relative;}
+.ppym-main .pym-titl .py-close{ position:absolute; top:0; right:0; display:inline-block; float:right; width:0.32rem; height:0.32rem; margin:0.38rem 0.34rem 0 0;}
+.ppym-main .pym-titl .py-close img{ width:100%;}
+
+.ppym-main .pym-conn{ height:1.94rem; line-height:1.94rem; text-align:center; font-size:0.72rem; color:#000000;border-bottom:1px solid #e3e3e3}
+.ppym-main .pym-zfb{ height:1.3rem;border-bottom:1px solid #e3e3e3; padding:0 0.3rem;}
+.ppym-main .pym-zfb span{ display:block; height:1.3rem; line-height:1.3rem; font-size:0.32rem; color:#000000;}
+.ppym-main .pym-zfb span em.zfb{ float:left; display:inline-block; width:0.67rem; height:1.3rem; background:url(../../images/dekaron/zfb-ico.png) no-repeat left center; margin-right:0.27rem; background-size:0.67rem;}
+.ppym-main .pym-zfb span em.weix{ float:left; display:inline-block; width:0.67rem; height:1.3rem; background:url(../../images/dekaron/winx-ico.png) no-repeat left center; margin-right:0.27rem; background-size:0.67rem;}
+.ppym-main .pym-zfb i.du-ico{ float:right; display:inline-block; width:0.750rem; height:1.3rem; background:url(../../images/dekaron/for-ico.png) no-repeat right center; background-size:0.36rem;}
+.ppym-main .pym-btn{ height:auto; display:block; overflow:hidden; padding:0.3rem;}
+.ppym-main .pym-btn a.py-btn{ display:block; height:0.93rem; line-height:0.93rem; background-color:#e54b4b; text-align:center; font-size:0.36rem; color:#fff; border-radius:0.1rem;}
+
+
+/*支付成功*/
+.cess-main{ height:auto; background:#3978b3 url(../../images/dekaron/cess-main-bj.png) no-repeat center top; border-radius:0.2rem; position:relative;}
+.cess-main .cess-img{ width:1.22rem; height:1.22rem; position:absolute; top:-0.21rem; left:50%; margin-left:-0.61rem;}
+.cess-main .cess-img img{ width:100%;}
+.cess-main .cess-tex{ padding-top:0.96rem; height:auto; line-height:1.1rem; font-size:0.36rem; text-align:center; color:#fff;}
+.cess-main .cess-btn{height:auto; display:block; overflow:hidden; padding:0.3rem;}
+.cess-main .cess-btn a.ce-btn{ display:block; height:0.93rem; line-height:0.93rem; background-color:#e54b4b; text-align:center; font-size:0.36rem; color:#fff; border-radius:0.1rem; }
+
+
+/*空图片*/
+.list-empty{float:left;  width:100%; text-align:center; background:#f1f1f1; }
+.list-empty p { display:block; padding:1.3rem 0 0 0 ; }
+.list-empty p img{ width:1.71rem; }
+.list-empty span{ display:block; padding-top:0.25rem; font-size:0.32rem; color:#666; }
