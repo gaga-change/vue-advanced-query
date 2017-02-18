@@ -2,111 +2,115 @@
   <!-- 筛选 -->
   <div class="filter">
     <!--不限 选项-->
-    <template v-if="isShowOuter">
-      <div class="filter-more docheight">
-        <div class="top-header border-bottom fixed-top above-mask-header">
-          <div class="top-back2 filter-back3">
-            <a @click="hideOuter()">返回</a>
-          </div>
-          <div class="top-bt3 " v-text="outerName">
+    <transition name="outerPage">
+      <template v-if="isShowOuter">
+        <div class="filter-more docheight">
+          <div class="top-header border-bottom fixed-top above-mask-header">
+            <div class="top-back2 filter-back3">
+              <a @click="hideOuter()">返回</a>
+            </div>
+            <div class="top-bt3 " v-text="outerName">
 
+            </div>
           </div>
+          <div class="filter-prof2 margin-top-2rem above-mask">
+            <div class="filter-search border-bottom" v-if="outerName=='角色职业' ">
+              <input class="f30" type="text" placeholder="首字母搜索" v-model="outerQuery">
+            </div>
+            <div class="prof2-list f30">
+
+
+              <transition-group tag="ul" @before-enter="beforeEnter"
+                                :appear="true"
+                                @enter="enter" @leave="leave">
+                <!--<ul>-->
+
+                <!--<li v-for="(item, index) in computedList" :key="item.msg" :data-index='index' style="transition: all .5s">-->
+                <!--<span v-text="item.msg"></span>-->
+                <!--</li>-->
+
+                <li class="border-bottom"
+                    v-for="(item,index) in outerListFilter"
+                    :key="item.id"
+                    :data-index="index"
+                    style="transition: all .5s; overflow: hidden"
+                    @click="outerCheck(item)"
+                    :class="{'active':item.check}">
+                  <!--<p v-text="item.name"></p>-->
+                  <em v-text="item.name"></em>
+                  <span><i><input type="checkbox"></i></span>
+                  <!--<div style="clear: both"></div>-->
+                </li>
+
+              </transition-group>
+              <!--</ul>-->
+            </div>
+            <div class="prof2-check f36">
+              <a class="fcheckmore" @click="confirm()">确定</a>
+            </div>
+          </div>
+          <div class="maskdiv3" @click="hideOuter()"></div>
         </div>
-        <div class="filter-prof2 margin-top-2rem above-mask">
-          <div class="filter-search border-bottom" v-if="outerName=='角色职业' ">
-            <input class="f30" type="text" placeholder="首字母搜索" v-model="outerQuery">
-          </div>
-          <div class="prof2-list f30">
 
-
-            <transition-group tag="ul" @before-enter="beforeEnter"
-                              :appear="true"
-                              @enter="enter" @leave="leave">
-              <!--<ul>-->
-
-              <!--<li v-for="(item, index) in computedList" :key="item.msg" :data-index='index' style="transition: all .5s">-->
-              <!--<span v-text="item.msg"></span>-->
-              <!--</li>-->
-
-              <li class="border-bottom"
-                  v-for="(item,index) in outerListFilter"
-                  :key="item.id"
-                  :data-index="index"
-                  style="transition: all .5s; overflow: hidden"
-                  @click="outerCheck(item)"
-                  :class="{'active':item.check}">
-                <!--<p v-text="item.name"></p>-->
-                <em v-text="item.name"></em>
-                <span><i><input type="checkbox"></i></span>
-                <!--<div style="clear: both"></div>-->
-              </li>
-
-            </transition-group>
-            <!--</ul>-->
-          </div>
-          <div class="prof2-check f36">
-            <a class="fcheckmore" @click="confirm()">确定</a>
-          </div>
-        </div>
-        <div class="maskdiv3" @click="hideOuter()"></div>
-      </div>
-
-    </template>
+      </template>
+    </transition>
 
     <!-- 显示筛选列表 -->
-    <div class="filter-list docheight" v-else>
-      <div class="filter-head">
-        <div class="top-header border-bottom fixed-top">
-          <div class="top-back2 filter-back">
-            <a @click="back">返回</a>
-          </div>
-          <div class="top-bt3">
-            精准筛选
-          </div>
-          <div class="top-right4 f32">
+    <transition name="innerPage">
+      <div class="filter-list docheight" v-if="!isShowOuter">
+        <div class="filter-head">
+          <div class="top-header border-bottom fixed-top">
+            <div class="top-back2 filter-back">
+              <a @click="back">返回</a>
+            </div>
+            <div class="top-bt3">
+              精准筛选
+            </div>
+            <div class="top-right4 f32">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="filter-body padding-b4 fw margin-top-2rem">
-        <div class="filter01 fw " style="text-align: left" :class="{'margin-bottom': item.name!='角色职业'}"
-             v-for="item in list">
+        <div class="filter-body padding-b4 fw margin-top-2rem">
+          <div class="filter01 fw " style="text-align: left" :class="{'margin-bottom': item.name!='角色职业'}"
+               v-for="item in list">
 
-          <h3 class="filter-title border-bottom f32"><b class="b-normal" v-text="item.name"></b>
-            <span
-              id="openprof"
-              v-if="item.outer"
-              @click="showOuter(item)">
+            <h3 class="filter-title border-bottom f32"><b class="b-normal" v-text="item.name"></b>
+              <span
+                id="openprof"
+                v-if="item.outer"
+                @click="showOuter(item)">
                                 <b class="b-normal" v-text="item.outer.name">
                                 </b>
                                 <i></i>
                             </span>
-          </h3>
-          <div class="fw filter-ul border-bottom" v-if="item.inner.length != 0">
-            <ul>
-              <li :class="{'active':inner.check}" v-for="(inner,index) in item.inner"
-                  v-if="item.show || index < 6">
+            </h3>
+            <div class="fw filter-ul border-bottom" v-if="item.inner.length != 0">
+              <ul>
+                <li :class="{'active':inner.check}" v-for="(inner,index) in item.inner"
+                    v-if="item.show || index < 6">
                                     <span class="f30" @click="innerCheck(inner, item)">
                                       <!--{{inner.check}}-->
                                       <input :type="item.type" name="">
                                       <b style="font-weight: normal" v-text="inner.name"></b>
                                     </span>
-              </li>
-            </ul>
-            <!--
-              当index 大于6的时候，自动隐藏多余的条数，同时显示下拉按钮
-            -->
-            <!-- 下拉显示更多 -->
-            <div v-if="item.inner.length > 6" class="fw downmore " @click="showResidue(item)"
-                 :class="{'rotate-180': item.show}"></div>
-            <!-- 缩回显示更多 -->
-            <!--<div class="fw upnmore"></div>-->
+                </li>
+              </ul>
+              <!--
+                当index 大于6的时候，自动隐藏多余的条数，同时显示下拉按钮
+              -->
+              <!-- 下拉显示更多 -->
+              <div v-if="item.inner.length > 6" class="fw downmore " @click="showResidue(item)"
+                   :class="{'rotate-180': item.show}"></div>
+              <!-- 缩回显示更多 -->
+              <!--<div class="fw upnmore"></div>-->
+            </div>
           </div>
         </div>
+        <div class="filter-foot fixed-bottom f36 border-top ">
+          <a><em class="whitesearch"></em>共精选出 <span v-text="commodityNum"></span> 件商品</a>
+        </div>
       </div>
-      <div class="filter-foot fixed-bottom f36 border-top ">
-        <a><em class="whitesearch"></em>共精选出 <span v-text="commodityNum"></span> 件商品</a>
-      </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -118,14 +122,11 @@
    *      3. 进入第二层，位置问题。默认位置覆盖掉了一条数据。 -------------------------------------- √
    *      4. 进入页面时，高度不是100%。 而是110%（猜）。 ------------------------------------------ 忽略
    *  动态效果：
-   *      1. 首字母查询，动画效果
-   *      2. 第一层列表载入动画效果
-   *      3. 第二层列表载入动画效果
+   *      1. 首字母查询，动画效果  ------------------------------------ √
+   *      2. 第一层列表载入动画效果 ----------------------------------- 忽略
+   *      3. 第二层列表载入\退出动画效果 ------------------------------ √
    *      4. 下拉上拉动态效果
-   *      5. 第二层出现和离开
-   *      6. 第二层筛选后数据列表变动动画效果
-   *      7. “不限页面”进入动画
-   *      8。 精选出的条数改变的动画效果
+   *      5。精选出的条数改变的动画效果 -------------------------------- 忽略
    *  命名问题：
    *      不要用a,b,v,vv  -------------------------------------------------------------------- √
    *  注释问题：
@@ -406,7 +407,8 @@
        */
       hideOuter: function () {
         this.isShowOuter = false;
-        this.outerQuery = ""
+        this.outerQuery = "";
+        this.goTop();
       },
       /**
        * 点击“不限”页面的选项时。控制选中状态。默认“不限”页面里的数据是 多选
@@ -504,20 +506,20 @@
         var tep = 0;
         var heighs = document.documentElement.scrollTop || document.body.scrollTop;
         tep = heighs / 100;
-//                document.documentElement.scrollTop = 0;
-//                document.body.scrollTop = 0;
-        var inteval = setInterval(function () {
-          var heighs = document.documentElement.scrollTop || document.body.scrollTop;
-          if (heighs < 3) {
-            clearInterval(inteval);
-          }
-          if (document.documentElement.scrollTop) {
-
-            document.documentElement.scrollTop = document.documentElement.scrollTop - tep
-          } else {
-            document.body.scrollTop = document.body.scrollTop - tep;
-          }
-        }, 2);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+//        var inteval = setInterval(function () {
+//          var heighs = document.documentElement.scrollTop || document.body.scrollTop;
+//          if (heighs < 3) {
+//            clearInterval(inteval);
+//          }
+//          if (document.documentElement.scrollTop) {
+//
+//            document.documentElement.scrollTop = document.documentElement.scrollTop - tep
+//          } else {
+//            document.body.scrollTop = document.body.scrollTop - tep;
+//          }
+//        }, 2);
       },
       beforeEnter: function (el) {
         el.style.opacity = 0;
@@ -583,4 +585,168 @@
     background-color: white;
   }
 
+  /* outerPage 动画效果*/
+
+  .outerPage-enter-active {
+    animation: fadeInDown .5s;
+  }
+
+  .outerPage-leave-active {
+    animation: fadeOutRight .5s;
+  }
+
+  .innerPage-enter-active {
+    animation: fadeIn .5s;
+  }
+
+  .innerPage-leave-active {
+    animation: fadeOut .5s;
+  }
+
+  /* animate.css含有的 部分动画 */
+
+  @-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+
+  @-webkit-keyframes fadeOutRight {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  @keyframes fadeOutRight {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  .fadeOutRight {
+    -webkit-animation-name: fadeOutRight;
+    animation-name: fadeOutRight;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  @-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+
+  @-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
 </style>
