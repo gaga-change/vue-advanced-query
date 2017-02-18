@@ -17,13 +17,32 @@
             <input class="f30" type="text" placeholder="首字母搜索" v-model="outerQuery">
           </div>
           <div class="prof2-list f30">
-            <ul>
-              <li class="border-bottom" v-for="item in outerListFilter" @click="outerCheck(item)"
+
+
+            <transition-group tag="ul" @before-enter="beforeEnter"
+                              :appear="true"
+                              @enter="enter" @leave="leave">
+              <!--<ul>-->
+
+              <!--<li v-for="(item, index) in computedList" :key="item.msg" :data-index='index' style="transition: all .5s">-->
+              <!--<span v-text="item.msg"></span>-->
+              <!--</li>-->
+
+              <li class="border-bottom"
+                  v-for="(item,index) in outerListFilter"
+                  :key="item.id"
+                  :data-index="index"
+                  style="transition: all .5s; overflow: hidden"
+                  @click="outerCheck(item)"
                   :class="{'active':item.check}">
+                <!--<p v-text="item.name"></p>-->
                 <em v-text="item.name"></em>
-                <span><i><input type="checkbox"></i></span></li>
-              <!--<li class="border-bottom active"><em>无货赔  付</em><span><i><input type="checkbox"></i></span></li>-->
-            </ul>
+                <span><i><input type="checkbox"></i></span>
+                <!--<div style="clear: both"></div>-->
+              </li>
+
+            </transition-group>
+            <!--</ul>-->
           </div>
           <div class="prof2-check f36">
             <a class="fcheckmore" @click="confirm()">确定</a>
@@ -443,21 +462,21 @@
        */
       getProfession: function (callBack) {
         var out = [
-          {name: "XXX", check: false},
-          {name: "YY", check: false},
-          {name: "abc", check: false},
-          {name: "ddd", check: false},
-          {name: "gacda", check: false},
-          {name: "fdsafdsa", check: false},
-          {name: "fdsafdsa", check: false},
-          {name: "cd", check: false},
-          {name: "Xfds", check: false},
-          {name: "fsd", check: false},
-          {name: "fds", check: false},
-          {name: "fds", check: false},
-          {name: "fds", check: false},
-          {name: "fds", check: false},
-          {name: "Xfds", check: false}
+          {name: "XXX", check: false, id: 1},
+          {name: "YY", check: false, id: 2},
+          {name: "abc", check: false, id: 3},
+          {name: "ddd", check: false, id: 4},
+          {name: "gacda", check: false, id: 5},
+          {name: "fdsafdsa", check: false, id: 6},
+          {name: "fdsafdsa", check: false, id: 7},
+          {name: "cd", check: false, id: 8},
+          {name: "Xfds", check: false, id: 9},
+          {name: "fsd", check: false, id: 10},
+          {name: "fds", check: false, id: 11},
+          {name: "fds", check: false, id: 12},
+          {name: "fds", check: false, id: 13},
+          {name: "fds", check: false, id: 14},
+          {name: "Xfds", check: false, id: 15}
         ];
 //                out = null;
         setTimeout(function () {
@@ -500,6 +519,24 @@
             document.body.scrollTop = document.body.scrollTop - tep;
           }
         }, 2);
+      },
+      beforeEnter: function (el) {
+        el.style.opacity = 0;
+        el.style.height = 0;
+      },
+      enter: function (el, done) {
+        var delay = el.getAttribute('data-index') * 50;
+        setTimeout(function () {
+          el.style.opacity = 1;
+          el.style.height = '2.125rem';
+        }, delay);
+      },
+      leave: function (el, done) {
+        var delay = el.getAttribute('data-index') * 50;
+        setTimeout(function () {
+          el.style.opacity = 0;
+          el.style.height = 0;
+        }, delay)
       }
     }
   }
