@@ -222,15 +222,15 @@
         outer: {
           name: "不限",
           list: [
-            {name: "免单购物"},
-            {name: "无货赔付"},
-            {name: "资料修改"},
-            {name: "商品已投保"},
-            {name: "找回包赔"},
-            {name: "截图认证"},
-            {name: "视频认证"},
-            {name: "寄售交易"},
-            {name: "担保交易"}
+            {name: "免单购物", id: 1},
+            {name: "无货赔付", id: 2},
+            {name: "资料修改", id: 3},
+            {name: "商品已投保", id: 4},
+            {name: "找回包赔", id: 5},
+            {name: "截图认证", id: 6},
+            {name: "视频认证", id: 7},
+            {name: "寄售交易", id: 8},
+            {name: "担保交易", id: 9}
           ]
         }
       }
@@ -293,7 +293,6 @@
       outerListFilter: function () {
         var self = this;
         return this.outerList.filter(function (item) {
-          console.log(item)
           if (item.check) {
             return true;
           }
