@@ -292,9 +292,18 @@
        */
       outerListFilter: function () {
         var self = this;
-        return this.outerList.filter(function (item) {
-          if (item.check) {
-            return true;
+        return this.outerList.filter(function (item, index) {
+          /**
+           * 符合筛选条件
+           *    已勾选  --- 不处理
+           *    未勾选  --- 不处理
+           * 不符合筛选条件
+           *    已勾选  --- 处理
+           *    未勾选  --- 不处理
+           */
+          if(item.name.toLocaleLowerCase().indexOf(self.outerQuery.toLocaleLowerCase()) == -1 && item.check){
+              console.log(item.name);
+              item.check = false;
           }
           return item.name.toLocaleLowerCase().indexOf(self.outerQuery.toLocaleLowerCase()) !== -1;
         })
@@ -421,7 +430,6 @@
       confirm: function () {
         var self = this;
 //                console.log(self.outerList);
-
         self.outerList.forEach(function (outerItem, outerIndex) {
           self.outerLink[outerIndex].check = outerItem.check;
         });
@@ -430,7 +438,6 @@
       /** 获取商品特色
        */
       getCommodityFeature: function (callBack) {
-
         var self = this;
 //                if(jsonData > 0) return;
         setTimeout(function () {
