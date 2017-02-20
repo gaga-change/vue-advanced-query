@@ -301,9 +301,9 @@
            *    已勾选  --- 处理
            *    未勾选  --- 不处理
            */
-          if(item.name.toLocaleLowerCase().indexOf(self.outerQuery.toLocaleLowerCase()) == -1 && item.check){
-              console.log(item.name);
-              item.check = false;
+          if (item.name.toLocaleLowerCase().indexOf(self.outerQuery.toLocaleLowerCase()) == -1 && item.check) {
+            console.log(item.name);
+            item.check = false;
           }
           return item.name.toLocaleLowerCase().indexOf(self.outerQuery.toLocaleLowerCase()) !== -1;
         })
@@ -362,10 +362,12 @@
          *        1. 单选： 同类所有 check=false
          *        2. 多选： 不变
          *  2. true 点击之后
-         *    check = false
+         *    单选 不变
+         *    多选 check = false
          *
          */
-        if (innerItem.check) {
+        if(innerItem.check && item.type != 'checkbox') return;
+        if (innerItem.check && item.type == 'checkbox') {
           innerItem.check = false;
         } else {
           if (item.type != 'checkbox') {
@@ -503,7 +505,7 @@
        * 返回路由上一层
        * */
       back: function () {
-//                this.$router.go(-1);
+        this.$router.go(-1);
       },
       /**
        * 回到页面顶部
