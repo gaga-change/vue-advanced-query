@@ -65,8 +65,8 @@
                 id="openprof"
                 v-if="item.outer"
                 @click="showOuter(item)">
-                <b class="b-normal" v-text="item.outer.name"></b>
-                <i></i>
+                <b class="b-normal">{{item | outerLinkName}}</b>
+                <i :class="{'remove-background-image': !item.outer.outerArrow}"></i>
                 </span>
             </h3>
             <div class="fw filter-ul border-bottom" v-if="item.inner.length != 0">
@@ -220,6 +220,7 @@
         inner: [],
         outer: {
           name: "不限",
+          outerArrow: "false",
           list: [
             {name: "免单购物", id: 1},
             {name: "无货赔付", id: 2},
@@ -555,6 +556,45 @@
         if (String(val).length > 8) {
           return "约" + Math.round(val / (10000 * 10000)) + "亿";
         }
+      },
+      outerLinkName: function (item) {
+        /**
+         *  数据量
+         *    等于0 ，return item.outer.name
+         *    大于0
+         *      循环列表，判断 check是否选中。
+         *      配置变量 name = []
+         *      - 开始循环每一个数据 => val
+         *      - 如果name的长度大于3，   结束
+         *      - 如果选中，把当前数据名加到name列表中
+         *      - 结束
+         *    如果name长度为0 return item.outer.name
+         *    如果name长度为1,或2  return name.join(",")
+         *    如果name长度为3 return name.pop().join(",")
+         *
+         */
+        if (!item.outer) return "";
+        if (item.outer.list && item.outer.list == 0) {
+          item.outer.outerArrow = true;
+          return item.outer.name;
+        }
+        var name = [];
+        item.outer.list.forEach(function (val, index) {
+          if (name.length > 2) return;
+          if (val.check) {
+            name.push(val.name);
+          }
+        })
+        if (name.length == 0) {
+          item.outer.outerArrow = true;
+          return item.outer.name;
+        }
+        item.outer.outerArrow = false;
+        if (name.length < 3) {
+          return name.join(", ")
+        }
+        name.pop();
+        return name.join(", ") + "等";
       }
     }
   }
@@ -563,6 +603,11 @@
 <style scoped>
   @import "../css/public.css";
   @import "../css/list.css";
+
+  .remove-background-image {
+    width: 0 !important;
+    background-image: none !important;
+  }
 
   .filter {
     display: block;
