@@ -555,7 +555,7 @@
          *      除以 10000，然后四舍五入 ， 加 万
          * 大于 8位 如 1,0000,0000  除以1*10^8， 四舍五入 加亿
          */
-        console.log("数据", val)
+//        console.log("数据", val)
         if (String(val).length < 5) {
           return val;
         }
