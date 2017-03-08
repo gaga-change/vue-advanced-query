@@ -23,7 +23,7 @@
                     v-for="(item,index) in outerListFilter"
                     :key="item.id"
                     :data-index="index"
-                    style="transition: all .5s; overflow: hidden"
+                    style="overflow: hidden"
                     @click="outerCheck(item)"
                     :class="{'active':item.check}">
                   <!--<p v-text="item.name"></p>-->
@@ -141,7 +141,7 @@
    *
    */
 
-
+  import Velocity from 'velocity-animate'
   import Vue from 'vue'
   var jsonData = {
     list: [
@@ -536,15 +536,21 @@
       enter: function (el, done) {
         var delay = el.getAttribute('data-index') * 50;
         setTimeout(function () {
-          el.style.opacity = 1;
-          el.style.height = '2.125rem';
+          Velocity(
+            el,
+            { opacity: 1, height: '2.125rem' },
+            { complete: done }
+          )
         }, delay);
       },
       leave: function (el, done) {
         var delay = el.getAttribute('data-index') * 50;
         setTimeout(function () {
-          el.style.opacity = 0;
-          el.style.height = 0;
+          Velocity(
+            el,
+            { opacity: 0, height: 0 },
+            { complete: done }
+          )
         }, delay)
       }
     },
