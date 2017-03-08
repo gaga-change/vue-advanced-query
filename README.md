@@ -1,21 +1,26 @@
-# shaixuan
+# 高级筛选
 
-> A Vue.js project
+> Vue 数据双向绑定的运用
 
-## Build Setup
+[点击进入页面](https://gaga-change.github.io/vue-advanced-query)
+
+
+## 技术栈
+
+* vue
+* vue-router(辅助开发)
 
 ``` bash
-# install dependencies
+# 下载依赖环境
 npm install
 
-# serve with hot reload at localhost:8080
+# 运行开发环境
 npm run dev
 
-# build for production with minification
+# 打包
 npm run build
 
-# build for production and view the bundle analyzer report
+# 打包（说明）
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
